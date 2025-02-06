@@ -1,0 +1,94 @@
+.contact {
+    padding-top: 50px;
+    padding-bottom: 50px;
+    background-color: #f0effd;
+    .form {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        width: 100%;
+        .title-sm {
+            color: #000;
+        }
+        .subtitle {
+            color: #000;
+            grid-row-start: 2;
+        }
+        &__inputs {
+            grid-row-start: 1;
+            grid-row-end: 3;
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            // flex-direction: column;
+            gap: 20px;
+            .btn-primary {
+                max-width: 100%;
+                width: calc(50% - 10px);
+            }
+        }
+        &__input {
+            width: 100%;
+            width: calc(50% - 10px);
+            padding: 14px 10px 14px 38px;
+            border: 1px solid #d6d6d6;
+            border-radius: 4px;
+            line-height: 1.6;
+            font-size: 1.3rem;
+            letter-spacing: 0%;
+            color: rgb(85, 86, 90);
+            outline: none;
+            transition: border 0.3s ease;
+            placeholder {
+                font-size: 24px;
+                line-height: 150%;
+                letter-spacing: 0%;
+                color: rgb(85, 86, 90);
+            }
+        }
+        input:hover {
+            border: 1px solid rgb(213, 201, 190);
+        }
+        input:focus {
+            border: 1px solid rgb(213, 201, 190);
+        }
+        &__checkbox {
+            width: 100%;
+            cursor: pointer;
+            position: relative;
+            display: inline-block;
+            color: rgb(85, 86, 90);
+            font-size: 19px;
+            line-height: 130%;
+            letter-spacing: 0%;
+            span {
+                padding-left: 10px;
+            }
+        }
+    }
+    @media (max-width: 991px) {
+        .form {
+            grid-template-columns: repeat(1, 1fr);
+            &__inputs {
+                grid-row-start: 3;
+                grid-row-end: 4;
+            }
+        }
+    }
+    @media (max-width: 767px) {
+        padding-top: 20px;
+        padding-bottom: 20px;
+        .form {
+            &__inputs {
+                .btn-primary {
+                    width: 100%;
+                }
+            }
+            &__input {
+                width: 100%;
+                font-size: 1rem;
+                padding: 8px 8px 8px 10px;
+            }
+        }
+    }
+}

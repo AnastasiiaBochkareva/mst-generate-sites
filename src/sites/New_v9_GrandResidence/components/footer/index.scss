@@ -1,0 +1,82 @@
+.footer {
+    background-color: black;
+    &__container {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-areas:
+            "logo logo"
+            "allcontacts contacts";
+        gap: 50px;
+        padding-top: 50px;
+        padding-bottom: 50px;
+        min-height: 200px;
+        justify-content: space-between;
+    }
+    &__logo {
+        grid-area: logo;
+        a {
+            line-height: 1.6;
+            font-size: 30px;
+            font-weight: 900;
+            width: max-content;
+            white-space: nowrap;
+            color: #fff;
+        }
+    }
+    &__contacts {
+        grid-area: allcontacts;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        gap: 20px;
+        a {
+            text-decoration: none;
+            cursor: pointer;
+            padding-bottom: 4px;
+            position: relative;
+            display: inline-block;
+            color: #fff;
+            width: max-content;
+            &::after {
+                content: "";
+                position: absolute;
+                left: 0;
+                bottom: 0;
+                width: 0;
+                height: 2px;
+                background-color: #fff;
+                transition: width 0.4s ease-in-out;
+            }
+
+            &:hover::after {
+                width: 100%;
+            }
+        }
+    }
+    .contacts {
+        grid-area: contacts;
+        width: 100%;
+        flex-wrap: wrap;
+        align-items: flex-end;
+    }
+    @media (max-width: 991px) {
+        &__container {
+            grid-template-columns: repeat(1, 1fr);
+            gap: 20px;
+
+            grid-template-areas:
+                "logo "
+                "allcontacts"
+                "contacts";
+        }
+        .contacts {
+            align-items: flex-start;
+        }
+        &__contacts {
+            a {
+                width: 100%;
+                white-space: break-spaces;
+            }
+        }
+    }
+}

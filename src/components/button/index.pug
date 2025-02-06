@@ -1,0 +1,8 @@
+mixin Button(param)
+    - param.text = param.text ? param.text : 'Button'
+    - param.href = param.href ? param.href : '#'
+    - param.class = param.class ? param.class : ' '
+    if(param.href)
+        a(href=`${param.link}` class=param.class).btn=param.text
+    else 
+        p Ссылка отсутствует

@@ -1,0 +1,68 @@
+.banner {
+    padding-top: 50px;
+    padding-bottom: 50px;
+    overflow: hidden;
+    color: #fff;
+
+    &__container {
+        position: relative;
+        min-height: 810px;
+        height: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        gap: 20px;
+        justify-content: center;
+        padding: 40px;
+        border-radius: 50px;
+        overflow: hidden;
+        &::after {
+            content: "";
+            position: absolute;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 0;
+            background: rgba(0, 0, 0, 0.15);
+            z-index: -1;
+        }
+        .subtitle-sm {
+            span {
+                display: block;
+                margin-top: 15px;
+                font-style: italic;
+            }
+        }
+        img {
+            position: absolute;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 0;
+            z-index: -1;
+            filter: blur(1px);
+            opacity: 0.9;
+            filter: brightness(50%);
+        }
+    }
+    @media (max-width: 1199px) {
+        padding-top: 20px;
+    }
+
+    @media (max-width: 991px) {
+        &__container {
+            min-height: 722px;
+        }
+    }
+    @media (max-width: 767px) {
+        padding-top: 10px;
+        padding-bottom: 20px;
+    }
+
+    @media (max-width: 575px) {
+        &__container {
+            padding: 15px;
+            min-height: 500px;
+        }
+    }
+}

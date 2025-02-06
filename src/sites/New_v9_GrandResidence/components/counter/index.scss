@@ -1,0 +1,32 @@
+.counter {
+    padding: 40px 20px;
+    background-color: #fbeced;
+
+    &__container {
+        display: flex;
+        gap: 20px;
+    }
+
+    &__item {
+        flex: 1;
+        background-color: #fff;
+        text-align: center;
+        padding: 20px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        border-radius: 8px;
+
+        .counter-number {
+            font-weight: bold;
+            color: #333;
+        }
+
+        .counter-label {
+            margin-top: 10px;
+        }
+    }
+    @media (max-width: 575px) {
+        &__container {
+            flex-wrap: wrap;
+        }
+    }
+}

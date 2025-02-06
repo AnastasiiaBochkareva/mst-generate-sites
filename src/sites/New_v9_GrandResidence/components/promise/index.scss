@@ -1,0 +1,23 @@
+.promise {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    h3 {
+        font-size: 1.5rem;
+        color: #333;
+    }
+
+    .subtitle {
+        font-size: 1.5rem;
+        text-align: center;
+        color: #666;
+        max-width: 800px;
+        margin: 0 auto;
+        @media (max-width: 757px) {
+            font-size: 1rem;
+        }
+    }
+    .italic {
+        font-style: italic;
+    }
+}

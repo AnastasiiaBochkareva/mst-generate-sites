@@ -1,0 +1,7 @@
+mixin Img(param)
+    - param.src = param.src ? `/src/sites/${siteName}/${param.src}` : ''
+    - param.alt = param.alt ? param.alt : 'Описание изображения' 
+    if (param.src)
+        img(src=param.src, alt=param.alt)
+    else
+        span Тут должна быть картинка

@@ -1,0 +1,15 @@
+doctype html
+html(lang="en")
+    head
+        meta(charset="utf-8")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        title Ваша страница на Pug
+        link(href="./src/index.scss" rel="stylesheet")
+    body
+        div(style="max-width: 600px; margin: auto auto auto 100px; padding: 30px;")
+            h1 Main page
+            ul(style="font-size: 30px;")
+                - const sites = ['New_v9_GrandResidence', 'single-page', 'thanks', 'privacy-policy', 'services', 'terms-conditions']
+                    each site in sites
+                        li
+                            a(href=`./${site}`)=site

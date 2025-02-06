@@ -1,0 +1,21 @@
+include /components/components
+include /sites/single-page/components/footer/index
+
+doctype html
+html(lang="en")
+    head
+        meta(charset="utf-8")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        title ЗАГОЛОВОК
+        link(rel='icon' type='image/x-icon' href='img/favicon-16x16.ico' alt='fav')
+        meta(name='description' content='ОПИСАНИЕ')
+        link(href=`/src/sites/${siteName}/index.scss` rel="stylesheet")
+    body
+        +Header()
+
+        main
+            
+
+        +Footer()
+        
+        script(type="module" src=`/src/sites/${siteName}/index.ts`)

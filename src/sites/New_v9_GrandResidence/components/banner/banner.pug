@@ -1,0 +1,16 @@
+mixin Banner()
+    section.banner(id='consultation').container
+        .banner__container
+            +Img({
+                src: 'img/banner-building.jpg',
+                alt: 'Premium real estate property banner',
+                }) 
+            h1.title Grand Residence
+            .subtitle Luxury Real Estate with 30% Savings
+            .subtitle-sm Discover exclusive offers on luxury apartments, country houses, and commercial real estate. <span>Special conditions for our clients!</span>
+            +Button({
+                href: true,
+                link: "#contact",
+                text: 'Schedule a consultation',
+                class: 'btn-primary'
+            })

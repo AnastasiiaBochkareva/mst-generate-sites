@@ -1,0 +1,7 @@
+mixin Link(param)
+    if(param.anchor)
+        a(href=param.href)
+    if(param.notanchor)
+        a(href=`/${siteName}/${param.href}`)
+    if(param.toMain)
+        a(href=`/${siteName}/${param.href ? param.href : ''}`)

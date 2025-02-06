@@ -1,0 +1,218 @@
+include /components/components
+include /sites/New_v9_GrandResidence/components/header/index
+include /sites/New_v9_GrandResidence/components/banner/banner
+include /sites/New_v9_GrandResidence/components/whyus/whyus
+include /sites/New_v9_GrandResidence/components/properties/index 
+include /sites/New_v9_GrandResidence/components/contact/index
+include /sites/New_v9_GrandResidence/components/footer/index
+include /sites/New_v9_GrandResidence/components/sails/index 
+include /sites/New_v9_GrandResidence/components/advantages/index 
+include /sites/New_v9_GrandResidence/components/info/index
+include /sites/New_v9_GrandResidence/components/promise/index
+
+doctype html
+html(lang="en")
+    head
+        meta(charset="utf-8")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        title Grand Residence - Luxury Real Estate Services
+        link(rel='icon' type='image/x-icon' href='img/favicon-16x16.ico' alt='fav')
+        meta(name='description' content='Explore our comprehensive luxury real estate services at Grand Residence. From buying and selling to rentals, legal support, property management, and exclusive investment opportunities, we provide tailored solutions for all your real estate needs.')
+        link(href=`/src/sites/${siteName}/index.scss` rel="stylesheet")
+    body
+        +Header({
+          navLinks: [
+            {
+              href: `/${siteName}/#consultation`,
+              title: 'Consultation',
+            },
+            {
+              href: `/${siteName}/#whyus`,
+              title: 'Why us',
+            },
+            {
+              href: `/${siteName}/#properties`,
+              title: 'Properties',
+            },
+            {
+              href: `/${siteName}/#contact`,
+              title: 'Contact us',
+            },
+            {
+              href: `/${siteName}/services`,
+              title: 'Services',
+            },
+          ]
+        })
+        main
+
+          section.services
+            .container
+              .services-header
+                h1.title-sm Our Services
+                p
+                  | We offer a full range of services for buying,
+                  | selling, and renting luxury real estate. We ensure
+                  | secure transactions, a professional approach, and
+                  | the best market conditions.
+              .services-item
+                .service-icon
+                  +Img({
+                      src: 'img/service-one.jpg',
+                      alt: 'Real Estate Sales',
+                  })
+                .service-description
+                  h3 Real Estate Sales 
+                  p
+                    |  We help you sell your property at the best
+                    | price. Our services include property valuation,
+                    | professional photography, and marketing
+                    | campaigns to quickly attract buyers.
+              .services-item
+                .service-icon
+                  +Img({
+                      src: 'img/service-two.jpg',
+                      alt: 'Luxury Rental Services',
+                  })
+                .service-description
+                  h3 Luxury Rental Services
+                  p
+                    | WWe offer the best rental options: luxury
+                    | apartments, country houses, and premium
+                    | residences. We work with both private and
+                    | corporate clients.
+              .services-item
+                .service-icon
+                  +Img({
+                      src: 'img/service-three.jpg',
+                      alt: 'Legal Support',
+                  })
+                .service-description
+                  h3 Legal Support
+                  p
+                    | We provide complete property verification,
+                    | document preparation, and transaction support at
+                    | every stage. Guaranteed security and
+                    | transparency for every deal.
+              .cta
+                h3.title-sm Ready to collaborate?
+                p
+                  | Submit a request, and we will find the best offers
+                  | for you!
+                a.cta-btn.btn.btn-primary(href='index.html#contact')
+                  | Submit a request
+
+          +Advantages({})
+
+          +Info({})
+
+          +Promise({})
+
+          section.container.service-block
+            .service-item
+              .service-text
+                h2.title-sm Property Management Services
+                p
+                  | We take care of your property, handling everything
+                  | from regular maintenance to emergency repairs, so
+                  | you can enjoy peace of mind.
+            .service-item
+              .service-img
+                +Img({
+                      src: 'img/manage-two.jpg',
+                      alt: 'Exclusive Property Search',
+                  })
+            
+            .service-item
+              .service-text
+                h2.title-sm Investment Opportunities
+                p
+                  | Explore the best investment opportunities in luxury
+                  | real estate. We provide expert advice and analysis
+                  | to help you make informed decisions.
+            .service-item
+              .service-img
+                +Img({
+                      src: 'img/manage-one.jpg',
+                      alt: 'Property Management',
+                  })
+            .service-item
+              .service-text
+                h2.title-sm Exclusive Property Search
+                p
+                  | We help you find the perfect property tailored to
+                  | your needs. Whether you&rsquo;re looking for a modern
+                  | apartment, a luxury villa, or an exclusive
+                  | penthouse, we offer a personalized search
+                  | experience.
+            .service-item
+              .service-img
+                +Img({
+                    src: 'img/manage-three.jpg',
+                    alt: 'Investment Opportunities',
+                  })    
+          
+          
+
+          section.services-introduction
+            .container
+              .services-text
+                h2.title-sm
+                  | Your Trusted Partner in Luxury Real Estate
+                p.subtitle
+                  | At Grand Residence, we offer a comprehensive range
+                  | of services tailored to meet the needs of our
+                  | clients in the luxury real estate market. With years
+                  | of experience and an in-depth understanding of
+                  | market trends, we provide expert advice, exceptional
+                  | service, and access to the highest quality
+                  | properties.
+                p.subtitle
+                  | Whether you&apos;re looking to buy a prestigious villa,
+                  | sell a luxury property, or rent an exclusive
+                  | apartment, we deliver personalized solutions to
+                  | fulfill your specific needs. Our team is dedicated
+                  | to understanding your goals and guiding you through
+                  | every step of the process.
+
+          +Sails({})
+
+          section.services-detail
+            .container
+              .services-text
+                h2.title-sm Our comprehensive services include:
+                ul
+                  li.subtitle.movable-subtitle
+                    strong Real Estate Sales:
+                    | Property valuation, marketing strategies, and
+                    | expert negotiations to secure the best price.
+                  li.subtitle.movable-subtitle
+                    strong Luxury Rentals:
+                    | From penthouses to exclusive villas, we offer
+                    | premium rental options to suit your lifestyle.
+                  li.subtitle.movable-subtitle
+                    strong Legal Support:
+                    | Transparent, secure transactions fully compliant
+                    | with local laws.
+                  li.subtitle.movable-subtitle
+                    strong Property Management:
+                    | Comprehensive care, from routine maintenance to
+                    | emergency repairs.
+                  li.subtitle.movable-subtitle
+                    strong Investment Opportunities:
+                    | Expert guidance to help grow your portfolio and
+                    | maximize returns.
+                  li.subtitle.movable-subtitle
+                    strong Concierge Services:
+                    | Personalized assistance for lifestyle
+                    | management, from event planning to interior
+                    | design consultations.
+                
+                a.cta-btn.btn.btn-primary(href='index.html#contact')
+                  | Submit a request
+      
+
+
+        +Footer()
+        
+        script(type="module" src=`/src/sites/${siteName}/index.ts`)

@@ -1,0 +1,76 @@
+.opportunities {
+    padding-top: 50px;
+    padding-bottom: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+    align-items: stretch;
+    &__left {
+        flex: 1;
+        border-radius: 8px;
+        overflow: hidden;
+        img {
+        }
+    }
+
+    &__right {
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding: 20px;
+        background-color: white;
+        border-radius: 8px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        .opportunities {
+            &__title {
+                font-size: 1.8rem;
+                color: #333;
+                margin-bottom: 15px;
+            }
+
+            &__text {
+                font-size: 1rem;
+                color: #666;
+                line-height: 1.6;
+                margin-bottom: 20px;
+            }
+
+            &__button {
+                a {
+                    text-decoration: none;
+                    cursor: pointer;
+                    padding-bottom: 4px;
+                    position: relative;
+                    display: inline-block;
+                    color: black;
+                    &::after {
+                        content: "";
+                        position: absolute;
+                        left: 0;
+                        bottom: 0;
+                        width: 0;
+                        height: 2px;
+                        background-color: black;
+                        transition: width 0.4s ease-in-out;
+                    }
+
+                    &:hover::after {
+                        width: 100%;
+                    }
+                }
+            }
+        }
+    }
+    @media (max-width: 767px) {
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+    @media (max-width: 575px) {
+        flex-direction: column;
+        &__left,
+        &__right {
+        }
+    }
+}

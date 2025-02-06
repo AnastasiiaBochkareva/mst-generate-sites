@@ -1,0 +1,50 @@
+mixin Header(param)
+    - param.navLinks = param.navLinks ? param.navLinks : []
+    header.header
+        .container.header__container
+            .header__logo 
+                a(href=`/${siteName}/`) Grand Residence
+            ul.header__list
+                each link in param.navLinks
+                    li.header__list-item
+                        a(href=link.href).subtitle-sm=link.title
+            .burger
+                span
+                span
+                span
+            .menu
+                .menu__close
+                    span x
+                ul.menu__list
+                    each link in param.navLinks
+                        li 
+                            a(href=link.href).subtitle-sm=link.title
+                            +Link({
+                                anchor: true,
+                                href: '#qwe'
+                            })
+                            +Link({
+                                notanchor: true,
+                                href: 'services',
+                            })
+                            +Link({
+                                notanchor: true,
+                                href: 'services#contact',
+                            })
+                            +Link({
+                                toMain: true,
+                                href: '#qwe',
+                            })
+                            //
+                            +Link({
+                                href: 'service.html#contact',
+                            })
+                            +Link({
+                                href: 'index.html#contact',
+                            })
+                            +Link({
+                                href: 'index.html',
+                            })
+                            +Link({
+                                href: 'services.html',
+                            })

@@ -1,0 +1,86 @@
+.services-module {
+    padding-top: 50px;
+    padding-bottom: 50px;
+
+    .wrapper {
+        overflow: hidden;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px;
+        justify-content: space-between;
+    }
+
+    .services-card {
+        text-align: center;
+        width: 100%;
+        max-width: calc(25% - 20px);
+
+        opacity: 0;
+        transform: translateY(20px);
+        transition: transform 0.3s ease, opacity 0.3s ease;
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.3s ease;
+        }
+        &.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+        &.hovered {
+            transform: scale(1.05);
+            transition: transform 0.3s ease;
+        }
+        &:hover .services-img img {
+            transform: scale(1.1);
+        }
+
+        .services-img {
+            max-width: 100px;
+            max-height: 100px;
+            width: 100%;
+            height: 100%;
+            border-radius: 50%;
+            background-size: cover;
+            background-position: center;
+            margin: 0 auto 10px;
+            border-radius: 50%;
+            overflow: hidden;
+        }
+
+        .services-name {
+            font-size: 1.125rem;
+            font-weight: bold;
+            color: #000;
+            text-decoration: none;
+            cursor: pointer;
+            padding-bottom: 4px;
+            position: relative;
+            display: inline-block;
+            color: black;
+            &::after {
+                content: "";
+                position: absolute;
+                left: 0;
+                bottom: 0;
+                width: 0;
+                height: 2px;
+                background-color: black;
+                transition: width 0.4s ease-in-out;
+            }
+
+            &:hover::after {
+                width: 100%;
+            }
+        }
+    }
+
+    @media (max-width: 991px) {
+        max-width: 100%;
+    }
+    @media (max-width: 767px) {
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+}

@@ -1,0 +1,41 @@
+mixin Sails()
+    section.container.sails
+        h2.title-sm Prime real estate offerings
+        .wrapper
+            
+            .sails-card
+                .sails-img
+                    +Img({
+                        src: 'img/apartment.jpg',
+                        alt: 'Apartment',
+                    })
+                .sails-name Apartment
+                .sails-count Price: $320,000
+        
+            .sails-card
+                .sails-img
+                    +Img({
+                        src: 'img/home.jpg',
+                        alt: 'Home',
+                    })
+                .sails-name Home
+                .sails-count Price: $550,000
+        
+            .sails-card
+                .sails-img
+                    +Img({
+                        src: 'img/penthouse.jpg',
+                        alt: 'Penthouse',
+                    })
+                .sails-name Penthouse   
+                .sails-count Price: $1,200,000
+    
+            .sails-card
+                .sails-img
+                    +Img({
+                        src: 'img/cottage.jpg',
+                        alt: 'Cottage',
+                    })
+                .sails-name Cottage
+                .sails-count Price: $180,000
+            

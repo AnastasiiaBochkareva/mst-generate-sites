@@ -1,0 +1,75 @@
+include /components/components
+include /sites/New_v9_GrandResidence/components/header/index
+include /sites/New_v9_GrandResidence/components/banner/banner
+include /sites/New_v9_GrandResidence/components/whyus/whyus
+include /sites/New_v9_GrandResidence/components/properties/index 
+include /sites/New_v9_GrandResidence/components/contact/index
+include /sites/New_v9_GrandResidence/components/footer/index
+include /sites/New_v9_GrandResidence/components/cities-for-rent/index
+include /sites/New_v9_GrandResidence/components/properties-for-rent/index
+include /sites/New_v9_GrandResidence/components/counter/index
+include /sites/New_v9_GrandResidence/components/opportunities/index
+include /sites/New_v9_GrandResidence/components/services/index
+include /sites/New_v9_GrandResidence/components/reviews/index
+
+
+doctype html
+html(lang="en")
+    head
+        meta(charset="utf-8")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        title Grand Residence - Luxury Real Estate and Expert Services
+        link(rel='icon' type='image/x-icon' href='img/favicon-16x16.ico' alt='fav')
+        meta(name='description' content=' Thank you for choosing Radiance Real Estate! We look forward to helping you find your dream property. Stay tuned for our latest listings, exclusive offers, and expert advice on luxury real estate.')
+        link(href=`/src/sites/${siteName}/index.scss` rel="stylesheet")
+
+    body
+        +Header({
+          navLinks: [
+            {
+              href: '#consultation',
+              title: 'Consultation',
+            },
+            {
+              href: '#whyus',
+              title: 'Why us',
+            },
+            {
+              href: '#properties',
+              title: 'Properties',
+            },
+            {
+              href: '#contact',
+              title: 'Contact us',
+            },
+            {
+              href: `/${siteName}/services`,
+              title: 'Services',
+            },
+          ]
+        })
+        main
+
+          +Banner({})
+
+          +Cities-for-rent({})
+
+          +Properties-for-rent({})
+
+          +Whyus({})
+
+          +Counter({})
+
+          +Properties({})
+
+          +Opportunities({})
+
+          +Services({})
+
+          +Reviews({})
+
+          +Contact({})
+
+        +Footer()
+        
+        script(type="module" src=`/src/sites/${siteName}/index.ts`)

@@ -1,0 +1,58 @@
+.cities-for-rent {
+    background-color: #f0effd;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    .wrapper {
+        display: flex;
+        gap: 20px;
+        flex-wrap: wrap;
+    }
+    .city-card {
+        text-align: center;
+        width: 100%;
+        max-width: calc(25% - 20px);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 5px;
+
+        .city-img {
+            max-width: 187px;
+            max-height: 187px;
+            border-radius: 50%;
+            background-size: cover;
+            background-position: center;
+            border-radius: 50%;
+            overflow: hidden;
+        }
+
+        .city-name {
+            font-size: 1.125rem;
+            font-weight: bold;
+        }
+
+        .city-count {
+            font-size: 0.875rem;
+            color: gray;
+        }
+    }
+    @media (max-width: 991px) {
+        max-width: 100%;
+    }
+    @media (max-width: 767px) {
+        .city-card {
+            max-width: calc(50% - 20px);
+        }
+    }
+    @media (max-width: 400px) {
+        .wrapper {
+        }
+
+        .city-card {
+            max-width: 100%;
+        }
+        .wrapper .city-card:nth-child(n + 5) {
+            display: none;
+        }
+    }
+}

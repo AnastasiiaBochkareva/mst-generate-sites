@@ -1,0 +1,14 @@
+mixin Contact()
+    section.contact(id='contact')
+        .container
+            form.form(action="thanks_form.php" method="POST")
+                h2.title-sm Contact us
+                .subtitle Ready to find your dream property? Fill out the form, and our specialist will contact you shortly.
+                .form__inputs
+                    input.form__input(type="text" name="name" placeholder="Name" required="")
+                    input.form__input(type="email" name="email" placeholder="Email" required="")
+                    label.form__checkbox
+                        input(type="checkbox" name="privacy" value="on" required="")
+                        span I agree to the processing of data
+                    button.form__button.btn.btn-primary(type="submit") Order
+                    
