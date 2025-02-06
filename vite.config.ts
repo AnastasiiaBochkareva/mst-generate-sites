@@ -1,10 +1,10 @@
 import { defineConfig } from "vite";
 import path from "path";
 import { MultiPagePugPlugin } from "./vite-multi-page";
-import { copyImagesPlugin } from "./vite-copy-files";
+import { copyFiles } from "./vite-copy-files";
 
 export default defineConfig({
-    plugins: [MultiPagePugPlugin(), copyImagesPlugin()],
+    plugins: [MultiPagePugPlugin(), copyFiles()],
 
     server: {
         watch: {

@@ -1,0 +1,72 @@
+@use "@/components/global";
+@use "@/sites/New_v9_GrandResidence/components/fonts";
+@use "@/components/button/New_v9_GrandResidence";
+
+@use "@/sites/New_v9_GrandResidence/components/components" as header;
+
+.container {
+    max-width: 1160px;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 10px;
+    padding-right: 10px;
+    @media (max-width: 1199px) {
+        max-width: 970px;
+    }
+
+    @media (max-width: 991px) {
+        max-width: 100%;
+    }
+    @media (max-width: 767px) {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+    @media (max-width: 575px) {
+    }
+}
+.title {
+    font-weight: 400;
+    font-size: 4.5rem;
+    line-height: 1.1;
+}
+.title-sm {
+    font-weight: 700;
+    font-size: 3rem;
+    line-height: 1.1;
+}
+.subtitle {
+    line-height: 1.6;
+    font-size: 1.9rem;
+}
+.subtitle-sm {
+    line-height: 1.6;
+    font-size: 1.3rem;
+}
+@media (max-width: 1199px) {
+    .title {
+        font-size: 3.75rem;
+    }
+}
+@media (max-width: 767px) {
+    .title {
+        font-size: 3rem;
+    }
+    .title-sm {
+        font-size: 2.25rem;
+    }
+    .subtitle {
+        font-size: 1.3rem;
+    }
+    .subtitle-sm {
+        font-size: 1rem;
+    }
+}
+@media (max-width: 575px) {
+    .title {
+        font-size: 2.25rem;
+    }
+    .title-sm {
+        font-size: 1.875rem;
+    }
+}

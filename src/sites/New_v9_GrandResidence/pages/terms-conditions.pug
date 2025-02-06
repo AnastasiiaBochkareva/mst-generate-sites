@@ -1,0 +1,59 @@
+extends /sites/New_v9_GrandResidence/layouts/base.pug
+
+block variables
+    - const title = 'Grand Residence - Terms and Conditions'
+    - const description = 'Read the Terms and Conditions of Grand Residence to understand the rules and guidelines for using our luxury real estate services. This page outlines the terms of service for buying, selling, renting, and investing in properties with us.'
+
+block content
+  +Header()
+  main
+    section.container.terms
+      div
+        h1.title Terms and Conditions
+        p.subtitle
+          | By accessing and using our services, you agree to comply
+          | with the following terms and conditions. Please read
+          | them carefully before using our platform.
+      div
+        h2.title-sm Legal Compliance and Regulations
+        p.subtitle-sm
+          | By accessing and using our services, you agree to comply
+          | with all applicable laws and regulations, including data
+          | protection standards and online safety protocols. Grand
+          | Residence operates in accordance with international
+          | compliance requirements to ensure a safe and secure user
+          | experience. We are committed to adhering to the highest
+          | standards of legal and ethical conduct while providing
+          | our services.
+      div
+        h2.title-sm User Responsibilities
+        p.subtitle-sm
+          | Users are required to act lawfully and refrain from
+          | violating any local, national, or international laws
+          | while using our services. Any misuse of our platform
+          | that breaches compliance policies may result in account
+          | suspension or legal action. As a user, you are
+          | responsible for your actions on our platform and must
+          | ensure that your activities comply with applicable laws.
+      div
+        h2.title-sm
+          | Dispute Resolution and Governing Law
+        p.subtitle-sm
+          | In case of disputes, we adhere to strict legal
+          | frameworks and offer fair resolution processes. All
+          | disputes will be governed by the laws of the
+          | jurisdiction where Grand Residence is registered. By
+          | using our services, you acknowledge acceptance of these
+          | terms and agree to their enforcement. Any legal
+          | proceedings related to disputes will take place in the
+          | designated jurisdiction.
+      div
+        h2.title-sm Contact Information
+        p.subtitle-sm
+          | For questions or concerns related to our policies,
+          | please contact us at 
+          a(href='mailto:grandresidence@gmail.com')
+            | grandresidence@gmail.com
+          |                         . We are happy to assist you with any inquiries you may
+          |                         have regarding our terms and conditions.
+  +Footer({})

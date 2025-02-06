@@ -2,13 +2,13 @@ import fs, { cpSync } from "fs";
 import path from "path";
 import type { Plugin } from "vite";
 
-function copyImagesPlugin(): Plugin {
+function copyFiles(): Plugin {
     return {
         name: "copy-files-plugin",
 
         closeBundle() {
-            // создание переменной, которая хранит в себе путь к папке src/sites
             const pagesDir = path.resolve(__dirname, "src", "sites");
+            const additionalDir = path.resolve(__dirname, "src", "additional");
 
             const pages = fs
                 .readdirSync(pagesDir, { withFileTypes: true })
@@ -16,31 +16,29 @@ function copyImagesPlugin(): Plugin {
                 .map((dirent) => dirent.name);
 
             pages.forEach((page) => {
-                const srcImgDir = path.resolve(pagesDir, page, "img");
-                if (fs.existsSync(srcImgDir)) {
-                    const outImgDir = path.resolve(
-                        __dirname,
-                        "dist",
-                        page,
-                        "img"
-                    );
-                    cpSync(srcImgDir, outImgDir, { recursive: true });
-                    console.log(
-                        `Copied images for page "${page}" to ${outImgDir}`
-                    );
-                }
+                const foldersForCopyies = ["img", "fonts"];
 
-                const srcFontsDir = path.resolve(pagesDir, page, "fonts");
-                if (fs.existsSync(srcFontsDir)) {
-                    const outFontsDir = path.resolve(
-                        __dirname,
-                        "dist",
-                        page,
-                        "fonts"
-                    );
-                    cpSync(srcFontsDir, outFontsDir, { recursive: true });
+                foldersForCopyies.forEach((folderName) => {
+                    const srcDir = path.resolve(pagesDir, page, folderName);
+                    if (fs.existsSync(srcDir)) {
+                        const outDir = path.resolve(
+                            __dirname,
+                            "dist",
+                            page,
+                            folderName
+                        );
+                        cpSync(srcDir, outDir, { recursive: true });
+                        console.log(
+                            `Copied files in "${folderName}" for page "${page}" to ${outDir}`
+                        );
+                    }
+                });
+
+                if (fs.existsSync(additionalDir)) {
+                    const outDir = path.resolve(__dirname, "dist", page);
+                    cpSync(additionalDir, outDir, { recursive: true });
                     console.log(
-                        `Copied fonts for page "${page}" to ${outFontsDir}`
+                        `Copied files from additional folder for page "${page}" to ${outDir}`
                     );
                 }
             });
@@ -48,4 +46,4 @@ function copyImagesPlugin(): Plugin {
     };
 }
 
-export { copyImagesPlugin };
+export { copyFiles };

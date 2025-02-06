@@ -16,6 +16,10 @@ function MultiPagePugPlugin() {
                 next: Function,
                 data: any
             ) => {
+                const stats = fs.statSync(pugFilePath);
+                if (!stats.isFile()) {
+                    return false;
+                }
                 if (!fs.existsSync(pugFilePath)) {
                     return false;
                 }
@@ -61,8 +65,7 @@ function MultiPagePugPlugin() {
             server.middlewares.use(async (req, res, next) => {
                 const url = req.url?.split("?")[0] || "/";
                 let route = url.replace(/^\/|\/$/g, "");
-                console.log("route");
-                console.log(route);
+
                 if (route === "") {
                     const rootPug = path.resolve(__dirname, "src", "index.pug");
                     const served = servePugFile(rootPug, res, next, {
@@ -73,35 +76,34 @@ function MultiPagePugPlugin() {
                 }
 
                 const lastPart = route.split("/");
-                const nameOfSite = lastPart[0];
-                const nameOfPageInSite = lastPart[1];
+                const nameOfSite = lastPart[0]; // the name of site in sites folder
+                const nameOfPageInSite = lastPart[1]; // name of pages in sites folder ~ index.html || services.html
 
                 if (nameOfPageInSite) {
-                    const otherPug = path.resolve(
+                    const replaceHtmlToPug = nameOfPageInSite.replace(
+                        ".html",
+                        ".pug"
+                    );
+
+                    const pagePug = path.resolve(
                         __dirname,
                         "src",
                         "sites",
                         nameOfSite,
-                        `${nameOfPageInSite}.pug`
+                        "pages",
+                        `${replaceHtmlToPug}` // index.pug || services.pug
                     );
-                    const served = servePugFile(otherPug, res, next, {
-                        siteName: nameOfSite,
-                    });
-                    if (served) return;
+                    try {
+                        const served = servePugFile(pagePug, res, next, {
+                            siteName: nameOfSite,
+                        });
+                        if (served) return;
+                    } catch (err) {
+                        // console.log("err :>> ", err);
+                    }
                     return next();
                 }
 
-                const pagePug = path.resolve(
-                    __dirname,
-                    "src",
-                    "sites",
-                    route,
-                    "index.pug"
-                );
-                const served = servePugFile(pagePug, res, next, {
-                    siteName: route,
-                });
-                if (served) return;
                 return next();
             });
 
@@ -118,26 +120,26 @@ function MultiPagePugPlugin() {
                     file.endsWith(".ts")
                 ) {
                     console.log(`[WATCHER] Изменён файл: ${file}`);
-                    // console.log('[WATCHER] Triggering full-reload');
                     server.ws.send({ type: "full-reload", path: "*" });
                 }
             });
         },
 
         generateBundle(_options, bundle) {
-            const pagesDir = path.resolve(__dirname, "src", "sites");
-            const dirs = fs.readdirSync(pagesDir, { withFileTypes: true });
+            const sitesDir = path.resolve(__dirname, "src", "sites");
+            const dirs = fs.readdirSync(sitesDir, { withFileTypes: true });
 
             dirs.forEach((dirEnt) => {
                 if (!dirEnt.isDirectory()) return;
 
-                const routeName = dirEnt.name;
-                const routeDir = path.join(pagesDir, routeName);
-                const files = fs.readdirSync(routeDir);
+                const siteName = dirEnt.name;
+                const siteDir = path.join(sitesDir, siteName);
+                const pagesDir = path.join(siteDir, "pages");
+                const files = fs.readdirSync(pagesDir);
 
                 const pugFiles = files.filter((file) => file.endsWith(".pug"));
-                const scssFile = path.join(pagesDir, routeName, "index.scss");
-                const tsFile = path.join(pagesDir, routeName, "index.ts");
+                const scssFile = path.join(sitesDir, siteName, "index.scss");
+                const tsFile = path.join(sitesDir, siteName, "index.ts");
 
                 // Компиляция SCSS
                 let cssOutput = "";
@@ -165,17 +167,17 @@ function MultiPagePugPlugin() {
                         });
                         cssOutput = scssResult.css.toString();
                         cssOutput = cssOutput.replace(
-                            new RegExp(`@/sites/${routeName}/`, "g"),
+                            new RegExp(`@/sites/${siteName}/`, "g"),
                             "../"
                         );
                         this.emitFile({
                             type: "asset",
-                            fileName: `${routeName}/css/index.css`,
+                            fileName: `${siteName}/css/index.css`,
                             source: cssOutput,
                         });
                     } catch (err) {
                         console.error(
-                            `Ошибка компиляции SCSS для ${routeName}:`,
+                            `Ошибка компиляции SCSS для ${siteName}:`,
                             err
                         );
                     }
@@ -201,20 +203,25 @@ function MultiPagePugPlugin() {
                             jsOutput = result.outputFiles[0].text;
                             this.emitFile({
                                 type: "asset",
-                                fileName: `${routeName}/js/index.js`,
+                                fileName: `${siteName}/js/index.js`,
                                 source: jsOutput,
                             });
                         }
                     } catch (err) {
                         console.error(
-                            `Ошибка компиляции TS для ${routeName}:`,
+                            `Ошибка компиляции TS для ${siteName}:`,
                             err
                         );
                     }
                 }
 
+                // проходимя по каждому pug чтобы каждый pug обработать pug npm пакетом
                 pugFiles.forEach((pugFileName) => {
-                    const pugFilePath = path.join(routeDir, pugFileName);
+                    const pugFilePath = path.join(
+                        siteDir,
+                        "pages",
+                        pugFileName
+                    );
 
                     if (!fs.existsSync(pugFilePath)) return;
 
@@ -230,29 +237,34 @@ function MultiPagePugPlugin() {
 
                     // Создаем HTML контент
                     const html = compiledFn({
-                        siteName: routeName,
+                        siteName: siteName,
                     });
 
-                    // Модификация ссылок в HTML
+                    // Модификация ссылок в HTML на стили, typescript && images
                     let finalHtml = html
                         .replace(
-                            `/src/sites/${routeName}/index.scss`,
+                            `/src/sites/${siteName}/index.scss`,
                             `css/index.css`
                         )
                         .replace(
-                            `/src/sites/${routeName}/index.ts`,
+                            `/src/sites/${siteName}/index.ts`,
                             `js/index.js`
                         )
                         .replace(
-                            new RegExp(`/src/sites/${routeName}/img`, "g"),
+                            new RegExp(`/src/sites/${siteName}/img`, "g"),
                             "img"
                         );
 
+                    // проходимся по каждой странице pug чтобы поменять все ссылки на другие страницы pug
                     pugFiles.forEach((pugFileName) => {
-                        const pugFilePath = path.join(routeDir, pugFileName);
-                        const pugFileNameWithoutExt = pugFileName.replace(
+                        const pugFilePath = path.join(
+                            siteDir,
+                            "pages",
+                            pugFileName
+                        );
+                        const pugFileNameHtmlExtension = pugFileName.replace(
                             ".pug",
-                            ""
+                            ".html"
                         );
 
                         if (
@@ -261,23 +273,18 @@ function MultiPagePugPlugin() {
                         ) {
                             const tempHtml = finalHtml.replace(
                                 new RegExp(
-                                    `/${routeName}/${pugFileNameWithoutExt}`,
+                                    `/${siteName}/${pugFileNameHtmlExtension}`,
                                     "g"
                                 ),
-                                `${pugFileNameWithoutExt}.html`
+                                `${pugFileNameHtmlExtension}`
                             );
                             if (tempHtml) finalHtml = tempHtml;
                         }
                     });
 
-                    finalHtml = finalHtml.replace(
-                        new RegExp(`href="/${routeName}/`, "g"),
-                        'href="index.html'
-                    );
-
                     // Создаем HTML файл с сохранением структуры папок
                     const htmlFilePath = path.join(
-                        routeName,
+                        siteName,
                         pugFileName.replace(".pug", ".html")
                     );
 

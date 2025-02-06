@@ -1,0 +1,32 @@
+extends /sites/New_v9_GrandResidence/layouts/base.pug
+
+block variables
+    - const title = 'Grand Residence - Luxury Real Estate and Expert Services'
+    - const description = 'Thank you for choosing Radiance Real Estate! We look forward to helping you find your dream property. Stay tuned for our latest listings, exclusive offers, and expert advice on luxury real estate.'
+
+block content
+  +Header()
+
+  main
+
+    +Banner({})
+
+    +Cities-for-rent({})
+
+    +Properties-for-rent({})
+
+    +Whyus({})
+
+    +Counter({})
+
+    +Properties({})
+
+    +Opportunities({})
+
+    +Services({})
+
+    +Reviews({})
+
+    +Contact({})
+
+  +Footer()

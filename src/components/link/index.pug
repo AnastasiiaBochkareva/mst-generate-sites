@@ -1,7 +1,8 @@
 mixin Link(param)
-    if(param.anchor)
-        a(href=param.href)
-    if(param.notanchor)
-        a(href=`/${siteName}/${param.href}`)
-    if(param.toMain)
-        a(href=`/${siteName}/${param.href ? param.href : ''}`)
+    - param.class = param.class ? param.class : ''
+    - param.href = param.href ? param.href : ''
+    - param.text = param.text ? param.text : ''
+    if(param.href && param.text)
+        a(href=`/${siteName}/${param.href}` class=`${param.class}`)=param.text
+    else
+        p Здесь должна быть ссылка!!!
