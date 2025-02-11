@@ -1,0 +1,33 @@
+.reviews {
+    h2 {
+        margin-bottom: 30px;
+    }
+    &__items {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 20px;
+    }
+    &__item {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+
+        background-color: #ff724a;
+        color: #fff;
+        padding: 30px;
+        border-radius: 30px;
+        h3 {
+            margin-top: auto;
+            border-top: 1px solid #fff;
+            padding-top: 10px;
+        }
+    }
+    @media (max-width: 767px) {
+        &__items {
+            grid-template-columns: 1fr;
+        }
+        &__item {
+            padding: 20px;
+        }
+    }
+}

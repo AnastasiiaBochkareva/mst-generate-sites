@@ -1,0 +1,37 @@
+.banner {
+    background-color: #ededed;
+    position: relative;
+    z-index: 1;
+    &__about {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        max-width: 80%;
+    }
+    &__container {
+        width: 100%;
+        position: relative;
+    }
+    &__img-bg {
+        position: absolute;
+        z-index: -1;
+        right: 0;
+        width: 20%;
+        bottom: -50px;
+        top: 50px;
+    }
+    @media (max-width: 1199px) {
+        &__img-bg {
+            width: 30%;
+            bottom: -50px;
+            top: 50px;
+        }
+    }
+    @media (max-width: 767px) {
+        &__img-bg {
+            width: 40%;
+            bottom: -20px;
+            top: 20px;
+        }
+    }
+}

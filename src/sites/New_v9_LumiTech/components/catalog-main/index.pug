@@ -1,0 +1,42 @@
+mixin Catalog-main()
+    section.catalog-main
+        .container.catalog-main__container
+            h2 Product Catalog
+            .catalog-main__cards
+                .catalog-main__card 
+                    +Img({
+                        src: 'img/industrial-lighting-1.jpg',
+                        alt: 'Industrial Lighting',
+                        class: 'catalog-main__img-bg'
+                    })
+
+                    h3 Industrial Lighting
+                .catalog-main__card 
+                    +Img({
+                        src: 'img/street-lighting-1.jpg',
+                        alt: 'Street Lights',
+                        class: 'catalog-main__img-bg'
+                    })
+
+                    h3 Street Lights
+                .catalog-main__card 
+                    +Img({
+                        src: 'img/office-home-1.jpg',
+                        alt: 'Office and Home Solutions',
+                        class: 'catalog-main__img-bg'
+                    })
+                    h3 Office and Home Solutions
+                .catalog-main__card 
+                    +Img({
+                        src: 'img/decorative-lighting-1.jpg',
+                        alt: 'Decorative Lighting',
+                        class: 'catalog-main__img-bg'
+                    })
+
+                    h3 Decorative Lighting
+
+            +Link({
+                class: 'btn catalog-main__btn',
+                href: 'catalog.html',
+                text: 'View catalog',
+            })

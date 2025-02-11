@@ -1,0 +1,21 @@
+extends /sites/New_v9_LumiTech/layouts/base.pug
+
+block variables
+    - const title = 'Explore Our LED Lighting Collection'
+    - const description = 'Browse a wide range of premium LED lighting solutions tailored to fit your space, budget, and style.'
+
+block content
+    +Header()
+
+    main
+        +Catalog-callback()
+
+
+        +Catalog()
+
+
+        +Services()
+
+        
+
+    +Footer()

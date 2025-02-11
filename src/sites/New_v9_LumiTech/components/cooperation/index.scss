@@ -1,0 +1,44 @@
+.cooperation {
+    &__title {
+        margin-bottom: 30px;
+    }
+    &__list {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 20px;
+        counter-reset: item;
+        align-items: center;
+    }
+    &__item {
+        width: 100%;
+        font-size: clamp(1.125rem, 2vw, 1.5rem);
+        padding: 10px;
+        display: inline;
+        background-color: #fff;
+        cursor: pointer;
+        a {
+            font-size: clamp(1rem, 2vw, 1.25rem);
+            color: #000;
+            text-decoration: none;
+            &:hover {
+                text-decoration: none;
+            }
+        }
+        span {
+            font-weight: bold;
+        }
+        &::before {
+            counter-increment: item;
+            content: counter(item) ". ";
+            font-weight: bold;
+            border-radius: 50%;
+            width: 30px;
+            height: 30px;
+            // display: flex;
+            // align-items: center;
+            // justify-content: center;
+            display: inline;
+        }
+    }
+}

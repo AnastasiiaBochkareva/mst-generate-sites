@@ -1,0 +1,27 @@
+mixin Callback()
+    
+    section.contacts
+            .container.contacts__container
+                .contacts__img
+                    +Img({
+                        src: 'img/led.jpg',
+                        alt: 'Buy LED',
+                        class: 'contacts__img-bg'
+                    })
+
+                form.form(action="thanks_form.php" method="POST" id='callback-form')
+                    .contacts__text
+                        h2.title Contact Us
+                        p.subtitle Thank you for reaching out! We’ve received your message and will get back to you as soon as possible. Our team is excited to help you find the perfect LED lighting solution.
+
+                        p.subtitle We look forward to working with you!
+                    .form__inputs
+
+                        input.form__input(type="text" name="name" placeholder="Name" required="")
+
+                        input.form__input(type="email" name="email" placeholder="Email" required="")
+
+                        label.form__checkbox
+                            input(type="checkbox" name="privacy" value="on" required="")
+                            span I agree to the processing of data
+                        button.form__btn.btn(type="submit") Get in touch

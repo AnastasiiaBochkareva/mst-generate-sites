@@ -1,0 +1,16 @@
+mixin Banner()
+    section.banner
+        .container.banner__container
+            +Img({
+                src:'img/banner.jpg',
+                alt:'LED lamp in a beautiful concrete room',
+                class:'banner__img-bg'
+            })
+            .banner__about
+                h1 Energy-Efficient LED Lighting for Your Business and Home
+                p LED solutions are 60% more efficient than traditional bulbs
+                +Link({
+                    class: 'btn limited-collection__btn',
+                    href: 'index.html#callback-form',
+                    text: 'Learn More',
+                })

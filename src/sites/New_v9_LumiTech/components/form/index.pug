@@ -1,0 +1,28 @@
+mixin Form(param)
+    - param.title = param.title ? param.title : ''
+    - param.adress = param.adress ? param.adress : ''
+    - param.btnText = param.btnText ? param.btnText : ''
+    - param.href = param.href ? param.href : ''
+    
+    section.contacts(id='form')
+            .container.contacts__container
+        
+                .contacts__text
+                    h2.title=param.title
+                    if(param.link)
+                        a(href=`&{param.href}`)=param.adress
+
+                form.form(action="thanks_form.php" method="POST")
+                    p.subtitle=param.subtitle
+                    .form__inputs
+
+                        if(param.name)
+                            input.form__input(type="text" name="name" placeholder="Name" required="")
+
+                        if(param.email)
+                            input.form__input(type="email" name="email" placeholder="Email" required="")
+
+                        label.form__checkbox
+                            input(type="checkbox" name="privacy" value="on" required="")
+                            span I agree to the processing of data
+                        button.form__btn.btn(type="submit")=param.btnText

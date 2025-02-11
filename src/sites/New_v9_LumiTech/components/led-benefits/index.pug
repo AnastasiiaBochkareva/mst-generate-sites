@@ -1,0 +1,52 @@
+mixin Led-benefits()
+    section.container.led-benefits
+        h2.led-benefits__title Benefits of LED Lighting
+        .led-benefits__cards
+            .led-benefits__card
+                svg(xmlns="http://www.w3.org/2000/svg", viewBox="0 0 24 24", width="64", height="64", fill="currentColor")
+                    path(d="M9 21h6a1 1 0 0 0 1-1v-1H8v1a1 1 0 0 0 1 1Zm3-19a7 7 0 0 0-4 12.74V17a1 1 0 0 0 1 1h6a1 1 0 0 0 1-1v-2.26A7 7 0 0 0 12 2Zm2.29 10.71A1 1 0 0 0 14 13v2h-4v-2a1 1 0 0 0-.29-.71 5 5 0 1 1 7.07 0Z")
+
+                h3.led-benefits__title-sm Up to 60% energy savings
+                p.led-benefits__subtitle Reduce electricity costs while maintaining bright and efficient lighting
+                +Link({
+                    class: 'btn led-benefits__btn',
+                    href: 'index.html#callback-form',
+                    text: 'Want it',
+                })
+            .led-benefits__card
+                svg(xmlns="http://www.w3.org/2000/svg", viewBox="0 0 24 24", width="64", height="64", fill="currentColor")
+                    circle(cx="12", cy="12", r="10", stroke="white", stroke-width="2", fill="none")
+                    line(x1="12", y1="12", x2="12", y2="2", stroke="white", stroke-width="2") // Hour hand (long arrow)
+                    circle(cx="12", cy="12", r="1", fill="white") // Center point
+
+                h3.led-benefits__title-sm 50,000-hour lifespan
+                p.led-benefits__subtitle Reduce electricity costs while maintaining bright and efficient lighting
+                +Link({
+                    class: 'btn led-benefits__btn',
+                    href: 'index.html#callback-form',
+                    text: 'Want it',
+                })
+            .led-benefits__card
+                svg(xmlns="http://www.w3.org/2000/svg", viewBox="0 0 24 24", width="64", height="64", fill="currentColor")
+                    path(d="M12 2L6 5v6c0 3.33 2.67 6 6 6s6-2.67 6-6V5l-6-3z", fill="currentColor")
+                    path(d="M12 2L18 5v6c0 3.33-2.67 6-6 6s-6-2.67-6-6V5l6-3z", fill="none", stroke="currentColor", stroke-width="2")
+
+                h3.led-benefits__title-sm Up to 5 years warranty
+                p.led-benefits__subtitle Reduce electricity costs while maintaining bright and efficient lighting
+                +Link({
+                    class: 'btn led-benefits__btn',
+                    href: 'index.html#callback-form',
+                    text: 'Want it',
+                })
+            .led-benefits__card
+                svg(xmlns="http://www.w3.org/2000/svg", viewBox="0 0 24 24", width="64", height="64", fill="currentColor")
+                    text(x="50%", y="50%", text-anchor="middle", alignment-baseline="middle", font-size="14", font-weight="bold") Hg
+                    line(x1="4", y1="4", x2="20", y2="20", stroke="currentColor", stroke-width="2")
+
+                h3.led-benefits__title-sm Eco-friendly and safe
+                p.led-benefits__subtitle Reduce electricity costs while maintaining bright and efficient lighting
+                +Link({
+                    class: 'btn led-benefits__btn',
+                    href: 'index.html#callback-form',
+                    text: 'Want it',
+                })

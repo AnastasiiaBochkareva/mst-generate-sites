@@ -1,0 +1,23 @@
+mixin Footer()
+    footer.footer
+        .container.footer__container
+            .footer__logo 
+                +Link({
+                    href: 'index.html',
+                    text: 'LumiTech'
+                })
+            .footer__contacts
+                a(href='tel:+91 99872 56430') +91 99872 56430
+                a(href='mailto:lumiTech@gmail.com') lumiTech@gmail.com
+                a(href='https://maps.app.goo.gl/H2FwJDp14w9bW8M96' target='_blank') Jehangir Boman Behram Rd, RBI Staff Colony, Mumbai Central, Mumbai, India
+
+            .footer__contacts.footer__contacts_rules
+                +Link({
+                    href: 'privacy-policy.html',
+                    text: 'Privacy policy'
+                })
+                +Link({
+                    href: 'terms-conditions.html',
+                    text: 'Terms and conditions'
+                })
+        

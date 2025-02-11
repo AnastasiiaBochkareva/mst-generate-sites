@@ -1,0 +1,25 @@
+.projects {
+    background-color: #e2dee1;
+    &__container {
+        h2 {
+            margin-bottom: 30px;
+        }
+        > p {
+            text-align: center;
+        }
+        ul {
+            padding-top: 20px;
+            padding-bottom: 20px;
+            li {
+                background-color: #fff;
+                padding: 20px;
+                h3 {
+                    margin-bottom: 10px;
+                }
+            }
+        }
+    }
+    &__btn {
+        margin: 30px auto 0;
+    }
+}

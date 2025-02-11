@@ -1,0 +1,24 @@
+@use "@/sites/New_v9_LumiTech/components/header/index" as header;
+@use "@/sites/New_v9_LumiTech/components/footer/index" as footer;
+@use "@/sites/New_v9_LumiTech/components/burger/index" as burger;
+
+@use "@/sites/New_v9_LumiTech/components/banner/index" as banner;
+@use "@/sites/New_v9_LumiTech/components/led-benefits/index" as led-benefits;
+@use "@/sites/New_v9_LumiTech/components/about-us/index" as about-us;
+@use "@/sites/New_v9_LumiTech/components/preparing-lighting/index" as
+    preparing-lighting;
+@use "@/sites/New_v9_LumiTech/components/reviews/index" as reviews;
+@use "@/sites/New_v9_LumiTech/components/catalog-main/index" as catalog-main;
+@use "@/sites/New_v9_LumiTech/components/cooperation/index" as cooperation;
+@use "@/sites/New_v9_LumiTech/components/callback/index" as callback;
+@use "@/sites/New_v9_LumiTech/components/form/index" as form;
+@use "@/sites/New_v9_LumiTech/components/projects/index" as projects;
+
+@use "@/sites/New_v9_LumiTech/components/catalog/index" as catalog;
+@use "@/sites/New_v9_LumiTech/components/catalog-callback/index" as
+    catalog-callback;
+@use "@/sites/New_v9_LumiTech/components/services/index" as services;
+@use "@/sites/New_v9_LumiTech/components/our-services/index" as our-services;
+
+@use "@/sites/New_v9_LumiTech/components/services-optional/index" as
+    services-optional;

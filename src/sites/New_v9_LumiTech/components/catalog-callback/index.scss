@@ -1,0 +1,13 @@
+.catalog-callback {
+    h2 {
+        margin-bottom: 30px;
+        font-style: italic;
+    }
+    p {
+        margin-bottom: 30px;
+        text-align: center;
+    }
+    &__btn {
+        margin: 30px auto 0;
+    }
+}
