@@ -1,0 +1,24 @@
+mixin Customer-favorites()
+    section.customer-favorites
+        .container.customer-favorites__container.grid-square
+            .customer-favorites__item.reveal-right
+                +Img({
+                    src: 'img/banner.jpg',
+                    alt: 'LoftStyle',
+                })
+            .customer-favorites__item.customer-favorites__text.reveal-left
+                h2 Customer favorites
+                p Our products are loved by our customers! Reliable, convenient, and practical – they help you organize your storage effortlessly.
+                p Choose the best products already trusted by many!
+            .customer-favorites__item.customer-favorites__text.reveal-bottom
+                ul
+                    li Transparent plastic bins – easily find what you need.
+                    li Multi-level organizers – perfect for small items.
+                    li Vacuum storage bags – free up closet space instantly.
+                +Link({
+                    class: 'btn customer-favorites__btn',
+                    href: 'catalog.html',
+                    text: 'See more',
+                })
+
+            

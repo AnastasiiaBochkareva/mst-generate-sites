@@ -1,0 +1,26 @@
+extends /sites/New_v9_NeatNest/layouts/base.pug
+
+block variables
+    - const title = 'Care and Maintenance Tips for NeatNest Products – Keep Them Looking New'
+    - const description = 'Learn how to care for and maintain your NeatNest products with simple, eco-friendly tips to ensure their longevity and beauty.'
+
+block content
+    +Header()
+
+    main
+        section.help-and-support.container
+            h1 Need Help? We're Here for You!
+            p If you have any questions or need assistance, you've come to the right place! Browse through our FAQs, or get in touch with our support team for personalized help.
+        +Delivery()
+
+        +Materials()
+
+        +Care()
+
+        +Tips()
+
+        +Contact()
+
+        +Faq()
+
+    +Footer()

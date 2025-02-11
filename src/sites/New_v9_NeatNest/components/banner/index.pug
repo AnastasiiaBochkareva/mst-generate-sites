@@ -1,0 +1,17 @@
+mixin Banner()  
+    section.banner
+        .container.banner__container
+            .banner__img
+                +Img({
+                    src: 'img/banner.jpg',
+                    alt: 'NeatNest',
+                })
+            .banner__bg
+            .banner__title
+                h1 NeatNest <br>- smartly space!
+                p Want to tidy up your home and make storage more convenient? In our store, you'll find boxes, organizers, hooks, and other products to help you optimize your space. High-quality materials, stylish designs, and practical solutions – all waiting for you! 
+                +Link({
+                    class: 'btn banner__btn',
+                    href: 'catalog.html',
+                    text: 'Browse catalog',
+                })

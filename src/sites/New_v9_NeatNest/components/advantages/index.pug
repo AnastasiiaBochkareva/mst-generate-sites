@@ -1,0 +1,25 @@
+mixin Advantages()
+    section.advantages
+        .advantages__bg
+        .container.advantages__container.reveal-zoom
+            .advantages__head
+                h2 Why choose us?
+                p We know how important it is for storage products to be both practical and high-quality. We’re committed to making your home more comfortable and organized! That’s why our customers trust us:
+                +Link({
+                    class: 'btn advantages__btn',
+                    href: 'catalog.html',
+                    text: 'Catalog',
+                })
+            .advantages__cols
+                .advantages__cols-bg
+                .advantages__col
+                    +Img({
+                        src: 'img/vacuum.jpg',
+                        alt: 'LoftStyle',
+                    })
+                .advantages__col.advantages__list
+                    ul
+                        li Quality & Durability – Tested materials and sturdy designs.
+                        li Wide Assortment – Solutions for homes, offices, garages, and more.
+                        li Fast Delivery – Orders shipped without delays.
+                        li Product Guarantee – Easy returns and exchanges.

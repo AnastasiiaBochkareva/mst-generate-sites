@@ -1,0 +1,24 @@
+extends /sites/New_v9_NeatNest/layouts/base.pug
+
+block variables
+    - const title = 'NeatNest Catalog – Organize Your Space with Quality Storage'
+    - const description = 'Explore NeatNest’s catalog of premium storage products designed to simplify and beautify your home. Shop today for the best in organization.'
+
+block content
+    +Header()
+
+    main
+
+        section.container.catalog__head
+            h1 Our products
+            p Find the perfect storage solutions for every corner of your home, office, or storage space. Our collection includes a wide variety of products designed to keep your life organized, from simple boxes to multi-functional organizers.
+
+        +Catalog-block()
+
+        +Arrivals()
+
+        +Ideas()
+
+        +Limited()
+
+    +Footer()

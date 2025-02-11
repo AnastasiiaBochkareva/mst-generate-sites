@@ -1,0 +1,30 @@
+mixin Arrivals-main()
+    section.arrivals-main   
+        .container.arrivals-main__container.grid-crooked
+            .arrivals-main__item.arrivals-main__text.reveal-right
+                h2 Fresh Finds – the latest storage solutions
+                p We constantly update our catalog to bring you the best storage solutions. Check out what’s new:
+                p Don’t miss out on our latest arrivals! 
+                +Link({
+                    class: 'btn arrivals-main__btn',
+                    href: 'catalog.html',
+                    text: 'View new arrivals',
+                })
+            .arrivals-main__item.reveal-left
+                +Img({
+                    src: 'img/baskets.jpg',
+                    alt: 'Stylish fabric baskets',
+                })
+                p Stylish fabric baskets – perfect for kids’ rooms.
+            .arrivals-main__item.reveal-bottom
+                +Img({
+                    src: 'img/organizers.jpg',
+                    alt: 'Multi-functional organizers',
+                })
+                p Multi-functional organizers – organize cosmetics and accessories.
+            .arrivals-main__item.reveal-right
+                +Img({
+                    src: 'img/storage-bins.jpg',
+                    alt: 'Foldable storage bins',
+                })
+                p Foldable storage bins – save space without sacrificing style.

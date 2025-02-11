@@ -1,0 +1,43 @@
+mixin Categories-main()
+    section.categories-main
+        .categories-main__bg
+        .container
+            .categories-main__head
+                h2 Storage solutions for every need
+                p We’ve selected the best products to help you easily organize your home, office, or storage space. Choose a category that suits you:
+            .categories-main__body.grid-ladder
+                .categories-main__item        
+                    +Img({
+                        src: 'img/boxes.jpg',
+                        alt: 'Compact and stylish storage solutions',
+                        class: 'reveal-left'
+                    })
+                .categories-main__item        
+                    +Img({
+                        src: 'img/hooks.jpg',
+                        alt: 'Convenient storage for clothes and accessories',
+                        class: 'reveal-bottom'
+                    })
+                .categories-main__item.categories-main__text.reveal-zoom
+                    h3 Boxes & Bins 
+                    p – Compact and stylish storage solutions.
+                    h3 Organizers 
+                    p – Keep every drawer neat and tidy.
+                .categories-main__item.categories-main__text.reveal-zoom
+                    h3 Hooks & Hangers 
+                    p – Convenient storage for clothes and accessories.
+                    +Link({
+                        class: 'btn categories-main__btn',
+                        href: 'catalog.html',
+                        text: 'View catalog',
+                    })
+                
+                .categories-main__item        
+                    +Img({
+                        src: 'img/organizers.jpg',
+                        alt: 'Keep every drawer neat and tidy',
+                        class: 'reveal-right'
+                    })
+                
+            
+            

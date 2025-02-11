@@ -1,0 +1,29 @@
+@use "@/sites/New_v9_NeatNest/components/header/index" as header;
+@use "@/sites/New_v9_NeatNest/components/footer/index" as footer;
+@use "@/sites/New_v9_NeatNest/components/burger/index" as burger;
+@use "@/sites/New_v9_NeatNest/components/reveal/index" as reveal;
+@use "@/components/grid/index" as grid;
+
+@use "@/sites/New_v9_NeatNest/components/banner/index" as banner;
+@use "@/sites/New_v9_NeatNest/components/categories-main/index" as
+    categories-main;
+@use "@/sites/New_v9_NeatNest/components/welcome-block/index" as welcome-block;
+@use "@/sites/New_v9_NeatNest/components/customer-favorites/index" as
+    customer-favorites;
+@use "@/sites/New_v9_NeatNest/components/advantages/index" as advantages;
+@use "@/sites/New_v9_NeatNest/components/reviews/index" as reviews;
+@use "@/sites/New_v9_NeatNest/components/arrivals-main/index" as arrivals-main;
+@use "@/sites/New_v9_NeatNest/components/tricks/index" as tricks;
+@use "@/sites/New_v9_NeatNest/components/form/index" as form;
+
+@use "@/sites/New_v9_NeatNest/components/catalog-block/index" as catalog-block;
+@use "@/sites/New_v9_NeatNest/components/limited/index" as limited;
+@use "@/sites/New_v9_NeatNest/components/arrivals/index" as arrivals;
+@use "@/sites/New_v9_NeatNest/components/ideas/index" as ideas;
+
+@use "@/sites/New_v9_NeatNest/components/faq/index" as faq;
+@use "@/sites/New_v9_NeatNest/components/materials/index" as materials;
+@use "@/sites/New_v9_NeatNest/components/tips/index" as tips;
+@use "@/sites/New_v9_NeatNest/components/care/index" as care;
+@use "@/sites/New_v9_NeatNest/components/contact/index" as contact;
+@use "@/sites/New_v9_NeatNest/components/delivery/index" as delivery;

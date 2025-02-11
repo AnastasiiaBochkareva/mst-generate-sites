@@ -1,0 +1,25 @@
+mixin Footer()
+    footer.footer
+        .container.footer__container
+            .footer__logo
+                +Link({
+                    href: 'index.html',
+                    text: 'NeatNest'
+                })
+            .footer__contact-links.footer__links
+                p Call us:
+                    a(href='tel:+91 8473 250 619') +91 8473 250 619
+                p White us:
+                    a(href='mailto:neatnest@gmail.com') neatnest@gmail.com
+                p Find us:
+                    a(href='https://maps.app.goo.gl/kmP2oWKUevPHSXCh8' target='_blank') Shiroor, Karnataka 581320, India
+            .footer__pages-links.footer__links
+                +Link({
+                    href: 'privacy-policy.html',
+                    text: 'Privacy policy'
+                })
+                +Link({
+                    href: 'terms-conditions.html',
+                    text: 'Terms and conditions'
+                })
+        

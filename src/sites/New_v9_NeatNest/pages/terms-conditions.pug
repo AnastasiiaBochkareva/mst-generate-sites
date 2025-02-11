@@ -1,0 +1,48 @@
+extends /sites/New_v9_NeatNest/layouts/base.pug
+
+block variables
+    - const title = 'NeatNest Terms and Conditions – Rules for Using Our Services'
+    - const description = 'Read NeatNest’s terms and conditions for using our services. We ensure safe, secure, and compliant transactions for our customers.'
+
+block content
+    +Header()
+
+    main
+        section.container.terms 
+            h1.title Terms and Conditions
+            div
+                p.subtitle By accessing and using our services, you agree to be bound by these Terms and Conditions. If you do not agree with these terms, please do not use our services. We reserve the right to modify or update these terms at any time, and we recommend reviewing this page periodically to stay informed about any changes. Your continued use of our services after any changes to the Terms and Conditions will be considered as your acceptance of the updated terms.
+
+            div
+                h3.title-sm Legal compliance and regulations
+                p.subtitle By accessing and using our services, you agree to comply with all applicable laws and regulations, including data protection standards and online safety protocols. NeatNest operates in accordance with international compliance requirements to ensure a safe and secure user experience. This includes adherence to privacy laws such as the General Data Protection Regulation (GDPR) for users in the European Union, and other relevant laws as per the geographical scope of our services.
+                p.subtitle We are committed to maintaining a secure online environment, and we take all reasonable steps to protect the personal information of our users. This involves complying with all applicable industry standards and implementing robust security measures to prevent unauthorized access to user data.
+
+            div
+                h3.title-sm User responsibilities
+                p.subtitle Users are required to act lawfully and refrain from violating any local, national, or international laws while using our services. By using our services, you agree not to engage in any activities that may harm, disrupt, or interfere with the functioning of our platform or the experience of other users.
+                p.subtitle Any misuse of our platform that breaches compliance policies may result in immediate suspension or termination of your account, and we may take appropriate legal action where necessary. This includes but is not limited to the following prohibited activities:
+                ul
+                    li Fraudulent activities or misrepresentation of personal information
+                    li Unauthorized access to or tampering with other user accounts or private data
+                    li Distributing harmful software or engaging in hacking activities
+                    li Posting offensive, defamatory, or unlawful content
+                p.subtitle We are committed to maintaining a respectful and safe online environment for all users, and we reserve the right to take any necessary action to protect the integrity of our services.
+
+            div
+                h3.title-sm Dispute resolution and governing law
+                p.subtitle In case of disputes, we adhere to strict legal frameworks and offer fair resolution processes. All disputes will be governed by the laws applicable in the jurisdiction where NeatNest is incorporated. By using our services, you acknowledge acceptance of these terms and agree to their enforcement.
+                p.subtitle We encourage users to resolve any issues directly with our support team before initiating any formal legal proceedings. In the event that a dispute cannot be resolved amicably, you agree to engage in alternative dispute resolution processes, such as mediation or arbitration, prior to pursuing litigation.
+            div
+                h3.title-sm Limitation of liability
+                p.subtitle NeatNest will not be held liable for any damages arising from the use or inability to use our services, including indirect, incidental, or consequential damages. While we make every effort to ensure the accuracy and security of our services, we do not guarantee uninterrupted service or error-free operation.
+            div
+                h3.title-sm Modifications to services
+                p.subtitle NeatNest reserves the right to modify or discontinue any of its services or features without prior notice. We will make reasonable efforts to inform users of any significant changes, but we cannot guarantee the availability of specific features or services at all times.
+            div
+                h3.title-sm Contact Information
+                p.subtitle For questions or concerns related to our policies, please contact us at 
+                    a(href='mailto:neatnest@gmail.com') neatnest@gmail.com.  
+                    We are available to assist you with any inquiries or issues you may have, and we strive to resolve all concerns in a timely and satisfactory manner.
+    
+    +Footer()

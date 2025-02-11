@@ -1,0 +1,36 @@
+mixin Limited()
+    section.container.limited.reveal-zoom
+        .limited-bg
+        div
+            .limited__item
+                
+                +Img({
+                    src: 'img/bins-1.jpg',
+                    alt: 'Foldable fabric bins',
+                })
+            .limited__item
+                h2 Limited Time Offers
+                p Take advantage of our exclusive offers on select products! Hurry, these deals won’t last long.
+                +Link({
+                    class: 'btn limited__btn',
+                    href: 'index.html#form',
+                    text: 'Shop now and save big!',
+                })
+        div.limited__grid
+            ul.limited__item
+                li 20% off on all storage bins
+                li Buy 2, get 1 free on baskets
+                li Free shipping on orders over $50
+
+            .limited__item
+                +Img({
+                    src: 'img/organizers-2.jpg',
+                    alt: 'Multi-tier drawer organizers',
+                })
+            .limited__item
+                +Img({
+                    src: 'img/bins-2.jpg',
+                    alt: 'Stackable plastic containers',
+                })
+           
+        
