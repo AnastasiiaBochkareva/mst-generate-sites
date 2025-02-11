@@ -1,0 +1,34 @@
+extends /sites/New_v9_LoftStyle/layouts/base.pug
+
+block variables
+    - const title = 'Termos e Condições - LoftStyle'
+    - const description = 'Leia os Termos e Condições da LoftStyle para entender as regras e regulamentos ao usar nossos serviços e produtos. Ao acessar nosso site, você concorda com os nossos termos de uso, conformidade legal e políticas de proteção de dados.'
+
+block content
+    +Header()
+
+    main
+        section.container.terms 
+            h1.title Termos e condições
+            div
+                p.subtitle Ao utilizar nossos serviços, você concorda com os termos abaixo e se compromete a cumprir todas as leis e regulamentos aplicáveis, incluindo os padrões de proteção de dados e os protocolos de segurança online. LoftStyle opera de acordo com os requisitos de conformidade internacionais para garantir uma experiência segura e protegida para os usuários.
+
+            div
+                h3.title-sm Conformidade legal e regulamentos
+                p.subtitle Ao acessar e usar nossos serviços, você concorda em cumprir todas as leis e regulamentos aplicáveis, incluindo os padrões de proteção de dados e os protocolos de segurança online. LoftStyle opera de acordo com os requisitos de conformidade internacionais para garantir uma experiência segura e protegida para os usuários.
+
+            div
+                h3.title-sm Responsabilidades dos usuários
+                p.subtitle Os usuários devem agir de acordo com a lei e se abster de violar quaisquer leis locais, nacionais ou internacionais ao usar nossos serviços. Qualquer uso indevido da nossa plataforma que viole a política de conformidade pode resultar na suspensão da conta ou em ações legais.
+
+            div
+                h3.title-sm Resolução de disputas e legislação aplicável
+                p.subtitle Em caso de disputas, seguimos rigorosos frameworks legais e oferecemos processos de resolução justos. Todas as disputas serão regidas pela legislação aplicável. Ao usar nossos serviços, você reconhece a aceitação destes termos e concorda com sua aplicação.
+
+            div
+                h3.title-sm Informações de contato
+                p.subtitle Para dúvidas ou comentários relacionados à nossa política, por favor, entre em contato conosco pelo e-mail       
+                    a(href='mailto:loftstyle@gmail.com') loftstyle@gmail.com  
+    
+    
+    +Footer()

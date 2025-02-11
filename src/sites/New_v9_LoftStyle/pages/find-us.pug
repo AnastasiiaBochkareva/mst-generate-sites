@@ -1,0 +1,61 @@
+extends /sites/New_v9_LoftStyle/layouts/base.pug
+
+block variables
+    - const title = 'LoftStyle - Encontre-nos'
+    - const description = 'Descubra como chegar à LoftStyle e explore nossa coleção exclusiva de decoração em estilo loft. Estamos prontos para ajudá-lo a transformar seu espaço. Consulte nossa página para mais detalhes sobre nossa localização.'
+
+block content
+    +Header()
+
+    main
+        section.container.find-us
+            
+            h1.find-us__title Encontre-nos no mapa
+            p.find-us__subtitle Estamos sempre felizes em recebê-lo! Nosso escritório está localizado em um ponto de fácil acesso, e você pode nos encontrar facilmente usando o mapa abaixo. Fique à vontade para nos visitar, estamos prontos para ajudar!
+            .map-container
+                iframe(
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d739.5631805594293!2d-9.26684441438765!3d38.73516361331956!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd1ecc30111ec293%3A0x1f081829da6f1091!2sRamalho%20%26%20Filhos!5e1!3m2!1sen!2sam!4v1739177750325!5m2!1sen!2sam"
+                    width="600"
+                    height="450"
+                    style="border:0;"
+                    allowfullscreen=""
+                    loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"
+                )
+
+        section.container.faq
+            h2.faq__title Perguntas frequentes (FAQ)
+            h3.faq__title-sm O que é o estilo de decoração loft?
+            p.faq__subtitle O estilo de decoração loft é inspirado em espaços industriais convertidos, onde materiais como tijolos expostos, metais e madeira criam um ambiente moderno e descontraído. Ele combina o charme da rusticidade com toques sofisticados e detalhes minimalistas, tornando o espaço único e acolhedor.
+
+            h3.faq__title-sm Quais produtos posso encontrar na LoftStyle?
+            p.faq__subtitle Na LoftStyle, oferecemos uma ampla gama de produtos em estilo loft, incluindo móveis de madeira, luminárias industriais, acessórios vintage, relógios de parede e painéis artísticos. Todos os nossos itens são cuidadosamente selecionados para adicionar caráter e funcionalidade ao seu espaço.
+
+            h3.faq__title-sm Como posso comprar os produtos da LoftStyle?
+            p.faq__subtitle Basta navegar pelo nosso site e escolher os produtos que você deseja comprar. Adicione-os ao carrinho de compras e siga as etapas de pagamento. Aceitamos diversas formas de pagamento para sua conveniência.
+
+            h3.faq__title-sm Vocês oferecem entrega para todo o Brasil?
+            p.faq__subtitle Sim, realizamos entregas para todo o território nacional. Verifique as opções de frete disponíveis ao finalizar sua compra.
+
+            h3.faq__title-sm Como faço para entrar em contato com a LoftStyle?
+            p.faq__subtitle Você pode entrar em contato conosco através do nosso e-mail: loftstyle@gmail.com. Estamos sempre prontos para ajudar com dúvidas ou assistência relacionada aos nossos produtos.
+
+            h3.faq__title-sm Os produtos da LoftStyle são exclusivos?
+            p.faq__subtitle Sim, oferecemos peças em edições limitadas, garantindo que cada item seja único e especial para sua decoração.
+
+            h3.faq__title-sm Posso devolver ou trocar um produto?
+            p.faq__subtitle Sim, aceitamos devoluções e trocas dentro de um período determinado após a compra. Consulte nossa política de devoluções no site para mais detalhes.
+
+            h3.faq__title-sm Quais são os cuidados recomendados para os produtos?
+            p.faq__subtitle Para garantir a longevidade dos nossos produtos, recomendamos cuidados específicos para cada material. Por exemplo, para móveis de madeira, utilize produtos próprios para madeira e evite exposição prolongada à luz direta. Para luminárias, siga as instruções de manutenção do fabricante.
+
+            h3.faq__title-sm Como posso acompanhar o status do meu pedido?
+            p.faq__subtitle Após a compra, enviaremos um e-mail com todas as informações sobre o status do seu pedido. Você também poderá acompanhar o status diretamente na sua conta em nosso site.
+
+            h3.faq__title-sm Posso personalizar os produtos da LoftStyle?
+            p.faq__subtitle Atualmente, oferecemos produtos selecionados para personalização. Entre em contato conosco para saber mais sobre as opções disponíveis.
+
+
+            
+    
+    +Footer()

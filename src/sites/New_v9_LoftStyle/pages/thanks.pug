@@ -1,0 +1,24 @@
+extends /sites/New_v9_LoftStyle/layouts/base.pug
+
+block variables
+    - const title = 'Obrigado por sua compra - LoftStyle'
+    - const description = 'Agradecemos por escolher a LoftStyle! Sua compra foi realizada com sucesso. Fique atento à sua caixa de entrada para mais informações sobre o seu pedido. Estamos ansiosos para ajudá-lo a transformar seu espaço com nossos produtos exclusivos.'
+
+block content
+    main
+        section.container.thanks
+            h1.thanks__title Obrigado pela sua mensagem!
+            p.thanks__subtitle Recebemos as suas informações e entraremos em contato em breve. Um dos nossos especialistas ligará para você para discutir todos os detalhes.
+
+            p.thanks__subtitle Se tiver mais alguma dúvida, não hesite em nos contatar. Estamos sempre prontos para ajudar!
+
+            h4.thanks__subtitle O que fazer a seguir?
+
+            p.thanks__title-sm Aguarde o contato de um de nossos atendentes.
+            p.thanks__title-sm Se precisar de uma resposta urgente, entre em contato conosco pelo telefone.
+            p.thanks__subtitle Obrigado por nos procurar! Apreciamos seu interesse e estamos prontos para oferecer as melhores soluções para você.
+            +Link({
+                class: 'btn thanks__btn',
+                href: 'index.html',
+                text: 'Home',
+            })

@@ -1,0 +1,14 @@
+.limited-collection {
+    text-align: center;
+    &__title {
+        margin-bottom: 30px;
+    }
+    &__subtitle {
+        margin-bottom: 20px;
+    }
+    &__btn {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}

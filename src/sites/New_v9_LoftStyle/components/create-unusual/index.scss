@@ -1,0 +1,30 @@
+.create-unusual {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    &__img,
+    &__col {
+        max-width: calc(50% - 10px);
+        width: 100%;
+    }
+    &__col {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        justify-content: center;
+        align-items: center;
+    }
+    &__subtitle {
+        text-align: center;
+    }
+    &__img {
+        overflow: hidden;
+    }
+    @media (max-width: 767px) {
+        flex-direction: column;
+        &__img,
+        &__col {
+            max-width: 100%;
+        }
+    }
+}

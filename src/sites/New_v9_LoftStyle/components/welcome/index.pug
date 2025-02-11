@@ -1,0 +1,11 @@
+mixin Welcome()
+    section.welcome
+        .container.welcome__container
+            h2.welcome__title Bem-vindo à LoftStyle
+            p.welcome__subtitle Bem-vindo à LoftStyle – o lugar onde o estilo loft moderno ganha vida na sua casa!
+            p.welcome__subtitle Oferecemos uma decoração exclusiva para criar um ambiente acolhedor e estiloso. Explore nossa coleção e encontre os elementos perfeitos para o seu interior
+            +Link({
+                class: 'btn welcome__btn',
+                href: 'index.html#form',
+                text: 'Saber mais',
+            })

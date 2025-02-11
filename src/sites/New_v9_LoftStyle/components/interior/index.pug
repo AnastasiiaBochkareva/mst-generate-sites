@@ -1,0 +1,24 @@
+mixin Interior()
+    section.interior.container
+        h2.interior__title Interiores que inspiram
+        .interior__info
+            +Img({
+                src: 'img/loft-space.jpg',
+                alt: 'Bye a gift',
+                class: 'interior__img-bg'
+            })
+            h3.interior__title-sm Com nossos produtos, você pode criar um ambiente que inspira e encanta. 
+            p.interior__subtitle O estilo loft não é apenas estética, é também uma atmosfera envolvente. Encontre inspiração e transforme seu espaço!
+            +Link({
+                class: 'btn interior__btn',
+                href: 'loft-style-decor.html#form',
+                text: 'Ver coleção de decoração estilo loft',
+            })
+        .interior__img
+            +Img({
+                src: 'img/loft-space-two.jpg',
+                alt: 'Bye a gift',
+                class: 'interior__img-bg'
+            })
+        
+            

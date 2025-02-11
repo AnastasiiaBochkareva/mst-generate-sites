@@ -1,0 +1,17 @@
+mixin Decore()
+    section.decore.container
+        .decore__col
+            h3.decore__title-sm LoftStyle
+            p.decore__subtitle Nossos produtos não são apenas decoração, mas a alma do seu interior no estilo loft.
+            +Img({
+                src: 'img/logo.jpg',
+                alt: 'Loft style decor'
+            })
+        .decore__col.decore__colored
+            h2.decore__title Decoração para um verdadeiro loft
+            p.decore__subtitle Oferecemos elementos elegantes e funcionais que destacam a singularidade do seu espaço. Metal, madeira, concreto – tudo o que você precisa para um loft autêntico.
+            +Link({
+                class: 'btn decore__btn',
+                href: 'index.html#form',
+                text: 'Saber mais sobre a decoração',
+            })

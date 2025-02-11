@@ -1,0 +1,50 @@
+.ideal-loft {
+    &__title {
+        margin-bottom: 20px;
+    }
+    &__cards {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+    &__img {
+        overflow: hidden;
+        width: 100%;
+        flex-grow: 1;
+        max-height: 75%;
+    }
+    &__card {
+        flex-grow: 1;
+        justify-content: space-between;
+        align-items: center;
+        height: auto;
+        max-height: 500px;
+
+        display: flex;
+        flex-direction: column-reverse;
+        background-color: #fff;
+        max-width: calc(50% - 15px);
+        position: relative;
+    }
+    &__subtitle {
+        color: #fff;
+        background-color: #4b6256;
+        padding: 20px;
+        flex-shrink: 0;
+        flex-grow: 1;
+        min-height: 80px;
+        width: 100%;
+    }
+    @media (max-width: 565px) {
+        &__cards {
+            flex-direction: column;
+        }
+        &__card {
+            max-width: 100%;
+            max-height: 400px;
+        }
+        &__subtitle {
+            padding: 10px;
+        }
+    }
+}

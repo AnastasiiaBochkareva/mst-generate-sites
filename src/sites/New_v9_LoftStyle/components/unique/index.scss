@@ -1,0 +1,25 @@
+.unique {
+    position: relative;
+    &::after {
+        content: "";
+        position: absolute;
+        display: block;
+        height: 3px;
+        width: 60%;
+        background-color: #84c0a0;
+        bottom: 0;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    &__title {
+        margin-bottom: 30px;
+    }
+    &__subtitle {
+        text-align: center;
+        &:not(:last-child) {
+            margin-bottom: 20px;
+        }
+    }
+    @media (max-width: 767px) {
+    }
+}

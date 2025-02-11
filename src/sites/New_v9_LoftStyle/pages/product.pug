@@ -1,0 +1,149 @@
+extends /sites/New_v9_LoftStyle/layouts/base.pug
+
+block variables
+    - const title = 'Produtos de decoração estilo Loft: Luminárias, Almofadas, Escadas e mais'
+    - const description = 'Descubra nossa coleção de decoração estilo loft: luminárias industriais, almofadas confortáveis, escadas modernas, relógios e espelhos únicos. Transforme seu espaço com peças autênticas e sofisticadas que combinam a rusticidade do loft com um design contemporâneo.'
+
+block content
+    +Header()
+
+    main
+        section.container
+            .what-is-loft__head
+                h1.what-is-loft__title O que é o estilo loft?
+                p.what-is-loft__subtitle O estilo loft é inspirado em espaços industriais, como antigos armazéns e fábricas, que foram transformados em residências. Caracteriza-se por uma estética rústica e contemporânea, com o uso de materiais expostos, como tijolos, concreto, madeira e metal. Este estilo destaca-se pela sua amplitude, com espaços abertos e tons neutros, criando um ambiente moderno e acolhedor.
+                +Link({
+                        class: 'btn what-is-loft__btn',
+                        href: 'index.html#form',
+                        text: 'Saiba mais',
+                    })
+
+        section.container
+            .what-is-loft__product
+                .what-is-loft__product-text
+                    h2.what-is-loft__title Luminárias loft
+                    p.what-is-loft__subtitle As lâmpadas no estilo loft são peças essenciais que combinam estética industrial com funcionalidade. Feitas de materiais como metal, ferro e vidro, essas luminárias criam uma atmosfera única, perfeita para iluminar espaços com um toque contemporâneo. Seja uma luminária pendente, uma arandela ou um lustre, as opções em estilo loft garantem um ambiente moderno e sofisticado.
+                    +Link({
+                        class: 'btn what-is-loft__btn',
+                        href: 'index.html#form',
+                        text: 'Saiba mais sobre luminárias',
+                    })
+                .what-is-loft__product-img
+                    +Img({
+                    src: 'img/loft-lamps.jpg',
+                    alt: 'Luminárias loft'
+                })
+        
+        section.container
+            .what-is-loft__product
+                .what-is-loft__product-text
+                    h2.what-is-loft__title Almofadas loft
+                    p.what-is-loft__subtitle As almofadas no estilo loft são perfeitas para adicionar conforto e personalidade a qualquer ambiente. Com tecidos naturais como linho, algodão e lã, essas almofadas trazem um toque de suavidade para o visual rústico e moderno do loft, criando um equilíbrio perfeito entre estilo e conforto.
+                    +Link({
+                        class: 'btn what-is-loft__btn',
+                        href: 'index.html#form',
+                        text: 'Saiba mais sobre almofadas',
+                    })
+                .what-is-loft__product-img
+                    +Img({
+                    src: 'img/leather-loft-pillow.jpg',
+                    alt: 'Almofadas loft'
+                })
+
+        section.container
+            .what-is-loft__product
+                .what-is-loft__product-text
+                    h2.what-is-loft__title Escadas loft
+                    p.what-is-loft__subtitle As escadas no estilo loft são mais do que apenas um meio de conectar os andares, elas se tornam uma peça central na decoração. Feitas de metal, madeira ou até vidro, as escadas loft são projetadas para se integrar ao ambiente, mantendo a sensação de espaço aberto e proporcionando um visual contemporâneo e elegante.
+                    +Link({
+                        class: 'btn what-is-loft__btn',
+                        href: 'index.html#form',
+                        text: 'Saiba mais sobre escadas',
+                    })
+                .what-is-loft__product-img
+                    +Img({
+                    src: 'img/loft-staircase.jpg',
+                    alt: 'Escadas loft'
+                })
+
+        section.container
+            .what-is-loft__product
+                .what-is-loft__product-text
+                    h2.what-is-loft__title Relógios loft
+                    p.what-is-loft__subtitle Relógios no estilo loft são uma maneira prática e estilosa de adicionar um toque industrial ao seu espaço. De tamanhos grandes e visíveis, feitos de metal ou madeira reciclada, esses relógios se tornam um elemento de destaque em qualquer ambiente, mantendo a funcionalidade sem abrir mão da estética.   
+                    +Link({
+                        class: 'btn what-is-loft__btn',
+                        href: 'index.html#form',
+                        text: 'Saiba mais sobre relógios',
+                    })
+                .what-is-loft__product-img
+                    +Img({
+                    src: 'img/loft-clock.jpg',
+                    alt: 'Relógios loft'
+                })
+
+        section.container
+            .what-is-loft__product
+                .what-is-loft__product-text
+                    h2.what-is-loft__title Espelhos loft
+                    p.what-is-loft__subtitle Os espelhos no estilo loft combinam funcionalidade com design arrojado. Com molduras de metal ou madeira rústica, eles trazem não apenas praticidade, mas também um toque sofisticado ao ambiente. São perfeitos para aumentar a sensação de amplitude e iluminar os espaços, mantendo a essência industrial do loft.
+                    +Link({
+                        class: 'btn what-is-loft__btn',
+                        href: 'index.html#form',
+                        text: 'Saiba mais sobre espelhos',
+                    })
+                .what-is-loft__product-img
+                    +Img({
+                    src: 'img/mirror-loft.jpg',
+                    alt: 'Espelhos loft'
+                })
+
+        section.container
+            .what-is-loft__product
+                .what-is-loft__product-text
+                    h2.what-is-loft__title Espaço de tijolos no loft
+                    p.what-is-loft__subtitle O uso de tijolos expostos é uma característica marcante do estilo loft. As paredes de tijolos aparentes trazem um charme rústico e uma sensação de autenticidade ao espaço, criando uma atmosfera acolhedora e única. Esse elemento combina bem com outros materiais naturais, como madeira e metal, e é ideal para dar personalidade ao ambiente.
+                    +Link({
+                        class: 'btn what-is-loft__btn',
+                        href: 'index.html#form',
+                        text: 'Saiba mais sobre loft',
+                    })
+                .what-is-loft__product-img
+                    +Img({
+                    src: 'img/combinations.jpg',
+                    alt: 'Espaço de tijolos no loft'
+                })
+
+        section.container
+            .what-is-loft__product
+                .what-is-loft__product-text
+                    h2.what-is-loft__title Decoração de palha no loft   
+                    p.what-is-loft__subtitle A decoração com palha no estilo loft traz um toque natural e orgânico ao ambiente, equilibrando o visual mais duro dos materiais industriais. Itens como cestas, vasos e detalhes decorativos de palha adicionam textura e calor, criando um contraste interessante com os elementos de metal e concreto.
+                    +Link({
+                        class: 'btn what-is-loft__btn',
+                        href: 'index.html#form',
+                        text: 'Saiba mais sobre decoração',
+                    })
+                .what-is-loft__product-img
+                    +Img({
+                        src: 'img/loft-accessories.jpg',
+                        alt: 'Decoração de palha no loft'
+                    })
+
+        section.container
+            .what-is-loft__product
+                .what-is-loft__product-text
+                    h2.what-is-loft__title Sótãos loft
+                    p.what-is-loft__subtitle Os sótãos loft são uma parte essencial do design desse estilo, aproveitando ao máximo os espaços abertos e a altura do ambiente. Com tetos altos, grandes janelas e paredes de tijolos expostos, os sótãos transformam-se em áreas multifuncionais, perfeitas para criar ambientes confortáveis e estilizados com um toque industrial.
+                    +Link({
+                        class: 'btn what-is-loft__btn',
+                        href: 'index.html#form',
+                        text: 'Saiba mais sobre sótãos loft',
+                    })
+                .what-is-loft__product-img
+                    +Img({
+                        src: 'img/loft-space-two.jpg',
+                        alt: 'Sótãos loft'
+                    })
+
+    +Footer()

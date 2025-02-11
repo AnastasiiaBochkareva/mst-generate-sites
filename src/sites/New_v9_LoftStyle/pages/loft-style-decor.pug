@@ -1,0 +1,38 @@
+extends /sites/New_v9_LoftStyle/layouts/base.pug
+
+block variables
+    - const title = 'Perguntas Frequentes - LoftStyle | Decoração Industrial e Exclusiva'
+    - const description = 'Tire suas dúvidas sobre nossos produtos e serviços na LoftStyle. Descubra tudo sobre o estilo de decoração loft, nossas opções de entrega, devoluções e muito mais. Estamos aqui para ajudar a transformar seu espaço!'
+
+block content
+    +Header()
+
+    main
+        section.container.loft-style-decor
+            h1.loft-style-decor__title Estilo loft: crie um espaço inspirador
+            p.loft-style-decor__subtitle Cada casa deve inspirar, e a decoração no estilo loft faz exatamente isso. Seja um cantinho aconchegante para leitura com uma poltrona vintage e uma lâmpada industrial, ou uma sala de estar aberta com prateleiras de metal e paredes de tijolos expostos — os detalhes certos podem mudar completamente a atmosfera. 
+            p.loft-style-decor__subtitle O segredo é encontrar um equilíbrio entre funcionalidade e estética para que o espaço seja não só bonito, mas também confortável para o dia a dia.
+            +Link({
+                class: 'btn loft-style-decor__btn',
+                href: 'index.html#form',
+                text: 'Nós ajudamos',
+            })
+            
+
+        +Aesthetics-loft()
+
+        +Why-loft()
+
+        +Unique-loft()
+
+        +Limited-collection()
+
+        +Ideal-loft()
+
+        +Create-unusual()
+
+        section
+
+        
+
+    +Footer()

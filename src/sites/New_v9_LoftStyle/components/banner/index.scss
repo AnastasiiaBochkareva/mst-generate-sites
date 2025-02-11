@@ -1,0 +1,18 @@
+.banner {
+    position: relative;
+    background: rgba(0, 0, 0, 0.3);
+    &__title,
+    &__title-sm {
+        text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.7);
+        color: #fff;
+    }
+    &__img {
+        border-radius: 50%;
+        max-width: 220px;
+        width: 100%;
+        max-height: 220px;
+        height: 100%;
+        overflow: hidden;
+        background-color: #e7e7e7;
+    }
+}

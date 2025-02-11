@@ -1,0 +1,23 @@
+mixin Footer()
+    footer.footer(id='form')
+        .container.footer__container
+            .footer__logo 
+                +Link({
+                    href: 'index.html',
+                    text: 'LoftStyle'
+                })
+            .footer__contacts
+                a(href='tel:+55 21 98836-5232') +55 21 98836-5232
+                a(href='mailto:loftstyle@gmail.com') loftstyle@gmail.com
+                a(href='https://maps.app.goo.gl/ASozpidmdKRJVeYE6' target='_blank') Ramalho & Filhos, Estrada Militar 74, 2730-226, Portugal
+
+            .footer__contacts.footer__conditions
+                +Link({
+                    href: 'privacy-policy.html',
+                    text: 'Política de privacidade'
+                })
+                +Link({
+                    href: 'terms-conditions.html',
+                    text: 'Termos e condições'
+                })
+        

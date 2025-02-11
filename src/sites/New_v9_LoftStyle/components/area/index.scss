@@ -1,0 +1,31 @@
+.area {
+    background-color: #84c0a0;
+    &__container {
+        display: flex;
+        gap: 20px;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    &__card {
+        background-color: #fff;
+        padding: 20px;
+        width: 100%;
+        max-width: calc(25% - 15px);
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+    &__title-sm {
+        // margin-bottom: 20px;
+    }
+    @media (max-width: 1199px) {
+        &__card {
+            max-width: calc(50% - 10px);
+        }
+    }
+    @media (max-width: 767px) {
+        &__card {
+            max-width: 100%;
+        }
+    }
+}

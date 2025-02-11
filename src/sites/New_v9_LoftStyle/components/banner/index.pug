@@ -1,0 +1,16 @@
+mixin Banner()
+    section.banner
+        +Img({
+                src: 'img/banner.jpg',
+                alt: 'LoftStyle',
+                class: 'banner__img-bg'
+            })
+        .container.banner__container
+            h3.banner__title-sm Bem-vindo à
+            h1.banner__title LoftStyle
+            
+            .banner__img
+                +Img({
+                    src: 'img/logo.jpg',
+                    alt: 'Loft style decor'
+                })

@@ -1,0 +1,16 @@
+mixin Create-unusual()
+    section.create-unusual.container
+        .create-unusual__img
+            +Img({
+                    src: 'img/combinations.jpg',
+                    alt: 'Bye a gift'
+                })
+        .create-unusual__col
+            h2.create-unusual__title Vamos criar algo extraordinário juntos
+            p.create-unusual__subtitle Sua casa é um reflexo da sua personalidade. 
+            p.create-unusual__subtitle Preencha-a com decoração que não só seja estilosa, mas que também carregue um significado. Seja transformando um loft, um apartamento ou um espaço de trabalho, estamos aqui para ajudá-lo a encontrar os elementos perfeitos que tornarão seu espaço verdadeiramente único.
+            +Link({
+                class: 'create-unusual__btn btn',
+                href: 'index.html#form',
+                text: 'Crie algo extraordinário',
+            })

@@ -1,0 +1,29 @@
+// all pages
+@use "@/sites/New_v9_LoftStyle/components/header/index" as header;
+@use "@/sites/New_v9_LoftStyle/components/footer/index" as footer;
+@use "@/components/burger/index" as burger;
+
+// index.pug
+@use "@/sites/New_v9_LoftStyle/components/banner/index" as banner;
+@use "@/sites/New_v9_LoftStyle/components/welcome/index" as welcome;
+@use "@/sites/New_v9_LoftStyle/components/decore/index" as decore;
+@use "@/sites/New_v9_LoftStyle/components/style/index" as style;
+@use "@/sites/New_v9_LoftStyle/components/interior/index" as interior;
+@use "@/sites/New_v9_LoftStyle/components/loft/index" as loft;
+@use "@/sites/New_v9_LoftStyle/components/atmosphere/index" as atmosphere;
+@use "@/sites/New_v9_LoftStyle/components/area/index" as area;
+@use "@/sites/New_v9_LoftStyle/components/house/index" as house;
+@use "@/sites/New_v9_LoftStyle/components/unique/index" as unique;
+@use "@/sites/New_v9_LoftStyle/components/combination/index" as combination;
+@use "@/sites/New_v9_LoftStyle/components/map/index" as map;
+@use "@/sites/New_v9_LoftStyle/components/callback/index" as callback;
+
+@use "@/sites/New_v9_LoftStyle/components/aesthetics-loft/index" as
+    aesthetics-loft;
+@use "@/sites/New_v9_LoftStyle/components/why-loft/index" as why-loft;
+@use "@/sites/New_v9_LoftStyle/components/unique-loft/index" as unique-loft;
+@use "@/sites/New_v9_LoftStyle/components/ideal-loft/index" as ideal-loft;
+@use "@/sites/New_v9_LoftStyle/components/limited-collection/index" as
+    limited-collection;
+@use "@/sites/New_v9_LoftStyle/components/create-unusual/index" as
+    create-unusual;

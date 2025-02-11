@@ -1,0 +1,46 @@
+extends /sites/New_v9_LoftStyle/layouts/base.pug
+
+block variables
+    - const title = 'LoftStyle - Decoração em estilo loft para o seu interior'
+    - const description = 'LoftStyle oferece elementos exclusivos de decoração em estilo loft, incluindo luminárias industriais, móveis de madeira e acessórios vintage. Transforme seu interior com nossos itens exclusivos para um espaço estiloso e confortável.'
+
+block content
+    +Header()
+
+    main
+        +Banner()
+
+        +Welcome()
+
+        +Decore()
+
+        +Style()
+
+        +Interior()
+
+        +Loft()
+
+        +Atmosphere()
+
+        +Area()
+
+        +Unique()
+
+        +House()
+
+        +Combination()
+
+        +Form({
+            title: 'Entre em contato conosco',
+            adress:'Estr. Militar 74, 2730-226, Portugal',
+            href: 'https://maps.app.goo.gl/bT4HwsjE5KwUWqwSA',
+            subtitle: 'Tem dúvidas ou precisa de ajuda? Preencha o formulário abaixo e entraremos em contato o mais rápido possível. Seja para encontrar a peça de decoração perfeita ou para obter suporte com seu pedido, estamos aqui para ajudar.',
+            name: true,
+            email: true,
+            btnText:'Enviar mensagem'
+
+        })
+        
+        
+
+    +Footer()
