@@ -1,0 +1,15 @@
+mixin Form()
+    section.container.contacts(id='form')
+        .grid-container
+            .contacts__text
+                h2.title Get in touch with us!
+                a(href='https://maps.app.goo.gl/ASozpidmdKRJVeYE6') Palli, Karnataka 574244, India
+            form.form(action="thanks_form.php" method="POST")
+                p.subtitle Have questions or need more details? We're here to help! Fill out the form, and one of our managers will get in touch with you shortly to provide all the information you need and assist with your gift selection.
+                .form__inputs
+                    input.form__input(type="text" name="name" placeholder="Name" required="")
+                    input.form__input(type="email" name="email" placeholder="Email" required="")
+                    label.form__checkbox
+                        input(type="checkbox" name="privacy" value="on" required="")
+                        span I agree to the processing of data
+                    button.form__btn.btn(type="submit") Order

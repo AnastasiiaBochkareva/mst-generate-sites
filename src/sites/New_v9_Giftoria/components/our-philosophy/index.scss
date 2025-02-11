@@ -1,0 +1,21 @@
+.our-philosophy {
+    padding-top: 50px;
+    padding-bottom: 50px;
+    padding: 40px;
+    overflow: hidden;
+    border-bottom: 1px solid #333;
+
+    .title {
+        margin-bottom: 20px;
+        text-align: center;
+    }
+
+    .description {
+        margin-bottom: 20px;
+        text-align: center;
+    }
+    .special {
+        text-align: center;
+        font-style: italic;
+    }
+}

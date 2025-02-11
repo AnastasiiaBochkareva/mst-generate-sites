@@ -1,0 +1,23 @@
+mixin Footer()
+    footer.footer
+        .container.footer__container
+            .footer__logo 
+                +Link({
+                    href: 'index.html',
+                    text: 'Giftoria'
+                })
+            .footer__contacts
+                a(href='tel:+91 98765 43210') +91 98765 43210
+                a(href='mailto:giftoria@gmail.com') giftoria@gmail.com
+                a(href='https://maps.app.goo.gl/ASozpidmdKRJVeYE6' target='_blank') Palli, Karnataka 574244, India
+
+            .footer__contacts.contacts
+                +Link({
+                    href: 'privacy-policy.html',
+                    text: 'Privacy policy'
+                })
+                +Link({
+                    href: 'terms-conditions.html',
+                    text: 'Terms and conditions'
+                })
+        

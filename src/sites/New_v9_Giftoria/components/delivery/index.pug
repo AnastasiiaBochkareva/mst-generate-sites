@@ -1,0 +1,35 @@
+mixin Delivery()
+    section.container.delivery(id='delivery')
+        .delivery__bg
+        .delivery__col.delivery__img.reveal-right
+            +Img({
+                src: 'img/banner.jpg',
+                alt: 'ALT',
+                class: 'scale'
+            })
+        .delivery__col
+            .delivery__title.reveal-left
+                h2.title Get your gifts delivered
+                p.subtitle We offer fast and reliable delivery to ensure your gifts arrive promptly and in perfect condition. Whether you're ordering for a special occasion or just because, we've got you covered!
+            .delivery__easy.reveal-bottom
+                h3.title-sm Delivery Made Easy
+                p.subtitle-sm At Giftoria, we understand that timely delivery is crucial. We offer multiple delivery options to suit your needs, from standard to express shipping. All orders are carefully packaged to ensure they reach you safely. Our Delivery Services Include:
+                ul
+                    li 
+                        p ✔ Nationwide Shipping
+                    li 
+                        p ✔ Secure Packaging
+                    li 
+                        p ✔ Tracking Information Provided
+                    li 
+                        p ✔ Flexible Delivery Options
+                +Link({
+                    class: 'btn',
+                    href: 'index.html#form',
+                    text: 'Learn More About Delivery',
+                }) 
+            
+
+
+
+

@@ -1,0 +1,30 @@
+extends /sites/New_v9_Giftoria/layouts/base.pug
+
+block variables
+    - const title = 'Giftoria - unique gift shop for every occasion'
+    - const description = 'At Giftoria, you’ll find the perfect gifts for your loved ones. We offer a wide range of unique and personalized items for any occasion.'
+
+block content
+    +Header()
+
+    main
+
+        +Banner({})
+
+        +Categories({})
+
+        +Arrivals({})
+
+        +Our-philosophy({})
+
+        +Delivery({})
+
+        +Preparation({})
+
+        +Reviews({})
+
+        +About-us({})
+
+        +Form({})
+
+    +Footer()

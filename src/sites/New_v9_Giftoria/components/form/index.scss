@@ -1,0 +1,93 @@
+.contacts {
+    padding-top: 50px;
+    .grid-container {
+        grid-template-columns: repeat(auto-fill, minmax(45%, 1fr));
+        .form {
+            box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+            background-color: #555272;
+            padding: 20px;
+            color: #fff;
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            &__btn {
+                max-width: 100%;
+                width: 100%;
+                padding: 15px 47px;
+                color: rgb(85, 86, 90);
+                &:hover {
+                    color: #fff;
+                }
+            }
+            &__inputs {
+                display: flex;
+                flex-wrap: wrap;
+                gap: 10px;
+                width: 100%;
+            }
+            &__input {
+                width: 100%;
+                width: calc(50% - 10px);
+                padding: 10px;
+                border: 1px solid #d6d6d6;
+                border-radius: 4px;
+                color: rgb(85, 86, 90);
+                outline: none;
+                transition: border 0.3s ease;
+                font-size: clamp(1rem, 2vw, 1.25rem);
+                placeholder {
+                    color: rgb(85, 86, 90);
+                    font-size: clamp(1rem, 2vw, 1.25rem);
+                }
+            }
+            input:hover {
+                border: 1px solid rgb(213, 201, 190);
+            }
+            input:focus {
+                border: 1px solid rgb(213, 201, 190);
+            }
+            &__checkbox {
+                width: 100%;
+                cursor: pointer;
+                position: relative;
+                display: inline-block;
+                font-size: 19px;
+                line-height: 130%;
+                letter-spacing: 0%;
+                span {
+                    padding-left: 10px;
+                }
+            }
+        }
+    }
+    &__text {
+        padding-left: 20px;
+        align-self: center;
+        .title {
+            margin-bottom: 20px;
+        }
+        a {
+            color: #333;
+        }
+    }
+    @media (max-width: 767px) {
+        padding-top: 20px;
+        .grid-container {
+            grid-template-columns: repeat(1, 1fr);
+            &__text {
+                padding: 0;
+            }
+            .form {
+                &__input {
+                    width: 100%;
+                }
+            }
+        }
+    }
+}
+.contacts.container {
+    @media (max-width: 767px) {
+        padding-right: 0;
+        padding-left: 0;
+    }
+}

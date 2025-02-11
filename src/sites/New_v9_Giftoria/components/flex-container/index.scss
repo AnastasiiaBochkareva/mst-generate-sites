@@ -1,0 +1,12 @@
+.flex-container {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: stretch;
+    width: 100%;
+    gap: 20px;
+    > div {
+        flex: 1;
+        width: 100%;
+        overflow: hidden;
+    }
+}

@@ -1,0 +1,21 @@
+.about-us {
+    padding-top: 50px;
+    padding-bottom: 50px;
+    background-color: #e9c6d1;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 40px;
+
+    .title {
+        margin-bottom: 20px;
+        text-align: center;
+    }
+
+    .description {
+        margin-bottom: 20px;
+    }
+    .special {
+        text-align: center;
+        font-style: italic;
+    }
+}

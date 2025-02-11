@@ -1,0 +1,34 @@
+mixin Categories()
+    section.categories
+        .container.categories__container
+            .categories__col
+                h3.title Choose the perfect gift with ease – convenient categories will help you find the best option!
+                p.subtitle A gift is not just an item; it’s an emotion and a memory. In our store, we’ve gathered collections for every occasion.
+            .categories__col.grid-container
+                .categories__item.reveal-right
+                    +Img({
+                        src: 'img/forhim.jpg',
+                        alt: 'For him',
+                    })
+                    h5.title-sm For him
+                    p.subtitle What to gift a man? Whether it’s a colleague, friend, brother, father, or loved one, we have stylish and practical gifts!
+                .categories__item.reveal-bottom
+                    +Img({
+                        src: 'img/forher.jpg',
+                        alt: 'For her',
+                    })
+                    h5.title-sm For her
+                    p.subtitle The perfect gift for a woman is care and attention.
+                .categories__item.reveal-left
+                    +Img({
+                        src: 'img/forkids.jpg',
+                        alt: 'For kids',
+                    })
+                    h5.title-sm For kids
+                    p.subtitle Children’s gifts should bring joy and promote development! 
+                +Link({
+                    class: 'btn',
+                    href: 'index.html#form',
+                    text: 'Learn more',
+                }) 
+                

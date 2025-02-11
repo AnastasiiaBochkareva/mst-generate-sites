@@ -1,0 +1,41 @@
+.banner {
+    position: relative;
+    overflow: hidden;
+    background-color: #d3d7db;
+    &__container {
+        padding-top: 50px;
+        padding-bottom: 50px;
+        z-index: 5;
+        position: relative;
+        .title {
+            margin-bottom: 30px;
+            color: #c71e38;
+            max-width: 900px;
+        }
+        .subtitle {
+            margin-bottom: 20px;
+            color: #c71e38;
+            max-width: 900px;
+        }
+    }
+    &__img-bg {
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        max-width: 60%;
+        z-index: 1;
+        opacity: 0.4;
+    }
+    .grid-container {
+        grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+        margin-bottom: 70px;
+    }
+    &__catalog {
+        max-width: 692px;
+        margin-right: auto;
+    }
+    &__img {
+        justify-content: space-between;
+    }
+}

@@ -1,0 +1,60 @@
+extends /sites/New_v9_Giftoria/layouts/base.pug
+
+block variables
+    - const title = 'Contact us | Giftoria '
+    - const description = 'If you have any questions or suggestions, feel free to reach out. We are always happy to help you choose the perfect gift and answer any inquiries.'
+
+block content
+    +Header()
+
+    main
+        section.contact-page__title.container
+            h1.title Contact Us
+            p.subtitle Feel free to reach out to us for any inquiries or feedback. We are always happy to assist you in finding the perfect gift for your loved ones. 
+            p.subtitle Your satisfaction is our priority, and we look forward to hearing from you!
+        section.contact-page__map.container
+            .map-container
+                iframe(src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d922.8663480056615!2d74.8713105!3d13.2489056!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bbcaf4a8aef5c45%3A0x16f47a726370cb45!2sPalli%20Gramha%20Punchayath%20Office!5e1!3m2!1sen!2sam!4v1738931724811!5m2!1sen!2sam" 
+                    width="600" 
+                    height="450" 
+                    style="border:0;" 
+                    allowfullscreen="" 
+                    loading="lazy" 
+                    referrerpolicy="no-referrer-when-downgrade")
+
+            .contact-page__container
+                .title-sm Call to us:
+                    a(href='tel:+91 98765 43210') +91 98765 43210
+                .title-sm Text us:
+                    a(href='mailto:giftoria@gmail.com') giftoria@gmail.com
+
+        section.working-hours.container
+            h2.title Our Working Hours
+            .hours
+                .hour-item
+                    h3 Monday - Friday
+                    p 9:00 AM - 6:00 PM
+                .hour-item
+                    h3 Saturday
+                    p 10:00 AM - 3:00 PM
+                .hour-item
+                    h3 Sunday
+                    p Closed
+
+
+        section.faq.container
+            h2.title Frequently asked questions
+
+            div.faq-item
+                p.question How can I track my order?
+                p.answer You can track your order by visiting the "Order Tracking" page and entering your order number.
+
+            div.faq-item
+                p.question What are the shipping options available?
+                p.answer We offer standard and express shipping methods, with international delivery available to select countries.
+
+            div.faq-item
+                p.question Can I return a product?
+                p.answer Yes, returns are accepted within 30 days of purchase. Please refer to our return policy for more details.
+
+    +Footer()

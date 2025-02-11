@@ -1,0 +1,18 @@
+@use "@/sites/New_v9_Giftoria/components/header/index" as header;
+@use "@/sites/New_v9_Giftoria/components/footer/index" as footer;
+@use "@/sites/New_v9_Giftoria/components/form/index" as form;
+@use "@/sites/New_v9_Giftoria/components/about-us/index" as about-us;
+@use "@/sites/New_v9_Giftoria/components/our-philosophy/index" as our-philosophy;
+@use "@/sites/New_v9_Giftoria/components/blog/index" as blog;
+// @use "@/components/buger/index" as buger;
+
+@use "@/sites/New_v9_Giftoria/components/banner/index" as banner;
+@use "@/sites/New_v9_Giftoria/components/categories/index" as categories;
+@use "@/sites/New_v9_Giftoria/components/arrivals/index" as arrivals;
+@use "@/sites/New_v9_Giftoria/components/delivery/index" as delivery;
+@use "@/sites/New_v9_Giftoria/components/preparation/index" as preparation;
+@use "@/sites/New_v9_Giftoria/components/reviews/index" as reviews;
+
+@use "@/sites/New_v9_Giftoria/components/reveal/index" as reveal;
+@use "@/sites/New_v9_Giftoria/components/flex-container/index" as flex;
+@use "@/sites/New_v9_Giftoria/components/grid-container/index" as grid;

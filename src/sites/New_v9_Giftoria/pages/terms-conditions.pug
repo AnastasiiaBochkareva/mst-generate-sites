@@ -1,0 +1,40 @@
+extends /sites/New_v9_Giftoria/layouts/base.pug
+
+block variables
+    - const title = 'Terms and conditions | Giftoria '
+    - const description = 'Read our terms of use to understand how our services work. We are committed to providing you with the best shopping experience while ensuring all legal aspects are covered.'
+
+block content
+    +Header()
+
+    main
+        section.container.terms 
+            h1.title Terms and conditions
+            div
+                h3.title-sm Legal Compliance and Regulations
+                p.subtitle By accessing and using our services, you agree to comply with all applicable laws and regulations, including consumer protection standards and online shopping protocols. Giftoria operates in accordance with international compliance requirements to ensure a safe and secure shopping experience.
+
+            div
+                h3.title-sm User Responsibilities
+                p.subtitle Users are required to act lawfully and refrain from violating any local, national, or international laws while using our services. Any misuse of our platform, including fraudulent activity or violating gift product guidelines, may result in account suspension or legal action.
+
+            div
+                h3.title-sm Dispute Resolution and Governing Law
+                p.subtitle In case of disputes, we adhere to strict legal frameworks and offer fair resolution processes. All disputes will be governed by the laws of the relevant jurisdiction. By using our services, you acknowledge acceptance of these terms and agree to their enforcement.
+
+            div
+                h3.title-sm Contact Information
+                p.subtitle For questions or concerns related to our policies, please contact us at 
+                    a(href='mailto:giftoria@gmail.com') giftoria@gmail.com
+
+            div
+                h3.title-sm Privacy and Data Protection
+                p.subtitle We value your privacy and are committed to safeguarding your personal information. Our data protection policies ensure that any personal information you provide is stored securely and used only for order processing and communication purposes as outlined in our Privacy Policy. By using our services, you consent to the collection and use of your data as described in our Privacy Policy.
+
+            div
+                h3.title-sm Order and Payment Terms
+                p.subtitle All orders placed through Giftoria are subject to availability and confirmation of the order price. Payment must be made in full at the time of purchase, and orders will only be processed once payment is confirmed. Giftoria reserves the right to cancel any order at its discretion.
+    
+    
+    
+    +Footer()

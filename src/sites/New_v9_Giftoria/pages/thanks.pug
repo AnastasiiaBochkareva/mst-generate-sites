@@ -1,0 +1,17 @@
+extends /sites/New_v9_Giftoria/layouts/base.pug
+
+block variables
+    - const title = 'Thank you | Giftoria'
+    - const description = 'Thank you for your purchase! We appreciate your trust in us and look forward to providing you with the perfect gifts for every occasion.'
+
+block content
+  main
+    section.container.thanks
+      h1.title Thank You!
+      p.subtitle "Thank you for visiting our site and showing interest in our products. We appreciate your time and hope you found exactly what you were looking for. Your satisfaction is very important to us!"
+      p.content "We are always here to help you choose the perfect gift for any occasion. Stay tuned for more exciting offers and gift ideas!"
+      
+      +Link({
+          href: 'index.html',
+          text: 'Go to Home'
+      })

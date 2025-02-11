@@ -1,0 +1,68 @@
+mixin Arrivals()
+    section.arrivals.container
+        .circle
+        .circle-outer
+        .arrivals__cards.slider-container
+            .arrivals__card.slider-block(id="block1")
+                .arrivals__col
+                    h2.title Fresh arrivals
+                    h3.title-sm – give unforgettable impressions!
+                    p.subtitle Every month, we add unique items to our collection that you won’t want to miss.
+                    a(href='#form').arrivals__btn.btn Learn more
+                .arrivals__img
+                    +Img({
+                        src: 'img/arrival.jpg',
+                        alt: 'Fresh arrivals',
+                        class: 'scale'
+                    })
+            .arrivals__card.slider-block(id="block2")
+                .arrivals__col
+                    h2.title Aromatic candle 
+                    h3.title-sm – with natural oils
+                    p.subtitle Creates a cozy atmosphere and fills the room with enchanting notes of lavender, vanilla, or sandalwood. Handmade, with no harmful additives.
+                    a(href='#form').arrivals__btn.btn Learn more
+                .arrivals__img
+                    +Img({
+                        src: 'img/candle.jpg',
+                        alt: 'Aromatic candle',
+                        class: 'scale'
+                    })
+            .arrivals__card.slider-block(id="block3")
+                .arrivals__col
+                    h2.title Music box 
+                    h3.title-sm – with hand engraving
+                    p.subtitle A charming gift that will be remembered for a long time. Wooden body with intricate carvings, hand mechanism – simply turn the handle and listen to the melody.
+                    a(href='#form').arrivals__btn.btn Learn more
+                .arrivals__img
+                    +Img({
+                        src: 'img/box.jpg',
+                        alt: 'Music box',
+                        class: 'scale'
+                    })
+            .arrivals__card.slider-block(id="block4")
+                .arrivals__col
+                    h2.title Handmade notebook 
+                    h3.title-sm – with a leather cover
+                    p.subtitle For those who love to write down ideas, keep a journal, or simply make notes. Natural leather, vintage style, thick pages, and a convenient clasp.
+                    a(href='#form').arrivals__btn.btn Learn more
+                .arrivals__img
+                    +Img({
+                        src: 'img/notebook.jpg',
+                        alt: 'Handmade notebook',
+                        class: 'scale'
+                    })
+            .arrivals__card.slider-block(id="block5")
+                .arrivals__col
+                    h2.title Ceramic mug 
+                    h3.title-sm – with an original design
+                    p.subtitle Every detail is carefully thought out – from the shape to the pattern. A perfect choice for those who enjoy morning coffee or evening tea.
+                    a(href='#form').arrivals__btn.btn Learn more
+                .arrivals__img
+                    +Img({
+                        src: 'img/mug.jpg',
+                        alt: 'Ceramic mug',
+                        class: 'scale'
+                    })
+        .buttons-container
+            button(id="prev-btn").scale <
+            button(id="next-btn").scale >

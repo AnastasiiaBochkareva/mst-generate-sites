@@ -1,0 +1,54 @@
+mixin Banner(param)
+    section.banner
+        +Img({
+            src: 'img/banner.jpg',
+            alt: 'Bye a gift',
+            class: 'banner__img-bg'
+        })
+        .container.banner__container 
+            h1.title Welcome to Giftoria – the world of perfect gifts!
+            p.subtitle We know how difficult it is to choose the perfect gift that will surprise, delight, and be remembered. At Giftoria, we've gathered the best ideas for every occasion: stylish souvenirs, unique accessories, personalized gifts, and one-of-a-kind items you won't find in regular stores.
+            p.subtitle Whether it's a birthday, anniversary, wedding, corporate event, or simply a desire to make someone special happy — you'll always find exactly what you need here!
+            .banner__catalog.grid-container
+                .banner__img.reveal-right
+                    +Img({
+                        src: 'img/box.jpg',
+                        alt: 'ALT',
+                        class: 'scale'
+                    })
+                .banner__img.reveal-top
+                    +Img({
+                        src: 'img/notebook.jpg',
+                        alt: 'ALT',
+                        class: 'scale'
+                    })
+                .banner__img.reveal-left
+                    +Img({
+                        src: 'img/arrival.jpg',
+                        alt: 'ALT',
+                        class: 'scale'
+                    })
+                .banner__img.reveal-right
+                    +Img({
+                        src: 'img/mug.jpg',
+                        alt: 'ALT',
+                        class: 'scale'
+                    })
+                .banner__img.reveal-bottom
+                    +Img({
+                        src: 'img/forhim.jpg',
+                        alt: 'ALT',
+                        class: 'scale'
+                    })
+                .banner__img.reveal-left
+                    +Img({
+                        src: 'img/candle.jpg',
+                        alt: 'ALT',
+                        class: 'scale'
+                    })
+            +Link({
+                class: 'btn',
+                href: 'index.html#form',
+                text: 'Want a gift',
+            })
+            

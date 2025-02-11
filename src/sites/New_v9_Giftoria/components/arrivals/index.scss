@@ -1,0 +1,82 @@
+.arrivals {
+    padding-top: 190px;
+    padding-bottom: 50px;
+    position: relative;
+    .circle {
+        position: absolute;
+        background-color: #fff;
+        width: 150px;
+        height: 150px;
+        border-radius: 50%;
+        border: 8px solid #e0e5eb;
+        right: 0;
+        bottom: 0;
+        z-index: 10;
+        &-outer {
+            box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+            position: absolute;
+            width: 70px;
+            height: 70px;
+            border-radius: 50%;
+            top: 90px;
+            left: 100px;
+            background-color: #c71e38;
+        }
+    }
+    &__card {
+        background-color: #fff;
+        max-height: 500px;
+        height: 100%;
+        width: 100%;
+        > div {
+            max-width: 50%;
+            width: 100%;
+        }
+    }
+    &__col {
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+        padding: 40px;
+        .title-sm {
+            text-align: right;
+            font-style: italic;
+        }
+        .subtitle {
+            margin-top: 15px;
+        }
+    }
+    &__btn {
+        margin-top: auto;
+    }
+    &__img {
+        overflow: hidden;
+    }
+    .buttons-container {
+        top: 60%;
+        transform: translateY(-60%);
+    }
+    @media (max-width: 767px) {
+        padding-top: 40px;
+        padding-bottom: 20px;
+        .circle {
+            display: none;
+            &-outer {
+                display: none;
+            }
+        }
+        &__card {
+            max-height: max-content;
+            flex-direction: column;
+            > div {
+                max-width: 100%;
+            }
+        }
+        &__img {
+            height: 100%;
+        }
+    }
+    .buttons-container {
+        transform: initial;
+    }
+}
