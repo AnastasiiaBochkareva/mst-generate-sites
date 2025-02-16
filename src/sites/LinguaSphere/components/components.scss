@@ -5,7 +5,7 @@
 
 @use "@/components/counter/index" as counter;
 
-// @use "@/sites/LinguaSphere/components/registration/index" as registration;
+@use "@/components/burger/index" as burger;
 
 //Main
 @use "@/sites/LinguaSphere/components/article/index" as article;
