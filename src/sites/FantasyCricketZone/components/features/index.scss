@@ -1,0 +1,53 @@
+.cricketzone-features {
+    h2 {
+        width: 100%;
+        margin-bottom: 30px;
+    }
+    .slide {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        gap: 20px;
+        > div {
+            width: 100%;
+            max-width: calc(50% - 15px);
+            // box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.3);
+            border: 1px solid #333;
+            padding: 20px 40px;
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+            align-items: center;
+            text-align: center;
+            transition: transform 0.3s ease-in-out;
+            &:hover {
+                transform: scale(1.1);
+            }
+        }
+    }
+
+    &__icon {
+        font-size: 3rem;
+    }
+    @media (max-width: 1199px) {
+        > div {
+            // max-width: calc(50% - 15px);
+        }
+    }
+    @media (max-width: 767px) {
+        h2 {
+            margin-bottom: 0;
+        }
+
+        .slide {
+            flex-direction: column;
+            > div {
+                max-width: 100%;
+                padding: 10px;
+            }
+        }
+        .slider-controls {
+            top: 60%;
+        }
+    }
+}

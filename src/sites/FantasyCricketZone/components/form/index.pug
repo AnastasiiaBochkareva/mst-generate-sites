@@ -1,0 +1,32 @@
+mixin Form()
+    
+    section.contacts
+        .container.contacts__container.reveal-zoom
+            form.form(action="thanks_form.php" method="POST" id='contact_form' class="contact_form")
+                .contacts__text
+                    h1.title Get in touch with us!
+                    p.subtitle Have any questions or need assistance? We're here to help! Get in touch with us:
+
+                .form__inputs
+
+                    input.form__input(type="text" name="name" placeholder="Name" required="")
+
+                    input.form__input(type="email" name="email" placeholder="Email" required="")
+
+
+                    label.form__checkbox
+                        input(type="checkbox" name="privacy" value="on" required="")
+                        span I agree to the processing of data
+                    button.form__btn.btn(type="submit") Send Message
+
+            .contacts__map
+                iframe(
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d319.77994987099373!2d78.37148024265237!3d17.44889250572027!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bcb93c315b386d9%3A0x699cec9b4805f003!2sCross%20Street%205%2C%20Siddiq%20Nagar%2C%20HITEC%20City%2C%20Hyderabad%2C%20Telangana%20500081%2C%20India!5e1!3m2!1sen!2sam!4v1739436257113!5m2!1sen!2sam"
+                    width="600"
+                    height="450"
+                    style="border:0;"
+                    allowfullscreen=""
+                    loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"
+                )
+                .contacts__map-bg

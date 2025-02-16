@@ -1,0 +1,107 @@
+mixin Table-content(param)   
+
+    .table-container.reveal-zoom
+        h3=param.title
+        table
+            thead
+                tr
+                    th Event
+                    th Points
+
+            if(param.general)
+                tbody
+                    tr
+                        td Featured in the Playing XI
+                        td 4
+                    tr
+                        td Captain Points
+                        td 2X
+                    tr
+                        td Vice-Captain Points
+                        td 1.5X
+            if(param.batting)
+                tbody
+                    tr
+                        td Every Run Scored
+                        td 1
+                    tr
+                        td Every Boundary Hit
+                        td 1.8
+                    tr
+                        td Every Six Hit
+                        td 3
+                    tr
+                        td 30 Run Bonus
+                        td 6
+                    tr
+                        td Half Century Bonus
+                        td 12
+                    tr
+                        td Century Bonus
+                        td 22
+                    tr
+                        td Double Century Bonus
+                        td 45
+                    tr
+                        td Dismissal for a Duck (Except Bowlers)
+                        td -2
+            if(param.bowling)
+                tbody
+                    tr
+                        td Every Wicket Taken (excluding run out)
+                        td 30
+                    tr
+                        td For Every LBW & Bowled Dismissal
+                        td 10
+                    tr
+                        td 3-Wicket Haul Bonus
+                        td 6
+                    tr
+                        td 4-Wicket Haul Bonus
+                        td 12
+                    tr
+                        td 5-Wicket Haul Bonus
+                        td 25
+                    tr
+                        td Maiden Over
+                        td 18
+            if(param.strike)
+                tbody
+                    tr
+                        td Strike Rate Over 175
+                        td 7
+                    tr
+                        td Strike Rate Between 160.01 to 175
+                        td 5
+                    tr
+                        td Strike Rate Between 140 to 160
+                        td 3
+                    tr
+                        td Strike Rate Between 70 to 80
+                        td -3
+                    tr
+                        td Strike Rate Between 60 to 69.99
+                        td -5
+                    tr
+                        td Strike Rate Less than 60
+                        td -7
+                    tr
+                        td Economy Rate Less than 4.5
+                        td 7
+                    tr
+                        td Economy Rate Between 4.5 to 5.99
+                        td 5
+                    tr
+                        td Economy Rate Between 6 to 7.5
+                        td 3
+                    tr
+                        td Economy Rate Between 10 to 12
+                        td -3
+                    tr
+                        td Economy Rate Between 12.01 to 13.5
+                        td -5
+                    tr
+                        td Economy Rate Over 13.5
+                        td -7
+
+            

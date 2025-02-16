@@ -1,0 +1,20 @@
+include /components/components
+include /sites/FantasyCricketZone/components/components
+
+block variables
+
+doctype html
+html(lang="en")
+    head
+        meta(charset="utf-8")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        title #{title}
+        link(rel='icon' type='image/x-icon' href='img/favicon.ico' alt='fav')
+        meta(name='description' content=`${description}`)
+        link(href=`/src/sites/${siteName}/index.scss` rel="stylesheet")
+        meta(name="keywords" content="fantasy cricket, cricket zone, play fantasy cricket, online cricket game, cricket sports, fantasy sports, cricket fans, fantasy leagues, cricket tournament, online betting")
+
+    body
+        block content
+        
+        script(type="module" src=`/src/sites/${siteName}/index.ts`)

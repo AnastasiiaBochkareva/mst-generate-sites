@@ -1,0 +1,15 @@
+mixin Htp-banner()
+    section.how-to-play-banner.reveal-zoom
+        .container.how-to-play-banner__container
+            +Img({
+                src: 'img/htp-banner.jpg',
+                alt: 'How to Play CricketZone',
+                class: 'how-to-play-banner__bg'
+            })
+            h1 How to Play CricketZone
+            p Dive into the world of fantasy cricket – strategize, build your team, and compete to win at CricketZone!
+            +Link({
+                class: 'btn cricketzone__btn',
+                href: 'contact.html',
+                text: 'Download cricketzone App',
+            })

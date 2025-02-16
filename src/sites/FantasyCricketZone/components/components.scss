@@ -1,0 +1,20 @@
+@use "@/sites/FantasyCricketZone/components/header/index" as header;
+@use "@/sites/FantasyCricketZone/components/footer/index" as footer;
+@use "@/sites/FantasyCricketZone/components/burger/index" as burger;
+
+@use "@/sites/FantasyCricketZone/components/banner/index" as banner;
+@use "@/sites/FantasyCricketZone/components/features/index" as features;
+@use "@/sites/FantasyCricketZone/components/benefits/index" as benefits;
+@use "@/sites/FantasyCricketZone/components/reviews/index" as reviews;
+@use "@/sites/FantasyCricketZone/components/faq/index" as faq;
+
+@use "@/sites/FantasyCricketZone/components/htp-banner/index" as htp-banner;
+@use "@/sites/FantasyCricketZone/components/guide/index" as guide;
+@use "@/sites/FantasyCricketZone/components/challenge/index" as challenge;
+@use "@/sites/FantasyCricketZone/components/table/index" as table;
+@use "@/sites/FantasyCricketZone/components/table-content/index" as
+    table-content;
+@use "@/sites/FantasyCricketZone/components/balls-banner/index" as balls-banner;
+
+@use "@/sites/FantasyCricketZone/components/form/index" as form;
+@use "@/sites/FantasyCricketZone/components/reveal/index" as reveal;
