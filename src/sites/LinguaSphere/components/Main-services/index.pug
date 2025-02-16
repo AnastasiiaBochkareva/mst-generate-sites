@@ -1,0 +1,27 @@
+mixin Main-services()
+    section.container.main-services
+        div.main-services__img
+            +Img({
+                src: 'img/classroom.jpeg',
+                alt: 'LinguaSphere'
+            })
+        
+
+        div.main-services__head
+            h2 Помощь в выборе анализов и подготовка к сдаче
+            p Сервис медицинской поддержки для русскоговорящих пациентов
+
+        div.main-services__body
+            h3 Не уверены, какие анализы нужно сдать?
+                span 1
+            h3 Как правильно подготовиться к сдаче анализов. 
+                span 2
+                p От соблюдения рекомендаций может зависеть точность результатов.  
+            p Специалист проконсультирует и поможет сделать правильный выбор.
+            +Link({
+                class: 'btn class__btn',
+                href: 'index.html#form',
+                text: 'Detalhes',
+            })
+         
+        

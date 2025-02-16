@@ -1,0 +1,37 @@
+mixin Nav-mob({})
+    - 
+        const headerLinks = [
+            {
+              href: 'index.html#form',
+              text: 'Contact us',
+            },
+            {
+              href: `catalog.html`,
+              text: 'Catalog',
+            },{
+              href: `help-and-info.html`,
+              text: 'Help and info',
+            },
+            {
+                href: '',
+                id: 'buy-btn',
+                text: 'Register',
+            },
+        ]
+    nav.menu
+        svg.burger(xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="17px" height="16px")
+            path(fill="black" fill-rule="evenodd" d="M-0.000,-0.000 L17.000,-0.000 L17.000,2.000 L-0.000,2.000 L-0.000,-0.000 Z")
+            path(fill="black" fill-rule="evenodd" d="M-0.000,7.000 L17.000,7.000 L17.000,9.000 L-0.000,9.000 L-0.000,7.000 Z")
+            path(fill="black" fill-rule="evenodd" d="M-0.000,14.000 L17.000,14.000 L17.000,16.000 L-0.000,16.000 L-0.000,14.000 Z")
+        .menu-overlay
+        .menu-content
+            ul
+                each link in headerLinks
+                    li
+                        if(link.href)
+                            +Link({
+                                href: link.href,
+                                text: link.text
+                            })
+                        if(link.id)
+                            button.btn.btn-modal(id=link.id)=link.text

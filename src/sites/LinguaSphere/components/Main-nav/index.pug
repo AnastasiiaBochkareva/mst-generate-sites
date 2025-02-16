@@ -1,0 +1,14 @@
+mixin Main-nav(param={})
+  section.main-nav
+    .container.main-nav__container
+      h2 Популярные направления
+      +Link({
+          class: 'btn main-nav__btn',
+          href: 'index.html#form',
+          text: 'Detalhes',
+      })
+      div
+        p(style='background-color: hsl(350, 72%, 66%);') Женское здоровье
+        p(style='background-color: hsl(194, 100%, 64%);') Мужское здоровье
+        p(style='background-color: hsl(185, 93%, 56%);') ПЦР-Тесты
+        p(style='background-color: hsl(283, 59%, 82%);') Общеклинические исследования

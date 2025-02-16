@@ -1,0 +1,19 @@
+@use "@/sites/LinguaSphere/components/header/index" as header;
+@use "@/sites/LinguaSphere/components/footer/index" as footer;
+
+@use "@/components/header-registration/index" as header-registration;
+
+@use "@/components/counter/index" as counter;
+
+// @use "@/sites/LinguaSphere/components/registration/index" as registration;
+
+//Main
+@use "@/sites/LinguaSphere/components/article/index" as article;
+@use "@/sites/LinguaSphere/components/Main-about/index" as Main-about;
+@use "@/sites/LinguaSphere/components/Main-banner/index" as Main-banner;
+@use "@/sites/LinguaSphere/components/Main-contacts/index" as Main-contacts;
+@use "@/sites/LinguaSphere/components/Main-nav/index" as Main-nav;
+@use "@/sites/LinguaSphere/components/Main-review/index" as Main-review;
+@use "@/sites/LinguaSphere/components/Main-services/index" as Main-services;
+@use "@/sites/LinguaSphere/components/Main-stock/index" as Main-stock;
+@use "@/sites/LinguaSphere/components/Subscribe/index" as Subscribe;

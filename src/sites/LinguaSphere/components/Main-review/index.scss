@@ -1,0 +1,15 @@
+.main-review {
+    .slide {
+        padding: 20px;
+        background-color: rgb(247, 247, 247);
+        max-width: calc(33% - 10px);
+        width: 100%;
+        &__head {
+            img {
+                width: 36px;
+                height: 36px;
+                border-radius: 50%;
+            }
+        }
+    }
+}

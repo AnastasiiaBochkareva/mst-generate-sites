@@ -1,0 +1,26 @@
+mixin Advantages()
+    section.advantages
+        .advantages__bg
+        .container.advantages__container.reveal-zoom.active
+            .advantages__head
+                h2 Why choose us?
+                p At LinguaSphere, we are dedicated to providing high-quality, flexible English courses. We understand the importance of learning at your own pace and making real progress in your language skills. Here&rsquo;s why students trust us:
+                p 
+                    +Link({
+                        class: 'btn advantages__btn',
+                        href: 'catalog.html',
+                        text: 'Catalog',
+                    })
+            .advantages__cols
+                .advantages__cols-bg
+                .advantages__col
+                    +Img({
+                        src: 'img/classroom1.jpeg',
+                        alt: 'LoftStyle',
+                    })
+                .advantages__col.advantages__list
+                    ul
+                        li Interactive Lessons &ndash; Engage with real-world content and practice.
+                        li Experienced Teachers &ndash; Learn from experts in the field of language education.
+                        li Flexible Scheduling &ndash; Learn whenever fits into your routine.
+                        li Supportive Community &ndash; Get the help you need from fellow learners and instructors.

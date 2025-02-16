@@ -1,0 +1,69 @@
+mixin Main-review(param={})
+  section.container.main-review
+    h2 Отзывы
+    .container__slider
+      .slider
+        .slide
+          .slide__head
+            +Img({
+                src: 'img/classroom.jpeg',
+                alt: 'LinguaSphere'
+            })
+            h3 – Anna Petrova
+            .small Berlin, Germany 
+            p ⭐⭐⭐⭐⭐
+          .slide__body
+            p Before joining the course, I struggled to express myself in English. Thanks to the engaging lessons and practical exercises at LinguaSphere, I gained confidence and improved my speaking skills. Now, I can easily chat with foreigners and even enjoy books in English!
+
+        .slide
+          .slide__head
+            +Img({
+                src: 'img/classroom.jpeg',
+                alt: 'LinguaSphere'
+            })
+            h3 – Mateusz Kowalski
+          .slide__body
+            p The business English course at LinguaSphere helped me master professional communication. Now I can confidently handle emails, meetings, and presentations in English. Recently, I successfully negotiated with an international client, which was a big step for my career!
+          .small Warsaw, Poland
+
+        .slide
+          .slide__head
+            +Img({
+                src: 'img/classroom.jpeg',
+                alt: 'LinguaSphere'
+            })
+            h3 – Sofia Ivanova
+          .slide__body
+            p The IELTS preparation course at LinguaSphere was a game changer for me! The detailed feedback and structured lessons helped me reach my target score. Now, I’m studying at a prestigious university abroad, and I feel well-prepared for academic challenges.
+          .small Sofia, Bulgaria
+
+        .slide
+          .slide__head
+            +Img({
+                src: 'img/classroom.jpeg',
+                alt: 'LinguaSphere'
+            })
+            h3 – Paolo Rossi
+          .slide__body
+            p Traveling has become much easier since I completed the travel English course. Now, I can confidently ask for directions, book hotels, and order food without any hesitation. On my last trip, I even helped other tourists who didn’t speak the local language!
+          .small Milan, Italy
+
+        .slide
+          .slide__head
+            +Img({
+              src: 'img/classroom.jpeg',
+              alt: 'LinguaSphere'
+            })
+            h3 – Elena Smirnova
+          .slide__body
+            p My son absolutely loved the English for kids course at LinguaSphere! The interactive lessons kept him engaged, and he started using English in everyday situations. Now, he watches cartoons in English and even corrects my pronunciation sometimes!
+          .small Moscow, Russia
+
+      .slider-controls
+        .prev-arrow <
+        .next-arrow >
+    +Link({
+            class: 'btn class__btn',
+            href: 'index.html#form',
+            text: 'Detalhes',
+        })

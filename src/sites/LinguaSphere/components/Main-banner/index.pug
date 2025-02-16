@@ -1,0 +1,17 @@
+mixin Main-banner(param={})
+    section.main-banner
+        .container.main-banner__container
+            div
+                h1 LinguaSphere
+                    span.hidden 1
+                p LinguaSphere
+                +Link({
+                    class: 'btn main__btn',
+                    href: 'index.html#form',
+                    text: 'Detailes',
+                })
+            div.main-banner__img
+                +Img({
+                    src: 'img/classroom.jpeg',
+                    alt: 'LinguaSphere'
+                })

@@ -1,0 +1,41 @@
+mixin Header(param)
+    - 
+        const headerLinks = [
+            {
+                href: 'index.html#form',
+                text: 'Contact us',
+            },
+            {
+                href: `catalog.html`,
+                text: 'Catalog',
+            },
+            {
+                href: `help-and-info.html`,
+                text: 'Help and info',
+            },
+            {
+                href: '',
+                id: 'buy-btn',
+                text: 'Register',
+            },
+        ]
+
+    header.header
+        .container.header__container
+            .header__logo
+                +Link({
+                    href: 'index1.html',
+                    text: 'NeatNest'
+                })
+            ul.header__list
+                each link in headerLinks
+                    li.header__list-item
+                        if(link.href)
+                            +Link({
+                                href: link.href,
+                                text: link.text
+                            })
+                        if(link.id)
+                            button.btn.btn-modal(id=link.id)=link.text
+            +Nav-mob({})
+                            

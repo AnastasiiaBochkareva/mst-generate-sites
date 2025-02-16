@@ -1,0 +1,25 @@
+extends /sites/LinguaSphere1/layouts/base.pug
+
+block variables
+    - const title = 'NeatNest Catalog – Organize Your Space with Quality Storage'
+    - const description = 'Explore NeatNest’s catalog of premium storage products designed to simplify and beautify your home. Shop today for the best in organization.'
+
+block content
+    +Header()
+
+    main
+
+        section.container.catalog__head
+            h1 Our lessons
+            p Explore a comprehensive range of English language courses designed to cater to all learning levels. Whether you're just starting your language journey or looking to enhance your fluency, our courses offer structured lessons, engaging materials, and personalized support to help you achieve your goals. 
+            p From foundational grammar to advanced conversational skills, we provide everything you need to stay organized and make steady progress. Join our vibrant online community and unlock the skills to communicate confidently in English.
+
+        +Catalog-block()
+
+        +Arrivals()
+
+        +Ideas()
+
+        +Limited()
+
+    +Footer()

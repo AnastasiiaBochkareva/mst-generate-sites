@@ -1,0 +1,31 @@
+mixin Arrivals-main()
+    section.arrivals-main
+        .container.arrivals-main__container.grid-crooked
+            .arrivals-main__item.arrivals-main__text.reveal-right.active
+                h2 New Courses &ndash; Explore our latest English learning programs
+                p We are constantly updating our catalog with new, exciting courses. Check out our newest offerings:
+                p Don&rsquo;t miss out on our latest courses!
+                p 
+                    +Link({
+                        class: 'btn arrivals-main__btn',
+                        href: 'catalog.html',
+                        text: 'View new arrivals',
+                    })
+            .arrivals-main__item.reveal-left.active
+                +Img({
+                    src: 'img/lesson.jpeg',
+                    alt: 'Stylish fabric baskets',
+                })
+                p English for Travelers &ndash; Master essential phrases for your next adventure.
+            .arrivals-main__item.reveal-bottom
+                +Img({
+                    src: 'img/notebook.jpeg',
+                    alt: 'Multi-functional organizers',
+                })
+                p Advanced Conversation &ndash; Perfect your speaking skills with real-world practice.
+            .arrivals-main__item.reveal-right.active
+                +Img({
+                    src: 'img/materials.jpeg',
+                    alt: 'Foldable storage bins',
+                })
+                p Pronunciation Practice &ndash; Speak clearly and confidently in English.

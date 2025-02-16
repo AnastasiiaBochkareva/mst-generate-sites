@@ -1,0 +1,36 @@
+.main-services {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 60px;
+    row-gap: 25px;
+    grid-template-areas:
+        "img head"
+        "img body";
+    > div {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+    &__head {
+        grid-area: head;
+
+        justify-content: flex-end;
+    }
+    &__body {
+        grid-area: body;
+    }
+    &__img {
+        grid-area: img;
+        box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.3);
+    }
+    @media (max-width: 767px) {
+        column-gap: 20px;
+    }
+    @media (max-width: 525px) {
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-areas:
+            "head"
+            "img"
+            "body";
+    }
+}
