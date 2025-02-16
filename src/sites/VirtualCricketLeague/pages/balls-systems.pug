@@ -1,0 +1,16 @@
+extends /sites/VirtualCricketLeague/layouts/base.pug
+
+block variables
+    - const title = 'Fantasy Cricket Scoring System – Earn Points, Track Performance, Win Big!'
+    - const description = 'Learn how points are awarded in VirtualCricketLeague and maximize your chances of winning by making strategic decisions. Track every moment and climb the leaderboard with your fantasy cricket expertise!'
+
+block content
+    +Header()
+
+    main
+        +Balls-banner()
+
+        +Table()
+
+
+    +Footer()

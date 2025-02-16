@@ -1,0 +1,199 @@
+@use "@/components/global";
+@use "@/components/slider";
+@use "@/components/banner-img-bg";
+@use "@/sites/VirtualCricketLeague/components/fonts";
+// @use "@/components/button/FantasyCricketZone";
+
+@use "@/sites/VirtualCricketLeague/components/components" as components;
+
+.container {
+    max-width: 1160px;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 10px;
+    padding-right: 10px;
+    @media (max-width: 1199px) {
+        max-width: 970px;
+    }
+
+    @media (max-width: 991px) {
+        max-width: 100%;
+    }
+    @media (max-width: 767px) {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+    @media (max-width: 575px) {
+    }
+}
+html,
+body {
+    font-family: "Roboto", serif;
+    overflow-x: hidden;
+}
+main {
+    overflow: hidden;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: "Kanit", serif;
+}
+h1 {
+    font-size: clamp(2rem, 5vw, 3.5rem);
+} // 32px–56px
+h2 {
+    font-size: clamp(1.75rem, 4vw, 2.5rem);
+    margin-bottom: 30px;
+    @media (max-width: 767px) {
+        h2 {
+            margin-bottom: 0;
+        }
+    }
+} // 28px–40px
+h3 {
+    // font-size: clamp(1.5rem, 3vw, 2rem);
+    font-size: clamp(1.125rem, 2vw, 1.5rem);
+} // 24px–32px
+.small {
+    font-size: clamp(0.875rem, 1.5vw, 1rem);
+} // 14px–16px
+p,
+li {
+    font-size: clamp(1rem, 2vw, 1.25rem);
+} // 16px–20px
+// link
+a {
+    font-size: clamp(1rem, 2vw, 1.25rem);
+    transition: color 0.3s ease;
+    &:hover {
+        text-decoration: underline;
+    }
+}
+
+// link
+a {
+    font-size: clamp(1rem, 2vw, 1.25rem);
+    transition: color 0.3s ease;
+    &:hover {
+        text-decoration: underline;
+    }
+}
+// button
+.btn {
+    display: block;
+    color: #fff;
+    cursor: pointer;
+    padding: 20px 47px;
+    border-radius: 30px;
+    max-width: max-content;
+    background-color: #e17fce;
+    font-size: clamp(1rem, 2vw, 1.25rem);
+    transition: background-color 0.3s ease;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.5);
+    text-decoration: none !important;
+    &:hover {
+        background-color: #fff;
+        color: #e17fce;
+    }
+}
+
+// PADDING
+.cricketleague__features,
+.benefits,
+.cricketleague__reviews,
+.reviews__container,
+.cricketleague-guide,
+.cricketleague__table,
+.contacts__container,
+.contacts__map,
+.cricketleague__challenge,
+.cricketleague__gallery {
+    padding-top: 50px;
+    padding-bottom: 50px;
+    @media (max-width: 767px) {
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+}
+// FLEX-CONTAINER
+.flex {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+// shadow
+.shadow-box {
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.3);
+}
+// zoom
+.zoom-box {
+    transition: transform 0.3s ease-in-out;
+    &:hover {
+        transform: scale(1.1);
+    }
+}
+// image
+img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.privacy-policy,
+.terms-conditions,
+.cookies-policy,
+.thanks {
+    h1,
+    h2 {
+        margin: 20px 0;
+    }
+    p,
+    ul {
+        margin: 10px 0;
+    }
+}
+.thanks {
+    background-color: #e5e5e5;
+    padding: 40px;
+    text-align: center;
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.3);
+    margin-top: 40px;
+    &__btn {
+        margin: 30px auto 0;
+    }
+    @media (max-width: 767px) {
+        margin-top: 0;
+    }
+}
+.cricketleague__features,
+.cricketleague__benefits {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 20px;
+    > div {
+        width: 100%;
+        max-width: calc(50% - 15px);
+        box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.3);
+        padding: 20px 40px;
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+        align-items: center;
+        transition: transform 0.3s ease-in-out;
+        &:hover {
+            transform: scale(1.1);
+        }
+    }
+    @media (max-width: 767px) {
+        > div {
+            max-width: 100%;
+        }
+    }
+}

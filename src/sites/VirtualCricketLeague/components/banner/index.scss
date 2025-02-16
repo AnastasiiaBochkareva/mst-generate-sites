@@ -1,0 +1,24 @@
+.cricketleague {
+    img {
+        position: absolute;
+    }
+    &__container {
+        position: relative;
+        background: rgba(0, 0, 0, 0.5);
+        padding: 100px 20px;
+        color: #fff;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 40px;
+        padding: 40px !important;
+        min-height: 500px;
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
+    }
+    &__btn {
+        margin-left: auto;
+        margin-right: auto;
+    }
+}

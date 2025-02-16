@@ -1,0 +1,61 @@
+mixin Footer()
+    footer.footer
+        .container.footer__container
+            .footer__logo
+                +Link({
+                    href: 'index.html',
+                    text: 'VirtualCricketLeague'
+                })
+                a(href='https://www.gamcare.org.uk/')
+                        +Img({
+                            src: 'img/gamecare.png',
+                            alt: 'gamble'
+                        })
+            .footer__links
+                div
+                    p Contact Us
+                    p
+                        a(href='tel:+919876234051') +91 987 623 4051
+                    p
+                        a(href='mailto:contact@virtualcricketleague.com') contact@virtualcricketleague.com 
+                    p
+                        a(href='https://maps.app.goo.gl/wNQgR6AL2fYMGntT8' target='_blank') 105, Lumbini Avenue, Gachibowli, Hyderabad, Telangana 500032, India
+                div
+                    p Quick Links
+                    +Link({
+                        href: 'index.html',
+                        text: 'Home',
+                    })
+                    +Link({
+                        href: 'how-to-play.html',
+                        text: 'How to Play',
+                    })
+                    +Link({
+                        href: 'balls-systems.html',
+                        text: 'Balls System',
+                    })
+                    +Link({
+                         href: 'contact.html',
+                        text: 'Contact',
+                    })
+                div
+                    p Legal
+                    +Link({
+                        href: `terms-conditions.html`,
+                        text: 'Terms and conditions',
+                    })
+                    +Link({
+                        href: `privacy-policy.html`,
+                        text: 'Privacy policy',
+                    })
+            .footer__disclaimer
+                +Img({
+                    src: 'img/disclaimer.png',
+                    alt: 'Disclaimer'
+                })
+                   
+                p Playing fantasy cricket on VirtualCricketLeague is fast and convenient! You can enjoy the game anytime, anywhere, without any interruptions. Please be aware that daily fantasy sports are not allowed in the states of Andhra Pradesh, Assam, Nagaland, Orissa, Sikkim, and Telangana. All rights reserved by VirtualCricketLeague. This website is owned and operated by virtualcricketleague.com, registered in India. 
+
+                
+                p.copyright © 2025 VirtualCricketLeague. All rights reserved.
+        

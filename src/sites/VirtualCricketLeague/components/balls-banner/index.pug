@@ -1,0 +1,16 @@
+mixin Balls-banner()
+    section.score-banner.reveal-zoom
+        +Img({
+                src: 'img/ball-banner.jpg',
+                alt: 'Score'
+            })
+        .score-banner__container.container 
+            
+            h1 Scoring System – Where Passion Meets Strategy
+            p In VirtualCricketLeague, your success is driven by the performance of your selected players. Our scoring system is designed to reward strategic decisions and in-game actions, ensuring that every choice you make matters. Track your team’s progress as your players earn points based on their real-world performances in matches. 
+            p Whether it's runs, wickets, catches, or economy rates, every moment on the field can impact your total score. Make the right moves, optimize your team, and climb the leaderboard for a chance to win exciting prizes. The more strategic your selections, the greater your chances of success!
+            +Link({
+                class: 'btn cricketleague__btn',
+                href: 'contact.html',
+                text: 'Download Now',
+            })

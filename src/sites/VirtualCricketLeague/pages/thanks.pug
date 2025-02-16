@@ -1,0 +1,22 @@
+extends /sites/VirtualCricketLeague/layouts/base.pug
+
+block variables
+    - const title = 'Thank You – VirtualCricketLeague'
+    - const description = 'Thank you for joining VirtualCricketLeague! Your registration is successful. Start playing fantasy cricket now and enjoy all the exciting features we offer. We’re glad to have you with us!'
+
+block content
+  main
+    section.container.thanks
+      h1 Thank You for Registering!
+      p Thank you for showing interest in VirtualCricketLeague! Your registration has been successfully completed. We're excited to have you as part of our fantasy cricket community.
+
+      p Now, you're all set to start playing and enjoying thrilling matches anytime and anywhere. We’re sure you’ll have a great time participating in games and tracking the results.
+
+      p If you have any questions or need assistance, don’t hesitate to reach out to us through our contact page.
+
+      p Thank you for choosing VirtualCricketLeague! Good luck and happy playing!
+      +Link({
+          class: 'btn thanks__btn',
+          href: 'index.html',
+          text: 'Home',
+      })

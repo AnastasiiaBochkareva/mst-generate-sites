@@ -1,0 +1,21 @@
+@use "@/sites/VirtualCricketLeague/components/header/index" as header;
+@use "@/sites/VirtualCricketLeague/components/footer/index" as footer;
+@use "@/sites/VirtualCricketLeague/components/burger/index" as burger;
+
+@use "@/sites/VirtualCricketLeague/components/banner/index" as banner;
+@use "@/sites/VirtualCricketLeague/components/features/index" as features;
+@use "@/sites/VirtualCricketLeague/components/benefits/index" as benefits;
+@use "@/sites/VirtualCricketLeague/components/reviews/index" as reviews;
+
+@use "@/sites/VirtualCricketLeague/components/htp-banner/index" as htp-banner;
+@use "@/sites/VirtualCricketLeague/components/guide/index" as guide;
+@use "@/sites/VirtualCricketLeague/components/challenge/index" as challenge;
+@use "@/sites/VirtualCricketLeague/components/table/index" as table;
+@use "@/sites/VirtualCricketLeague/components/table-content/index" as
+    table-content;
+@use "@/sites/VirtualCricketLeague/components/balls-banner/index" as
+    balls-banner;
+
+@use "@/sites/VirtualCricketLeague/components/form/index" as form;
+@use "@/sites/VirtualCricketLeague/components/reveal/index" as reveal;
+@use "@/sites/VirtualCricketLeague/components/gallery/index" as gallery;

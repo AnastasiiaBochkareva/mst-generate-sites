@@ -1,0 +1,14 @@
+mixin Banner()
+    section.cricketleague.reveal-zoom
+        +Img({
+                src: 'img/banner.jpg',
+                alt: 'Cricketleague'
+            })
+        .container.cricketleague__container
+            h1 Build Your Dream Team & Rule the Game!
+            p Play the ultimate fantasy cricket game! Pick real players, earn points based on their real match performances, and compete to win.    
+            +Link({
+                class: 'btn cricketleague__btn',
+                href: 'contact.html',
+                text: 'Download Now',
+            })

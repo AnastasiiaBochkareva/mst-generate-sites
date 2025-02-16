@@ -1,0 +1,24 @@
+.cricketleague__benefits {
+    > div {
+        background-color: #fff;
+        span {
+            position: relative;
+            background-color: #d859bf;
+            color: #fff;
+            width: 100%;
+            height: 2px;
+            display: flex;
+        }
+    }
+}
+.benefits {
+    background-color: #e5e5e5;
+    &__btn {
+        margin: 30px auto;
+    }
+    @media (max-width: 767px) {
+        &__btn {
+            margin: 10px auto;
+        }
+    }
+}
