@@ -140,14 +140,6 @@ function MultiPagePugPlugin() {
                 const pugFiles = files.filter((file) => file.endsWith(".pug"));
                 const scssFile = path.join(sitesDir, siteName, "index.scss");
                 const tsFile = path.join(sitesDir, siteName, "index.ts");
-                const textTsFile = path.join(sitesDir, siteName, "text.ts");
-
-                if (fs.existsSync(textTsFile)) {
-                    // Используем require для динамической загрузки данных
-                    const textModule = require(textTsFile);
-                    const itemsFAQ = textModule.itemsFAQ || [];
-                    console.log("itemsFAQ :>> ", itemsFAQ);
-                }
 
                 // Компиляция SCSS
                 let cssOutput = "";
@@ -243,15 +235,10 @@ function MultiPagePugPlugin() {
                         pretty: true,
                     });
 
-                    const { itemsFAQ } = require(textTsFile);
-                    const options = {
-                        siteName: siteName,
-                    };
-
-                    if (itemsFAQ) console.log("itemsFAQ :>> ", itemsFAQ);
-
                     // Создаем HTML контент
-                    const html = compiledFn(options);
+                    const html = compiledFn({
+                        siteName: siteName,
+                    });
 
                     // Модификация ссылок в HTML на стили, typescript && images
                     let finalHtml = html
