@@ -1,31 +1,40 @@
-let currentBlockIndex = 0;
-const blocks = document.querySelectorAll(".slider-block");
-const nextBtn = document.getElementById("next-btn");
-const prevBtn = document.getElementById("prev-btn");
+const initializeSlider = () => {
+    const slider = document.querySelector(".slider") as HTMLElement | null;
+    const slides = document.querySelectorAll(
+        ".slide"
+    ) as NodeListOf<HTMLElement>;
+    const prevArrow = document.querySelector(
+        ".prev-arrow"
+    ) as HTMLElement | null;
+    const nextArrow = document.querySelector(
+        ".next-arrow"
+    ) as HTMLElement | null;
 
-if (blocks.length > 0) {
-    blocks[currentBlockIndex].classList.add("active");
-}
+    if (!slider || slides.length === 0 || !prevArrow || !nextArrow) {
+        return;
+    }
 
-if (nextBtn && prevBtn) {
-    nextBtn.addEventListener("click", () => {
-        if (blocks.length > 0) {
-            blocks[currentBlockIndex].classList.remove("active");
+    let currentIndex = 0;
+    const totalSlides = slides.length;
 
-            currentBlockIndex = (currentBlockIndex + 1) % blocks.length;
+    const moveToSlide = (index: number) => {
+        slider.style.transform = `translateX(-${index * 100}%)`;
+    };
 
-            blocks[currentBlockIndex].classList.add("active");
-        }
-    });
+    const moveToPrevSlide = () => {
+        currentIndex = (currentIndex - 1 + totalSlides) % totalSlides;
+        moveToSlide(currentIndex);
+    };
 
-    prevBtn.addEventListener("click", () => {
-        if (blocks.length > 0) {
-            blocks[currentBlockIndex].classList.remove("active");
+    const moveToNextSlide = () => {
+        currentIndex = (currentIndex + 1) % totalSlides;
+        moveToSlide(currentIndex);
+    };
 
-            currentBlockIndex =
-                (currentBlockIndex - 1 + blocks.length) % blocks.length;
+    prevArrow.addEventListener("click", moveToPrevSlide);
+    nextArrow.addEventListener("click", moveToNextSlide);
+};
 
-            blocks[currentBlockIndex].classList.add("active");
-        }
-    });
-}
+document.addEventListener("DOMContentLoaded", () => {
+    initializeSlider();
+});

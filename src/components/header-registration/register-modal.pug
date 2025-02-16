@@ -1,0 +1,12 @@
+mixin Register-modal()
+    div(id='register-modal' class='modal hidden')
+        form(id='register-form')
+            label(for='name') Имя
+            input(type='text' id='name' required)
+            label(for='email') Почта
+            input(type='email' id='email' required)
+            label(for='password') Пароль
+            input(type='password' id='password' required)
+            label(for='confirm-password') Повторите пароль
+            input(type='password' id='confirm-password' required)
+            button(type='submit') Зарегистрироваться

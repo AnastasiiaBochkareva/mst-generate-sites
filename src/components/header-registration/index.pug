@@ -1,0 +1,16 @@
+mixin Header-registration()
+    header.header
+        h2.logo MyWebsite
+        nav
+            ul
+                li
+                    a(href="#") Home
+                li
+                    a(href="#") About
+                li
+                    a(href="#") Services
+        div.auth-buttons
+            button(id='register-btn') Регистрация
+            button(id='login-btn') Войти
+            button(id='logout-btn' class='hidden') Разлогиниться
+            span(id='welcome-msg' class='hidden') Добро пожаловать,<span (id='user-name')></span>

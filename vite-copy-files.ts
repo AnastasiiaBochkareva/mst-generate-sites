@@ -34,11 +34,22 @@ function copyFiles(): Plugin {
                     }
                 });
 
+                const excludeFiles = ["index.php", "robots.txt", "sitemap.xml"];
+                const outDir = path.resolve(__dirname, "dist", page);
                 if (fs.existsSync(additionalDir)) {
-                    const outDir = path.resolve(__dirname, "dist", page);
-                    cpSync(additionalDir, outDir, { recursive: true });
+                    // Копирует все файлы директории additionalDir, без рекурсивности, исключая excludeFiles
+                    fs.readdirSync(additionalDir).forEach((file) => {
+                        if (!excludeFiles.includes(file)) {
+                            const srcPath = path.join(additionalDir, file);
+                            const destPath = path.join(outDir, file);
+                            cpSync(srcPath, destPath, { recursive: true });
+                        }
+                    });
+
                     console.log(
-                        `Copied files from additional folder for page "${page}" to ${outDir}`
+                        `Copied files from additional folder for page "${page}" to ${outDir}, excluding ${excludeFiles.join(
+                            ", "
+                        )}`
                     );
                 }
             });
