@@ -1,0 +1,47 @@
+mixin Form()
+    
+    section.contacts
+        .container.contacts__container
+            form.form.move-left(action="thanks_form.php" method="POST" id='contact_form' class="contact_form")
+                .contacts__text
+                    h1.title Get in Touch with Us!
+                    p.subtitle Have any questions or need assistance? We're here to help! Get in touch with us:
+
+                .form__inputs
+
+                    input.form__input(type="text" name="name" placeholder="Name" required="")
+
+                    input.form__input(type="email" name="email" placeholder="Email" required="")
+
+
+                    label.form__checkbox
+                        input(type="checkbox" name="privacy" value="on" required="")
+                        span I agree to the processing of data
+                    button.form__btn.btn(type="submit") Send Message
+            +Img({
+                src: 'img/ball-banner.jpg',
+                alt: 'Score',
+                class: 'move-right',
+            })
+    section.contacts__container.contacts__container_bg
+        .container.move-zoom
+            h2 Have Questions or Need Support?
+            p We're here to assist you! Whether you're looking for help, have feedback, or want more details about CricketSquad, feel free to get in touch. We prioritize providing quick and efficient responses to all your queries.
+            p Our team is available to assist with any issues or questions you may have. Simply fill out the contact form above, or use the details below, and we'll get back to you as soon as we can. Your experience with CricketSquad matters to us!
+            p If you have concerns, suggestions, or need more information, don't hesitate to reach out. We're always ready to assist in any way possible.
+            p Our aim is to ensure your experience with CricketSquad is seamless and enjoyable. Whether you need technical support, have platform-related questions, or wish to provide feedback, we are happy to help.
+            p
+                a(href='tel:+919875134251') +91 987 513 4251
+            p
+                a(href='mailto:contact@cricketsquad.com') contact@cricketsquad.com
+            p
+                a(href='https://maps.app.goo.gl/j2t3JPNWA7nv74Rr5' target='_blank') 909, SBH Officers Colony, Ayyappa Soceity, Mega Hills, Madhapur, Hyderabad, Telangana 500081, India
+                
+
+    
+    
+    
+    section.contacts__map 
+        iframe(src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d319.77940390189053!2d78.39225306391201!3d17.449203724588497!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bcb9166fa163b2f%3A0xd68b2a24ed865d38!2s909%2C%20SBH%20Officers%20Colony%2C%20Ayyappa%20Soceity%2C%20Mega%20Hills%2C%20Madhapur%2C%20Hyderabad%2C%20Telangana%20500081%2C%20India!5e1!3m2!1sen!2sam!4v1739527036635!5m2!1sen!2sam" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade")
+       
+

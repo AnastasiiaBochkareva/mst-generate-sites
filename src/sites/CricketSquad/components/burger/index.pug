@@ -1,0 +1,42 @@
+mixin Nav-mob({})
+    - 
+        const headerLinks = [
+            {
+              href: 'index.html',
+              text: 'Home',
+            },
+            {
+              href: 'how-to-play.html',
+              text: 'How to Play',
+            },
+            {
+              href: 'balls-systems.html',
+              text: 'Balls System',
+            },
+            {
+              href: 'contact.html',
+              text: 'Contact',
+            },
+            {
+              href: `terms-conditions.html`,
+              text: 'Terms and conditions',
+            },
+            {
+              href: `privacy-policy.html`,
+              text: 'Privacy policy',
+            }
+        ]
+    nav.menu
+        svg.burger(xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="17px" height="16px")
+            path(fill="white" fill-rule="evenodd" d="M-0.000,-0.000 L17.000,-0.000 L17.000,2.000 L-0.000,2.000 L-0.000,-0.000 Z")
+            path(fill="white" fill-rule="evenodd" d="M-0.000,7.000 L17.000,7.000 L17.000,9.000 L-0.000,9.000 L-0.000,7.000 Z")
+            path(fill="white" fill-rule="evenodd" d="M-0.000,14.000 L17.000,14.000 L17.000,16.000 L-0.000,16.000 L-0.000,14.000 Z")
+        .menu-overlay
+        .menu-content
+            ul
+                each link in headerLinks
+                    li
+                        +Link({
+                            href: link.href,
+                            text: link.text
+                        })

@@ -1,0 +1,16 @@
+extends /sites/CricketSquad/layouts/base.pug
+
+block variables
+    - const title = 'CricketSquad Scoring System – Strategize, Score, and Climb the Leaderboard!'
+    - const description = 'Discover how points are awarded in CricketSquads fantasy cricket game. Make smart selections, track real-time player performance, and climb the leaderboard with your strategic gameplay. Earn big rewards and prove your cricket expertise!'
+
+block content
+    +Header()
+
+    main
+        +Balls-banner()
+
+        +Table()
+
+
+    +Footer()

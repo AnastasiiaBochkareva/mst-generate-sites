@@ -1,0 +1,61 @@
+mixin Footer()
+    footer.footer
+        .container.footer__container
+            .footer__logo
+                +Link({
+                    href: 'index.html',
+                    text: 'CricketSquad'
+                })
+                a(href='https://www.gamcare.org.uk/')
+                        +Img({
+                            src: 'img/gamecare.png',
+                            alt: 'gamble'
+                        })
+            .footer__links
+                div
+                    p Contact Us
+                    p
+                        a(href='tel:+919875134251') +91 987 513 4251
+                    p
+                        a(href='mailto:contact@cricketsquad.com') contact@cricketsquad.com
+                    p
+                        a(href='https://maps.app.goo.gl/j2t3JPNWA7nv74Rr5' target='_blank') 909, SBH Officers Colony, Ayyappa Soceity, Mega Hills, Madhapur, Hyderabad, Telangana 500081, India
+                div
+                    p Quick Links
+                    +Link({
+                        href: 'index.html',
+                        text: 'Home',
+                    })
+                    +Link({
+                        href: 'how-to-play.html',
+                        text: 'How to Play',
+                    })
+                    +Link({
+                        href: 'balls-systems.html',
+                        text: 'Balls System',
+                    })
+                    +Link({
+                         href: 'contact.html',
+                        text: 'Contact',
+                    })
+                div
+                    p Legal
+                    +Link({
+                        href: `terms-conditions.html`,
+                        text: 'Terms and conditions',
+                    })
+                    +Link({
+                        href: `privacy-policy.html`,
+                        text: 'Privacy policy',
+                    })
+            .footer__disclaimer
+                +Img({
+                    src: 'img/disclaimer.png',
+                    alt: 'Disclaimer'
+                })
+                   
+                p Experience the thrill of fantasy cricket on CricketSquad anytime, anywhere, with ease and no interruptions. However, please note that daily fantasy sports are restricted in the states of Andhra Pradesh, Assam, Nagaland, Orissa, Sikkim, and Telangana. All rights are reserved by CricketSquad. This website is owned and operated by cricketsquad.com, a registered entity in India.
+
+                
+                p.copyright © 2025 CricketSquad. All rights reserved.
+        

@@ -1,0 +1,36 @@
+.cricketsquad {
+    > div {
+        position: relative;
+        max-width: 800px;
+        width: 100%;
+        background-color: rgb(226, 226, 226, 0.9);
+        box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.3);
+        padding: 40px;
+        min-height: 600px;
+        margin: auto;
+
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        align-items: center;
+        justify-content: center;
+    }
+    img {
+        position: absolute;
+        z-index: -1;
+        bottom: -50px;
+        right: -150px;
+        box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.3);
+    }
+    @media (max-width: 767px) {
+        > div {
+            min-height: max-content;
+        }
+        img {
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 0;
+        }
+    }
+}

@@ -1,0 +1,21 @@
+extends /sites/CricketSquad/layouts/base.pug
+
+block variables
+    - const title = 'Thank You for Your Message - CricketSquad'
+    - const description = 'Your message has been successfully submitted. Our team will get back to you as soon as possible. Thank you for reaching out to CricketSquad! We are here to assist you with any queries you may have.'
+
+block content
+  main
+    section.container.thanks
+      h1 Thank You for Joining CricketSquad!
+      p Thank you for getting in touch with us! Your message has been successfully submitted, and our team will reach out to you shortly. We appreciate your time and will ensure that you receive the necessary information or assistance as quickly as possible.
+
+      p If you have any additional questions, feel free to contact us through our contact page.
+
+      p Thank you for choosing CricketSquad! We're happy to assist you!
+
+      +Link({
+          class: 'btn thanks__btn',
+          href: 'index.html',
+          text: 'Home',
+      })

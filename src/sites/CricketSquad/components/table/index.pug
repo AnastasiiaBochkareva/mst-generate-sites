@@ -1,0 +1,19 @@
+mixin Table()
+    section.cricketsquad__table.container
+        h2 Scoring System
+        +Table-content({
+            title: 'General Points',
+            general: true
+        })
+        +Table-content({
+            title: 'Batting Points',
+            batting: true
+        })
+        +Table-content({
+            title: 'Bowling Points',
+            bowling: true
+        })
+        +Table-content({
+            title: 'Strike Rate & Economy Rate Points',
+            strike: true
+        })

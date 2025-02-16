@@ -1,0 +1,19 @@
+@use "@/sites/CricketSquad/components/header/index" as header;
+@use "@/sites/CricketSquad/components/footer/index" as footer;
+@use "@/sites/CricketSquad/components/burger/index" as burger;
+
+@use "@/sites/CricketSquad/components/banner/index" as banner;
+@use "@/sites/CricketSquad/components/features/index" as features;
+@use "@/sites/CricketSquad/components/benefits/index" as benefits;
+@use "@/sites/CricketSquad/components/reviews/index" as reviews;
+
+@use "@/sites/CricketSquad/components/htp-banner/index" as htp-banner;
+@use "@/sites/CricketSquad/components/guide/index" as guide;
+@use "@/sites/CricketSquad/components/challenge/index" as challenge;
+@use "@/sites/CricketSquad/components/table/index" as table;
+@use "@/sites/CricketSquad/components/table-content/index" as table-content;
+@use "@/sites/CricketSquad/components/balls-banner/index" as balls-banner;
+
+@use "@/sites/CricketSquad/components/form/index" as form;
+@use "@/sites/CricketSquad/components/move/index" as move;
+@use "@/sites/CricketSquad/components/gallery/index" as gallery;

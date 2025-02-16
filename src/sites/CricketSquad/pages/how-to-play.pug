@@ -1,0 +1,20 @@
+extends /sites/CricketSquad/layouts/base.pug
+
+block variables
+    - const title = 'How to Play Fantasy Cricket on CricketSquad'
+    - const description = 'Discover everything you need to know about playing fantasy cricket on CricketSquad. Learn how to create your dream team, understand the scoring system, create challenges, and start competing. Whether you are a beginner or a pro, our step-by-step guide will help you master the game and climb the leaderboard!'
+
+block content
+    +Header()
+
+    main
+
+        +Htp-banner()
+
+        +Guide()
+
+
+        +Challenge()
+
+
+    +Footer()
