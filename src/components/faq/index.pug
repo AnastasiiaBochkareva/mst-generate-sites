@@ -1,6 +1,7 @@
 mixin Faq(param)
 
     - param.title = param.title ? param.title : ''
+    - param.text = config.text.FAQ ?? []
 
     section.container.faq
         h2=param.title

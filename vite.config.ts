@@ -1,7 +1,7 @@
 import { defineConfig } from "vite";
 import path from "path";
-import { MultiPagePugPlugin } from "./vite-multi-page";
-import { copyFiles } from "./vite-copy-files";
+import { MultiPagePugPlugin } from "./lib/vite-multi-page";
+import { copyFiles } from "./lib/vite-copy-files";
 
 export default defineConfig({
     plugins: [MultiPagePugPlugin(), copyFiles()],
@@ -15,9 +15,8 @@ export default defineConfig({
     css: {
         preprocessorOptions: {
             scss: {
-                api: "legacy",
                 includePaths: [path.resolve(__dirname, "src")],
-            },
+            } as any,
         },
     },
 
