@@ -1,52 +1,58 @@
 .header {
-    // $primary-color: #264441;
-    // $light-color: #5c6c68;
-}
-body {
-    font-family: Arial, sans-serif;
-}
+    background-color: #fff;
+    &__container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: 20px;
+        padding: 10px 20px;
+        color: #333;
 
-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 10px 20px;
-    background-color: #264441;
-    color: white;
-}
-
-h2.logo {
-    margin: 0;
-}
-
-nav ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-    display: flex;
-    gap: 20px;
-}
-
-nav ul li {
-    display: inline-block;
-}
-
-button {
-    padding: 8px 16px;
-    background-color: #5c6c68;
-    border: none;
-    cursor: pointer;
-    color: white;
-    border-radius: 5px;
-    margin-left: 10px;
-}
-
-button:hover {
-    background-color: darken(#5c6c68, 10%);
+        .auth-buttons {
+            display: flex;
+            gap: 15px;
+            align-items: center;
+        }
+    }
+    &__logo {
+        margin: 0;
+    }
+    &__nav {
+        margin-left: auto;
+        ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            gap: 20px;
+            li {
+                display: inline-block;
+            }
+        }
+    }
+    @media (max-width: 767px) {
+        &__nav {
+            display: none;
+        }
+        .menu {
+            display: block;
+            order: 1;
+        }
+        &__container {
+            .auth-buttons {
+                order: 2;
+                width: 100%;
+                justify-content: flex-end;
+                border-top: 1px solid #333;
+                padding-top: 10px;
+            }
+        }
+    }
 }
 
 .modal {
-    // display: none;
+    display: none;
     position: fixed;
     top: 0;
     left: 0;
@@ -55,22 +61,20 @@ button:hover {
     background: rgba(0, 0, 0, 0.5);
     justify-content: center;
     align-items: center;
-}
+    &.active {
+        display: flex;
+    }
 
-.modal form {
-    background-color: white;
-    padding: 20px;
-    border-radius: 5px;
-    width: 300px;
-}
-
-.modal input {
-    width: 100%;
-    padding: 8px;
-    margin: 10px 0;
-    border: 1px solid #ccc;
-}
-
-.hidden {
-    display: none;
+    form {
+        background-color: white;
+        padding: 20px;
+        border-radius: 5px;
+        width: 300px;
+    }
+    input {
+        width: 100%;
+        padding: 8px;
+        margin: 10px 0;
+        border: 1px solid #ccc;
+    }
 }

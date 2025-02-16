@@ -4,7 +4,7 @@ const registerBtn = document.getElementById(
 const loginBtn = document.getElementById("login-btn") as HTMLButtonElement;
 const logoutBtn = document.getElementById("logout-btn") as HTMLButtonElement;
 const welcomeMsg = document.getElementById("welcome-msg") as HTMLSpanElement;
-const userNameSpan = document.getElementById("user-name") as HTMLSpanElement;
+const userNameSpan = document.getElementById("user-name") as HTMLElement;
 const registerModal = document.getElementById(
     "register-modal"
 ) as HTMLDivElement;
@@ -26,8 +26,9 @@ let user: { name: string; email: string; password: string } | null = JSON.parse(
 function updateUI() {
     if (isAuthenticate === true) {
         if (userNameSpan) {
-            userNameSpan.textContent = user.name;
+            userNameSpan.innerText = user.name;
         }
+
         welcomeMsg.classList.remove("hidden");
         logoutBtn.classList.remove("hidden");
         registerBtn.classList.add("hidden");
@@ -42,12 +43,12 @@ function updateUI() {
 
 // Открытие модалки
 function openModal(modal: HTMLElement) {
-    modal?.classList.remove("hidden");
+    modal?.classList.add("active");
 }
 
 // Закрытие модалки
 function closeModal(modal: HTMLElement) {
-    modal?.classList.add("hidden");
+    modal?.classList.remove("active");
 }
 
 // Валидация пароля (без пробелов)
@@ -110,6 +111,7 @@ loginForm?.addEventListener("submit", (event) => {
 document.addEventListener("click", (event) => {
     if ((event.target as HTMLElement).id === "register-btn")
         openModal(registerModal);
+
     if ((event.target as HTMLElement).id === "login-btn") openModal(loginModal);
 
     // Выход
@@ -118,6 +120,7 @@ document.addEventListener("click", (event) => {
         localStorage.setItem("isAuthenticate", JSON.stringify(isAuthenticate));
         updateUI();
     }
+
     if (event.target === registerModal) closeModal(registerModal);
     if (event.target === loginModal) closeModal(loginModal);
 });
