@@ -1,34 +1,17 @@
 mixin Faq(param)
 
     - param.title = param.title ? param.title : ''
+    - param.p = param.p ? param.p : ''
     - param.text = config.text.FAQ ?? []
 
     section.container.faq
         h2=param.title
-        .accordion
-        
-            .accordion-item
-                button.accordion-header
-                    p What kind of products does NeatNest offer?
-                .accordion-content
-                    p NeatNest provides high-quality storage and organization products, including baskets, shelves, boxes, and space-saving solutions for every room. 
+        p=param.p
+        .accordion.reveal-zoom
+            each el in param.text
+                .accordion-item
+                    button.accordion-header
+                        h3=el.h2
+                    .accordion-content
+                        p=el.p
             
-            .accordion-item
-                button.accordion-header
-                    p Do you offer international shipping?
-                .accordion-content
-                    p At the moment, our products are available for delivery within Karnataka, India. We are working on expanding our shipping options.
-            
-            .accordion-item
-                button.accordion-header
-                    p Can I return a product if it doesn’t meet my expectations?
-                .accordion-content
-                    p Yes, we offer a hassle-free return policy. If you are not satisfied with your purchase, please contact us within 14 days to initiate a return.
-            
-            .accordion-item
-                button.accordion-header
-                    p How can I contact customer support?
-                .accordion-content
-                    p You can reach us via email at 
-                        a(href='mailto:neatnest@gmail.com') neatnest@gmail.com  
-                        We strive to respond as quickly as possible.

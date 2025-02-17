@@ -17,11 +17,12 @@
     .slider-controls {
         position: absolute;
         top: 50%;
+        left: 50%;
         width: 100%;
-        max-width: calc(100% - 10px);
+        max-width: calc(100% - 50px);
         display: flex;
         justify-content: space-between;
-        transform: translateY(-50%);
+        transform: translate(-50%, -50%);
         .prev-arrow,
         .next-arrow {
             color: #000;

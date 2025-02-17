@@ -1,20 +1,28 @@
-mixin Header-registration()
+mixin Header-registration(param)
     header.header
         .container.header__container
-            h2.header__logo MyWebsite
+            h2.header__logo
+                +Link({
+                    href: '/',
+                    text: 'LinguaSphere'
+                })
             nav.header__nav
                 ul
                     li
-                        a(href="#") Home
+                        a(href="/") Home
                     li
-                        a(href="#") About
+                        a(href="about-us.html") About-us
                     li
-                        a(href="#") Services
+                        a(href="courses.html") Courses
+                    li
+                        a(href="advantages.html") Advantages
+                    li
+                        a(href="teaching-team.html") Teaching-team
             div.auth-buttons
-                p(id='welcome-msg' class='hidden') Добро пожаловать, 
+                p(id='welcome-msg' class='hidden') Welcome, 
                     span(id='user-name')
-                button(id='register-btn') Регистрация
-                button(id='login-btn') Войти
-                button(id='logout-btn' class='hidden') Разлогиниться
+                button(id='register-btn' class="btn btn-register") Registration
+                button(id='login-btn' class="btn btn-register") Login
+                button(id='logout-btn' class='hidden btn btn-register') Logout
             +Nav-mob({})
                 

@@ -58,6 +58,13 @@
 
     &-content.active {
         right: 0;
+        ul {
+            li {
+                a {
+                    color: #000;
+                }
+            }
+        }
     }
 
     &-overlay.active {
