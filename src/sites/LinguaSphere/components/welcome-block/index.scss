@@ -1,0 +1,35 @@
+.welcome-block {
+    background-color: #e5e5e5;
+    &__container {
+        max-width: 900px;
+        h2 {
+            text-align: center;
+            position: relative;
+            margin-bottom: 50px;
+            &::after {
+                content: "";
+                height: 2px;
+                max-width: 200px;
+                width: 100%;
+                background-color: #000;
+                display: block;
+                position: absolute;
+                left: 50%;
+                bottom: -25px;
+                transform: translateX(-50%);
+            }
+        }
+        p {
+            margin-top: 20px;
+            text-align: center;
+        }
+    }
+    .btn {
+        margin: 30px auto 0;
+    }
+    @media (max-width: 767px) {
+        .btn {
+            margin: 10px auto 0;
+        }
+    }
+}

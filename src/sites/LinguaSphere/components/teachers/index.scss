@@ -1,0 +1,46 @@
+.teachers {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: space-between;
+    h2,
+    h3,
+    p {
+        width: 100%;
+        text-align: center;
+    }
+    > div {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        gap: 10px;
+        width: 100%;
+        max-width: calc(33% - 15px);
+        box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.3);
+        padding: 20px;
+        transition: transform 0.3s ease;
+        &:hover {
+            transform: translate(5px, -5px);
+        }
+        span {
+            font-size: 2.5rem;
+        }
+
+        img {
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+        }
+    }
+    @media (max-width: 767px) {
+        > div {
+            max-width: 100%;
+            h3,
+            p {
+                // max-width: calc(100% - 60px);
+            }
+        }
+    }
+}

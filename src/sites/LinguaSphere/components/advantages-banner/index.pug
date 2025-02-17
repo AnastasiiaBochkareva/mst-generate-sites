@@ -1,0 +1,18 @@
+mixin Advantages-banner(param={})
+    section.advantages-banner
+        .container.advantages-banner__container
+            div
+                h1 Advantages of Our Courses    
+                    span.hidden mostbet
+                p At LinguaSphere, we offer not only high-quality education but also unique advantages that will help you achieve your goals in learning English.
+                    
+                +Link({
+                    class: 'btn-banner',
+                    href: 'index.html#form',
+                    text: 'Learn more',
+                })
+            div.advantages-banner__img
+                +Img({
+                    src: 'img/couple.jpeg',
+                    alt: 'LinguaSphere'
+                })

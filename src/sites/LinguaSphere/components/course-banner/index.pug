@@ -1,0 +1,18 @@
+mixin Course-banner(param={})
+    section.course-banner
+        .container.course-banner__container
+            div
+                h1 Who Are We?
+                    span.hidden mostbet
+                p LinguaSphere is a team of professionals dedicated to helping you succeed in learning English with comfort and ease.
+                    
+                +Link({
+                    class: 'btn-banner',
+                    href: 'index.html#form',
+                    text: 'Learn more',
+                })
+            div.course-banner__img
+                +Img({
+                    src: 'img/video.jpeg',
+                    alt: 'LinguaSphere'
+                })

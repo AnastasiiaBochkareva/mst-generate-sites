@@ -1,0 +1,18 @@
+mixin About-banner(param={})
+    section.about-banner
+        .container.about-banner__container
+            div
+                h1 Courses for All Levels
+                    span.hidden mostbet
+                p Choose a course that matches your skill level and goals. From beginners to professionals, we offer programs for everyone!
+                    
+                +Link({
+                    class: 'btn-banner',
+                    href: 'index.html#form',
+                    text: 'Learn more',
+                })
+            div.about-banner__img
+                +Img({
+                    src: 'img/lesson1.jpeg',
+                    alt: 'LinguaSphere'
+                })

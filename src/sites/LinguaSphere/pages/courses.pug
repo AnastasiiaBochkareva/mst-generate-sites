@@ -1,0 +1,34 @@
+extends /sites/LinguaSphere/layouts/base.pug
+
+block variables
+    - const title = 'English Courses at LinguaSphere'
+    - const description = 'Discover a variety of English courses at LinguaSphere, tailored for travelers, professionals, and exam preparation. Learn with expert teachers and interactive methods to achieve your language goals.'
+
+block content
+    //- +Header()
+    +Header-registration({
+        logo: 'LinguaSphere'
+    })
+
+    main
+        +Course-banner()
+
+        +Beginner()
+
+        +Categories()
+
+        +Atmosphere()
+
+        +Area()
+
+        +Faq({
+            title: 'Frequently Asked Questions',
+            p: 'Our students often ask these questions:',
+        })
+
+        +Login-modal()
+
+        +Register-modal()
+
+
+    +Footer()

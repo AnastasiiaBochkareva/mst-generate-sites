@@ -1,0 +1,31 @@
+mixin Welcome()
+    section.welcome
+        .container.welcome__container
+            h2 Our History
+            .about-items
+                .about-item.reveal-right
+                    p LinguaSphere was founded with a clear mission—to make learning English accessible, effective, and engaging for everyone.
+                    .arrow →
+                .about-item.reveal-top
+                    p Our school was founded in 2015 by a team of passionate educators who wanted to create a new approach to language learning.
+                    .arrow →
+                .about-item.reveal-left
+                    p For nearly a decade, we have been helping students master English, adapt to international environments, and achieve their personal and professional goals.
+                    .arrow →
+                .about-item.reveal-right
+                    p Over the years, we have refined our teaching methods, introduced new technologies, and expanded our range of courses to meet the needs of modern learners.
+                    .arrow →
+                .about-item.reveal-top
+                    p What started as a small initiative has grown into an international educational platform with students from different countries and cultures.
+                    .arrow →
+                .about-item.reveal-left
+                    p We continuously update our programs, train our instructors, and integrate innovative tools to provide the best possible learning experience.
+                    .arrow →
+                .about-item.reveal-zoom
+                    p LinguaSphere is not just a language school—it’s a community where every student’s success is our top priority.
+                    .arrow ✔ 
+            +Link({
+                class: 'btn',
+                href: 'index.html#form',
+                text: 'Join to LinguaSphere',
+            })

@@ -1,0 +1,65 @@
+.linguasphere__philosophy {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    position: relative;
+    h2 {
+        position: absolute;
+        top: 70px;
+        right: 10px;
+        background-color: #4b6256;
+        color: #fff;
+        padding: 20px;
+        max-width: 400px;
+    }
+    > div {
+        background-color: #f2f2f2;
+        padding: 30px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 20px;
+        flex: 2;
+        width: 100%;
+        max-width: calc(50% - 10px);
+        ul {
+            li {
+                margin-bottom: 10px;
+                transition: transform 0.3s ease;
+                &:hover {
+                    transform: translate(5px, -5px);
+                }
+                p {
+                    margin-top: 5px;
+                    font-style: italic;
+                }
+            }
+        }
+    }
+    img {
+        flex: 1;
+        max-width: calc(50% - 10px);
+    }
+    @media (max-width: 1199px) {
+        img {
+            flex: 1;
+        }
+        h2 {
+            top: 50px;
+            max-width: calc(50% - 20px);
+        }
+    }
+    @media (max-width: 767px) {
+        flex-direction: column;
+        h2 {
+            position: initial;
+            max-width: 100%;
+        }
+        > div {
+            max-width: 100%;
+        }
+        img {
+            max-width: 100%;
+        }
+    }
+}

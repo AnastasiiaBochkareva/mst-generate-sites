@@ -1,0 +1,23 @@
+mixin Customer-favorites()
+    section.customer-favorites
+        .container.customer-favorites__container.grid-square
+            .customer-favorites__item.reveal-right
+                +Img({
+                    src: 'img/speaking.jpeg',
+                    alt: 'LinguaSphere'
+                })
+            .customer-favorites__item.customer-favorites__text.reveal-left
+                h2 Lifetime Access to Materials
+                p At LinguaSphere, we believe that learning is a continuous process. That’s why all our students receive unlimited access to the course materials for life. 
+                p  Even after completing the course, you will always have the opportunity to revisit lessons, refresh your understanding, and explore new content as needed.
+            .customer-favorites__item.customer-favorites__text.reveal-right
+                ul
+                    li ✔  Whether you want to review video tutorials, take additional tests, or reinforce your skills, our platform allows you to do so at your own pace. 
+                    li ✔  We provide ongoing access to all learning resources, ensuring that you can continue improving your English long after the course has ended.
+                +Link({
+                    class: 'btn',
+                    href: 'catalog.html',
+                    text: 'Learn more',
+                })
+
+            

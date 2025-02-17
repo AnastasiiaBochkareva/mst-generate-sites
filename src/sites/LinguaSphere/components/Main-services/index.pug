@@ -1,27 +1,31 @@
 mixin Main-services()
     section.container.main-services
-        div.main-services__img
+        div.main-services__img.reveal-left
             +Img({
-                src: 'img/classroom.jpeg',
-                alt: 'LinguaSphere'
+                src: 'img/person.jpeg',
+                alt: 'Online Learning'
             })
         
 
-        div.main-services__head
-            h2 Помощь в выборе анализов и подготовка к сдаче
-            p Сервис медицинской поддержки для русскоговорящих пациентов
+        div.main-services__head.reveal-right
+            h2 Benefits of Online Learning
+            p The online learning format at LinguaSphere offers convenience and flexibility, allowing you to study from anywhere, anytime. Here’s what you get with us:
 
-        div.main-services__body
-            h3 Не уверены, какие анализы нужно сдать?
+        div.main-services__body.reveal-right
+            h3 Course accessibility.
                 span 1
-            h3 Как правильно подготовиться к сдаче анализов. 
+            p Study materials are available 24/7, so you can learn whenever it suits you.
+            h3 Flexible scheduling.
                 span 2
-                p От соблюдения рекомендаций может зависеть точность результатов.  
-            p Специалист проконсультирует и поможет сделать правильный выбор.
+            p No need to follow rigid timetables—you decide when and how much time to dedicate to learning.
+            h3 Remote interaction with instructors.
+                span 2
+            p Receive instant feedback from teachers and improve your skills in a comfortable environment. 
+            p With us, education becomes accessible and convenient for everyone, even those living in the most remote areas.
             +Link({
-                class: 'btn class__btn',
+                class: 'btn',
                 href: 'index.html#form',
-                text: 'Detalhes',
+                text: 'Join to LinguaSphere',
             })
          
         

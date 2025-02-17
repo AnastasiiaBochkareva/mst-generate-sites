@@ -2,17 +2,17 @@ mixin Main-banner(param={})
     section.main-banner
         .container.main-banner__container
             div
-                h1 LinguaSphere
+                h1 Welcome to LinguaSphere
                     span.hidden mostbet
-                p LinguaSphere
+                p Start your journey to mastering the English language with us. We offer courses for all levels—from beginners to professionals. Join us and discover new horizons!
                     
                 +Link({
-                    class: 'btn main__btn',
+                    class: 'btn-banner',
                     href: 'index.html#form',
-                    text: 'Detailes',
+                    text: 'Learn more',
                 })
             div.main-banner__img
                 +Img({
-                    src: 'img/classroom.jpeg',
+                    src: 'img/teacher.jpeg',
                     alt: 'LinguaSphere'
                 })

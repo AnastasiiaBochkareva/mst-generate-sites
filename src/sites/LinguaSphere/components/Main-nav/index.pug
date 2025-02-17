@@ -1,14 +1,24 @@
 mixin Main-nav(param={})
   section.main-nav
     .container.main-nav__container
-      h2 Популярные направления
-      +Link({
-          class: 'btn main-nav__btn',
-          href: 'index.html#form',
-          text: 'Detalhes',
-      })
+     
+      h2.reveal-left Result-Oriented Learning
+      p.reveal-right At LinguaSphere, we believe that learning should be both effective and engaging. Our methodology is based on a combination of theory and practice:
+      
       div
-        p(style='background-color: hsl(350, 72%, 66%);') Женское здоровье
-        p(style='background-color: hsl(194, 100%, 64%);') Мужское здоровье
-        p(style='background-color: hsl(185, 93%, 56%);') ПЦР-Тесты
-        p(style='background-color: hsl(283, 59%, 82%);') Общеклинические исследования
+        div.reveal-zoom(style='background-color: #EA516D;')
+          h3 Practical Focus.
+          p  We don’t just explain rules—we actively apply them in real-life examples and situations.
+        div.reveal-zoom(style='background-color: #00ABDF;')
+          h3 Adaptability.
+          p  We tailor the learning process to each student, allowing you to study at your own pace.
+        div.reveal-zoom(style='background-color: #05A8B3;')
+          h3 Interactivity.
+          p  Our courses include live communication with instructors, online assignments, and role-playing exercises to help you master the language.
+        //- p(style='background-color: hsl(283, 59%, 82%);') Общеклинические исследования
+      p.reveal-left We ensure a personalized approach so that you feel comfortable learning and confidently moving toward your goals.
+      +Link({
+          class: 'btn',
+          href: 'index.html#form',
+          text: 'Learn more',
+      })

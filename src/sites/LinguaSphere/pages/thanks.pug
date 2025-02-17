@@ -1,9 +1,17 @@
 extends /sites/LinguaSphere/layouts/base.pug
 
 block variables
-    - const title = 'Title'
-    - const description = 'Description'
+    - const title = 'Thank You for Reaching Out – LinguaSphere'
+    - const description = 'Thank you for your message! Our team will get in touch with you soon to assist with your inquiry. Stay tuned!'
 
 block content
   main
-    section.container.thanks
+    section.thanks
+      .container
+        h1 Thank You for Reaching Out!
+        p We have received your message and will get back to you soon. Thank you for your interest in LinguaSphere! If you have any additional questions, feel free to stay in touch – we’re always happy to help.
+        +Link({
+            class: 'btn-banner',
+            href: '/',
+            text: 'Home',
+        })

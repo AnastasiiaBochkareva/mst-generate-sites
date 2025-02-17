@@ -1,0 +1,31 @@
+extends /sites/LinguaSphere/layouts/base.pug
+
+block variables
+    - const title = 'Advantages of Learning with LinguaSphere'
+    - const description = 'Explore the unique benefits of studying at LinguaSphere. From interactive lessons to expert teachers and lifetime access to materials, we provide everything you need for successful language learning.'
+
+block content
+    //- +Header()
+    +Header-registration({
+        logo: 'LinguaSphere'
+    })
+
+    main
+        +Advantages-banner()
+
+        +Advantages()
+
+        +Welcome-block()
+
+        +Reviews()
+
+        +Customer-favorites()
+
+        +Motivation()
+
+        +Login-modal()
+
+        +Register-modal()
+
+
+    +Footer()

@@ -1,46 +1,54 @@
 mixin Main-review(param={})
   section.container.main-review
-    h2 Отзывы
+    +Img({
+        src: 'img/different.jpeg',
+        alt: 'Our Students',
+        class: 'reveal-zoom'
+    })
     .container__slider
-      .slider
+      h2.reveal-zoom Success Stories of Our Students
+      p.reveal-zoom We take pride in our students' achievements. Here are a few examples of how learning at LinguaSphere has changed their lives:
+      
+      .slider.reveal-right
+
         .slide
           .slide__head
             +Img({
-                src: 'img/classroom.jpeg',
+                src: 'img/person4.jpeg',
                 alt: 'LinguaSphere'
             })
             h3 – Anna Petrova
             .small Berlin, Germany 
             p ⭐⭐⭐⭐⭐
           .slide__body
-            p Before joining the course, I struggled to express myself in English. Thanks to the engaging lessons and practical exercises at LinguaSphere, I gained confidence and improved my speaking skills. Now, I can easily chat with foreigners and even enjoy books in English!
+            p I enrolled in the Business English course to enhance my competitiveness in the job market. The program helped me improve my business correspondence skills and conduct negotiations in English with confidence. This was a crucial step in my career.
 
         .slide
           .slide__head
             +Img({
-                src: 'img/classroom.jpeg',
+                src: 'img/person4.jpeg',
                 alt: 'LinguaSphere'
             })
             h3 – Mateusz Kowalski
           .slide__body
-            p The business English course at LinguaSphere helped me master professional communication. Now I can confidently handle emails, meetings, and presentations in English. Recently, I successfully negotiated with an international client, which was a big step for my career!
+            p I joined LinguaSphere to improve my English for travel and conversations. Now, I can comfortably discuss topics ranging from culture to politics with native speakers. The course also proved beneficial for work-related interactions.
           .small Warsaw, Poland
 
         .slide
           .slide__head
             +Img({
-                src: 'img/classroom.jpeg',
+                src: 'img/person4.jpeg',
                 alt: 'LinguaSphere'
             })
             h3 – Sofia Ivanova
           .slide__body
-            p The IELTS preparation course at LinguaSphere was a game changer for me! The detailed feedback and structured lessons helped me reach my target score. Now, I’m studying at a prestigious university abroad, and I feel well-prepared for academic challenges.
+            p I chose the intermediate course because I already had basic English knowledge but struggled with speaking fluently. The LinguaSphere instructors helped me build confidence and refine my grammar. This opened up new opportunities for me.
           .small Sofia, Bulgaria
 
         .slide
           .slide__head
             +Img({
-                src: 'img/classroom.jpeg',
+                src: 'img/person4.jpeg',
                 alt: 'LinguaSphere'
             })
             h3 – Paolo Rossi
@@ -51,19 +59,19 @@ mixin Main-review(param={})
         .slide
           .slide__head
             +Img({
-              src: 'img/classroom.jpeg',
+              src: 'img/person4.jpeg',
               alt: 'LinguaSphere'
             })
             h3 – Elena Smirnova
           .slide__body
-            p My son absolutely loved the English for kids course at LinguaSphere! The interactive lessons kept him engaged, and he started using English in everyday situations. Now, he watches cartoons in English and even corrects my pronunciation sometimes!
+            p The Conversational English course helped me not only improve my speaking skills but also discuss complex topics like art and culture. Now, I can communicate freely on various subjects.
           .small Moscow, Russia
 
       .slider-controls
         .prev-arrow <
         .next-arrow >
-    +Link({
-            class: 'btn class__btn',
-            href: 'index.html#form',
-            text: 'Detalhes',
-        })
+      +Link({
+          class: 'btn',
+          href: 'index.html#form',
+          text: 'Learn more',
+      })

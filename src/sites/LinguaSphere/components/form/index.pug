@@ -1,0 +1,26 @@
+mixin Form()
+    
+    section.contacts
+        .container.contacts__container
+            form.form.reveal-zoom(action="thanks_form.php" method="POST" id='form' class="contact_form")
+                .contacts__text
+                    h1.title Get in touch with LinguaSphere!
+                    p.subtitle Have any questions or need assistance? We're here to help! Get in touch with LinguaSphere:
+
+                .form__inputs
+
+                    input.form__input(type="text" name="name" placeholder="Name" required="")
+
+                    input.form__input(type="email" name="email" placeholder="Email" required="")
+
+
+                    label.form__checkbox
+                        input(type="checkbox" name="privacy" value="on" required="")
+                        span I agree to the processing of data
+                    button.form__btn.btn(type="submit") Send Message
+
+            .contacts__map.reveal-top
+                +Img({
+                    src: 'img/computer.jpeg',
+                    alt: 'Get in touch'
+                })

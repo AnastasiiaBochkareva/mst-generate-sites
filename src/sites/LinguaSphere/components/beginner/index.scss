@@ -1,0 +1,111 @@
+.beginner {
+    padding-top: 50px;
+    padding-bottom: 50px;
+    position: relative;
+
+    display: flex;
+    gap: 40px;
+    &__bg {
+        background-color: rgb(5, 168, 179);
+        position: absolute;
+        max-height: 80%;
+        max-width: 231px;
+        width: 100%;
+        height: 100%;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        z-index: 1;
+        box-shadow: 0 2px 6px rgba(0, 0, 0, 0.5);
+    }
+    &__img {
+        height: auto;
+        max-width: 477px;
+        width: 100%;
+        overflow: hidden;
+        padding-top: 50px;
+        padding-bottom: 50px;
+        img {
+            box-shadow: 0 2px 6px rgba(0, 0, 0, 0.5);
+        }
+    }
+    &__title {
+        background-color: rgb(234, 81, 109);
+        color: #fff;
+        padding: 20px;
+        max-width: 400px;
+        max-height: max-content;
+        width: 100%;
+        height: 100%;
+        box-shadow: 0 2px 6px rgba(0, 0, 0, 0.5);
+        .title {
+            margin-bottom: 20px;
+        }
+    }
+    &__col {
+        position: relative;
+        z-index: 5;
+    }
+    &__col:not(.beginner__img) {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        gap: 40px;
+        position: relative;
+        z-index: 5;
+    }
+    &__easy {
+        background-color: #fff;
+        padding: 20px;
+        max-width: 600px;
+        max-height: max-content;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        box-shadow: 0 2px 6px rgba(0, 0, 0, 0.5);
+        gap: 10px;
+        .btn {
+            width: 100%;
+            max-width: 100%;
+            text-align: center;
+        }
+        .title-sm {
+            margin-bottom: 10px;
+        }
+        ul {
+            display: flex;
+            flex-direction: column;
+            padding-left: 10%;
+            margin-bottom: 20px;
+        }
+    }
+    @media (max-width: 767px) {
+        flex-direction: column;
+        gap: 20px;
+        padding-top: 20px;
+        padding-bottom: 20px;
+        &__img {
+            padding: 0;
+            max-width: 100%;
+        }
+        &__col:not(.beginner__img) {
+            gap: 20px;
+        }
+        &__title {
+            max-width: 100%;
+        }
+        &__bg {
+            right: 15px;
+            left: 15px;
+            top: 40px;
+            bottom: 40px;
+            max-width: calc(100% - 30px);
+            max-height: calc(100% - 80px);
+            transform: initial;
+        }
+        &__easy {
+            max-width: 100%;
+        }
+    }
+}

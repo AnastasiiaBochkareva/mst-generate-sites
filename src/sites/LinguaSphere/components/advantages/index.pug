@@ -1,0 +1,20 @@
+mixin Advantages()
+    section.advantages
+        .container.advantages__container
+            .advantages__head.reveal-left
+                h2 Excellent Quality of Education
+                p We take pride in using proven methodologies in our courses that have demonstrated their effectiveness.
+                +Link({
+                    class: 'btn',
+                    href: 'catalog.html',
+                    text: 'Join to LinguaSphere',
+                })
+            .advantages__cols
+                .advantages__cols-bg.reveal-top
+                .advantages__col.reveal-zoom
+                    +Img({
+                        src: 'img/different1.jpeg',
+                        alt: 'LinguaSphere'
+                    })
+                .advantages__col.advantages__list.reveal-right
+                    p We closely follow the development of educational technologies and constantly improve our programs. The lessons include a wide range of materials: textbooks, interactive tasks, videos, and games. This allows students to absorb information more effectively and actively apply their knowledge.

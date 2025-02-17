@@ -1,0 +1,30 @@
+extends /sites/LinguaSphere/layouts/base.pug
+
+block variables
+    - const title = 'About Us – LinguaSphere'
+    - const description = 'Discover the story behind LinguaSphere, our mission, and our commitment to delivering high-quality English language education. Learn more about our team, values, and teaching approach.'
+
+block content
+    +Header-registration({
+        logo: 'LinguaSphere'
+    })
+
+    main
+        +About-banner()
+
+        +Welcome()
+
+        +Unique-loft()
+
+        +Why-loft()
+
+        +Teachers()
+
+        +Tricks()
+
+        +Login-modal()
+
+        +Register-modal()
+
+
+    +Footer()

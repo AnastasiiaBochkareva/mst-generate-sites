@@ -1,4 +1,25 @@
 mixin Footer()
     footer.footer
         .container.footer__container
+            .footer__logo 
+                +Link({
+                    href: '/',
+                    text: 'LinguaSphere'
+                })
+            .footer__contacts
+                p Call us:
+                    a(href='tel:+91 98430 56359') +91 98430 56359
+                p Write us: 
+                    a(href='mailto:contact@linguasphere.com') contact@linguasphere.com
+            .footer__links 
+                p
+                    +Link({
+                        href: 'privacy-policy.html',
+                        text: 'Privacy policy',
+                    })
+                p
+                    +Link({
+                        href: 'terms-conditions.html',
+                        text: 'Terms and conditions',
+                    })
         

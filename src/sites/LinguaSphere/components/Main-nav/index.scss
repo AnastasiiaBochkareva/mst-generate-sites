@@ -1,29 +1,42 @@
 .main-nav {
     background-color: #e6f8fd;
     &__container {
-        display: grid;
-        grid-template-columns: max-content 1fr;
-        column-gap: 40px;
-        row-gap: 25px;
-        grid-template-areas:
-            "title div"
-            "btn div";
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px;
         h2 {
-            grid-area: title;
-        }
-        > a {
-            grid-area: btn;
+            width: 100%;
+            text-align: center;
         }
         > div {
-            grid-area: div;
             display: flex;
             flex-wrap: wrap;
             gap: 10px;
             justify-content: space-between;
-            > p {
+
+            > div {
                 flex: 1;
+                padding: 20px;
+                color: #fff;
+                text-align: center;
+                box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.3);
+                transition: transform 0.3s ease;
+                &:hover {
+                    transform: translate(5px, -5px);
+                }
+                > p {
+                    margin-top: 10px;
+                }
             }
         }
+        > p {
+            width: 100%;
+            text-align: center;
+        }
+    }
+
+    .btn {
+        margin: 10px auto 0;
     }
     @media (max-width: 525px) {
         &__container {

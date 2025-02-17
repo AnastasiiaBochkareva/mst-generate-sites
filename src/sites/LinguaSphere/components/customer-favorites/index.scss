@@ -1,0 +1,27 @@
+.customer-favorites {
+    margin-top: 40px;
+    background-color: #e5e5e5;
+    &__text {
+        padding: 30px;
+        background-color: #fff;
+    }
+    &__item {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.3);
+    }
+    &__container {
+    }
+    .btn {
+        margin: 30px auto 0;
+    }
+    @media (max-width: 767px) {
+        &__item:not(.customer-favorites__text) {
+            max-height: 300px;
+        }
+        .btn {
+            margin: 10px auto 0;
+        }
+    }
+}

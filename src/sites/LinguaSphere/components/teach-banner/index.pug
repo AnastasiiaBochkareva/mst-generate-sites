@@ -1,0 +1,18 @@
+mixin Teach-banner(param={})
+    section.teach-banner
+        .container.teach-banner__container
+            div
+                h1 Become Part of the LinguaSphere Team
+                    span.hidden mostbet
+                p If you're an experienced teacher passionate about education, join our team and help students achieve their goals!
+                    
+                +Link({
+                    class: 'btn-banner',
+                    href: 'index.html#form',
+                    text: 'Learn more',
+                })
+            div.teach-banner__img
+                +Img({
+                    src: 'img/teacher1.jpeg',
+                    alt: 'LinguaSphere'
+                })

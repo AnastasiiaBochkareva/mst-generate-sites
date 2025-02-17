@@ -1,0 +1,58 @@
+extends /sites/LinguaSphere/layouts/base.pug
+
+block variables
+    - const title = 'Privacy Policy | LinguaSphere'
+    - const description = 'Learn how LinguaSphere protects your personal information and ensures your privacy while using our services. Your trust is important to us.'
+
+block content
+    +Header-registration({
+        logo: 'LinguaSphere'
+    })
+
+    main
+        section.container.terms-conditions
+            h1 Privacy Policy
+            p At LinguaSphere, we take your privacy seriously and are committed to safeguarding your personal information. This Privacy Policy outlines how we collect, use, and protect your data when you access our website or participate in our educational services.
+
+            h2 Information We Collect
+            p When you visit LinguaSphere’s website, register for courses, or interact with our online content, we may collect the following types of information:
+            ul
+                li - Personal Data: This includes your name, contact information, educational background, and any details you provide during registration or communication with us.
+                li - Usage Data: We may collect non-personal information such as your IP address, browser type, operating system, and pages visited on our website. This helps us improve our website’s functionality and user experience.
+                li - Communication Data: If you reach out to us through email, our contact form, or other communication channels, we collect the content of your messages for customer support and service improvement purposes.
+
+            h2 How We Use Your Information
+            p LinguaSphere uses the information we collect to provide you with the best possible educational experience. Here are some ways we use your personal data:
+            ul  
+                li - Course Enrollment: To process your enrollment, provide access to course materials, and support your learning journey.
+                li - Communication: To send you updates, reminders, and relevant information about courses, events, and programs at LinguaSphere. We may also reach out to you for feedback or to address any concerns you may have.
+                li - Service Improvement: To analyze and improve the content, functionality, and user experience of our website and educational offerings.
+                li - Customer Support: To respond to your inquiries, provide assistance, and resolve any issues you may encounter while using our services.
+            
+            h2 Data Security and Protection
+            p We understand the importance of safeguarding your personal data. LinguaSphere employs a variety of security measures to ensure that your information is protected from unauthorized access, alteration, disclosure, or destruction. These measures include encryption, secure servers, and regular monitoring of our systems.
+            p We also conduct regular security audits and updates to ensure the safety of your data. While we make every effort to protect your privacy, please note that no method of online transmission or storage is 100% secure. However, we strive to minimize the risk and ensure that your data is treated with the utmost care.
+
+            h2 Data Sharing and Third Parties
+            p LinguaSphere does not sell or share your personal information with third parties for marketing purposes. However, we may share your data in the following situations:
+            ul
+                li - Service Providers: We may work with trusted third-party service providers to help deliver our educational services, such as hosting, payment processing, or email communication. These providers are contractually obligated to protect your data and use it only for the services they provide to us.
+                li - Legal Requirements: If required by law, we may disclose your personal data to comply with legal obligations, such as in response to a court order or governmental request.
+
+            h2 Your Rights and Choices
+            p As a user, you have the right to access, modify, or request the deletion of your personal data at any time. If you would like to exercise any of these rights, please contact us through the provided communication channels. We are happy to assist you in managing your data.
+            p You also have the right to withdraw your consent for the processing of your personal data at any time, although this will not affect any data processing done prior to the withdrawal.
+
+            h2 Data Retention
+            p LinguaSphere will retain your personal data only for as long as necessary to fulfill the purposes outlined in this Privacy Policy, unless a longer retention period is required or permitted by law. Once your data is no longer needed, we will securely delete or anonymize it.
+
+
+            h2 Policy Updates
+            p LinguaSphere reserves the right to update this Privacy Policy from time to time. Any changes will be reflected on this page, and we will notify you of significant changes when applicable. We encourage you to review this Privacy Policy periodically to stay informed about how we are protecting your personal data.
+
+            h2 Contact Us
+            p If you have any questions, concerns, or requests regarding your privacy or this policy, please feel free to reach out to us. We are here to assist you and ensure that your experience with LinguaSphere is secure and enjoyable.
+        +Login-modal()
+
+        +Register-modal()
+    +Footer()

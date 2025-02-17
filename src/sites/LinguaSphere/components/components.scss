@@ -3,17 +3,52 @@
 
 @use "@/components/header-registration/index" as header-registration;
 
-@use "@/components/counter/index" as counter;
+@use "@/sites/LinguaSphere/components/counter/index" as counter;
 
 @use "@/components/burger/index" as burger;
 
+@use "@/sites/LinguaSphere/components/reveal/index" as reveal;
+
 //Main
 @use "@/sites/LinguaSphere/components/article/index" as article;
-@use "@/sites/LinguaSphere/components/Main-about/index" as Main-about;
 @use "@/sites/LinguaSphere/components/Main-banner/index" as Main-banner;
 @use "@/sites/LinguaSphere/components/Main-contacts/index" as Main-contacts;
 @use "@/sites/LinguaSphere/components/Main-nav/index" as Main-nav;
 @use "@/sites/LinguaSphere/components/Main-review/index" as Main-review;
 @use "@/sites/LinguaSphere/components/Main-services/index" as Main-services;
-@use "@/sites/LinguaSphere/components/Main-stock/index" as Main-stock;
-@use "@/sites/LinguaSphere/components/Subscribe/index" as Subscribe;
+@use "@/sites/LinguaSphere/components/form/index" as form;
+
+@use "@/sites/LinguaSphere/components/courses-everyone/index" as
+    courses-everyone;
+@use "@/sites/LinguaSphere/components/categories-main/index" as categories-main;
+@use "@/components/grid/index" as grid;
+
+//courses
+@use "@/sites/LinguaSphere/components/categories/index" as categories;
+@use "@/sites/LinguaSphere/components/beginner/index" as beginner;
+@use "@/sites/LinguaSphere/components/atmosphere/index" as atmosphere;
+@use "@/sites/LinguaSphere/components/area/index" as area;
+@use "@/sites/LinguaSphere/components/course-banner/index" as course-banner;
+@use "@/components/faq/index" as faq;
+//about
+@use "@/sites/LinguaSphere/components/welcome/index" as welcome;
+@use "@/sites/LinguaSphere/components/unique-loft/index" as unique-loft;
+@use "@/sites/LinguaSphere/components/why-loft/index" as why-loft;
+@use "@/sites/LinguaSphere/components/teachers/index" as teachers;
+@use "@/sites/LinguaSphere/components/tricks/index" as tricks;
+@use "@/sites/LinguaSphere/components/about-banner/index" as about-banner;
+//advantages
+@use "@/sites/LinguaSphere/components/advantages/index" as advantages;
+@use "@/sites/LinguaSphere/components/reviews/index" as reviews;
+@use "@/sites/LinguaSphere/components/welcome-block/index" as welcome-block;
+@use "@/sites/LinguaSphere/components/customer-favorites/index" as
+    customer-favorites;
+@use "@/sites/LinguaSphere/components/motivation/index" as motivation;
+@use "@/sites/LinguaSphere/components/advantages-banner/index" as
+    advantages-banner;
+//why-work
+@use "@/sites/LinguaSphere/components/why-work/index" as why-work;
+@use "@/sites/LinguaSphere/components/candidates/index" as candidates;
+@use "@/sites/LinguaSphere/components/teach-banner/index" as teach-banner;
+@use "@/sites/LinguaSphere/components/support-and-benefits/index" as
+    support-and-benefits;

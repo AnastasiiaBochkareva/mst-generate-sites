@@ -1,0 +1,39 @@
+extends /sites/LinguaSphere/layouts/base.pug
+
+block variables
+    - const title = 'LinguaSphere – Learn English with Professionals'
+    - const description = 'LinguaSphere offers high-quality English language courses tailored to meet your needs. Our team of experts provides innovative learning methods, flexible schedules, and lifelong access to materials. Whether you are preparing for an exam, advancing your career, or simply improving your communication skills, LinguaSphere is here to help you succeed.'
+
+block content
+
+  +Header-registration({
+    logo: 'LinguaSphere'
+  })
+
+  main
+    
+    +Main-banner()
+
+    +Main-services()
+
+    +Main-nav()
+
+    +Courses-everyone()
+
+    +Counter({
+      counterOne: 'students have successfully completed our courses and improved their English skills.',
+      counterTwo: 'of learners note significant progress in speaking and comprehension after just a few months.',
+      counterThree: 'experienced instructors help students achieve their goals with personalized guidance.',
+    })
+
+    +Main-review()
+
+    +Categories-main()
+
+    +Login-modal()
+
+    +Register-modal()
+
+    +Form()
+
+  +Footer()

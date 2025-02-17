@@ -1,0 +1,40 @@
+.why-work {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: space-between;
+    h2 {
+        text-align: center;
+    }
+    > div {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        align-items: center;
+        justify-content: center;
+        padding: 20px;
+        width: 100%;
+        flex: 1;
+        min-width: calc(33% - 15px);
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+        transition: transform 0.3s ease;
+        &:hover {
+            transform: translate(5px, -5px);
+        }
+    }
+    > h2,
+    > p {
+        width: 100%;
+    }
+    @media (max-width: 767px) {
+        > div {
+            max-width: calc(50% - 15px);
+            flex: initial;
+        }
+    }
+    @media (max-width: 525px) {
+        > div {
+            max-width: 100%;
+        }
+    }
+}

@@ -1,0 +1,25 @@
+extends /sites/LinguaSphere/layouts/base.pug
+
+block variables
+    - const title = 'Meet the LinguaSphere Teaching Team – Experts in Language Learning'
+    - const description = 'Our qualified and passionate teachers at LinguaSphere help students master English through innovative methods and personalized support. Learn from native speakers and experienced educators dedicated to your success.'
+
+block content
+    +Header-registration({
+        logo: 'LinguaSphere'
+    })
+
+    main
+        +Teach-banner()
+
+        +Why-work()
+
+        +Candidates()
+
+        +Support-and-benefits()
+
+        +Login-modal()
+
+        +Register-modal()
+
+    +Footer()

@@ -1,0 +1,51 @@
+.footer {
+    background-color: #333;
+    color: #fff;
+    a {
+        color: #fff;
+    }
+    &__logo {
+        grid-area: logo;
+        a {
+            font-size: clamp(1.375rem, 3vw, 1.75rem);
+        }
+    }
+    &__container {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+        grid-template-areas:
+            "logo logo"
+            "contacts links";
+    }
+    &__contacts {
+        grid-area: contacts;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        p {
+            a {
+                margin-left: 6px;
+            }
+        }
+    }
+    &__links {
+        grid-area: links;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        align-items: flex-end;
+    }
+    @media (max-width: 767px) {
+        &__container {
+            grid-template-columns: repeat(1, 1fr);
+            grid-template-areas:
+                "logo"
+                "contacts"
+                "links";
+        }
+        &__links {
+            align-items: flex-start;
+        }
+    }
+}
