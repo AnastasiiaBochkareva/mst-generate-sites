@@ -1,6 +1,7 @@
 mixin Register-modal()
     div(id='register-modal' class='modal')
-        form(id='register-form')
+        .register-modal(id='register-form')
+            .btn-close X
             label(for='name') Имя
             input(type='text' id='name' required)
             label(for='email') Почта
@@ -9,4 +10,4 @@ mixin Register-modal()
             input(type='password' id='password' required)
             label(for='confirm-password') Повторите пароль
             input(type='password' id='confirm-password' required)
-            button(type='submit' class='btn-banner') Зарегистрироваться
+            button(type='submit' class='btn-banner' id='modal-register-btn') Зарегистрироваться

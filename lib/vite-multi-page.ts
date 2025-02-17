@@ -1,8 +1,8 @@
 import path from "path";
 import { ViteDevServer } from "vite";
 import fs from "fs";
-import { processPug, processScss, processTS } from './build'
-import { handlePugMiddleware, setupWatcher } from './serve'
+import { processPug, processScss, processTS } from "./build";
+import { handlePugMiddleware, setupWatcher } from "./serve";
 
 const ROOT_DIR = path.resolve(__dirname, "../");
 
@@ -18,9 +18,11 @@ function MultiPagePugPlugin() {
             setupWatcher(server);
         },
 
-        generateBundle(_options, bundle) {
+        generateBundle: async function (_options, bundle) {
             const sitesDir = path.resolve(ROOT_DIR, "src", "sites");
             const dirs = fs.readdirSync(sitesDir, { withFileTypes: true });
+
+            const promises = [];
 
             dirs.forEach((dirEnt) => {
                 if (!dirEnt.isDirectory()) return;
@@ -31,18 +33,23 @@ function MultiPagePugPlugin() {
                 const siteDir = path.join(sitesDir, siteName);
 
                 processScss.call(this, { siteName, siteDir });
-
                 processTS.call(this, { siteName, siteDir });
 
-                processPug({
-                    siteName,
-                    siteDir,
-                    emitFile: this.emitFile.bind(this)
-                })
-                  .catch((err) => {
-                      console.error(`Ошибка обработки Pug для ${siteName}:`, err);
-                  });
-            })
+                promises.push(
+                    processPug({
+                        siteName,
+                        siteDir,
+                        emitFile: this.emitFile.bind(this),
+                    }).catch((err) => {
+                        console.error(
+                            `Ошибка обработки Pug для ${siteName}:`,
+                            err
+                        );
+                    })
+                );
+            });
+
+            await Promise.all(promises);
         },
     };
 }

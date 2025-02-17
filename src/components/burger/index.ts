@@ -51,21 +51,24 @@ document.addEventListener("DOMContentLoaded", () => {
         menuContent.addEventListener("click", closeMenu);
     }
 
-    document.addEventListener("click", (e: MouseEvent) => {
-        const menu = document.querySelector(
-            ".menu-content"
-        ) as HTMLElement | null;
-        const burger = document.querySelector(".burger") as HTMLElement | null;
+    // document.addEventListener("click", (e: MouseEvent) => {
+    // const menu = document.querySelector(
+    //     ".menu-content"
+    // ) as HTMLElement | null;
+    // const burger = document.querySelector(".burger") as HTMLElement | null;
 
-        if (menu && burger) {
-            if (
-                !(
-                    menu.contains(e.target as Node) ||
-                    burger.contains(e.target as Node)
-                )
-            ) {
-                closeMenu();
-            }
-        }
-    });
+    // if (e.target.closest(".burger.active")) {
+    //     closeMenu();
+    // }
+    // if (menu && burger) {
+    //     if (
+    //         !(
+    //             menu.contains(e.target as Node) ||
+    //             burger.contains(e.target as Node)
+    //         )
+    //     ) {
+    //         closeMenu();
+    //     }
+    // }
+    // });
 });

@@ -7,65 +7,74 @@ mixin Main-review(param={})
     })
     .container__slider
       h2.reveal-zoom Success Stories of Our Students
+        span.hidden mostbet
       p.reveal-zoom We take pride in our students' achievements. Here are a few examples of how learning at LinguaSphere has changed their lives:
-      
-      .slider.reveal-right
+      div(style='overflow: hidden;')
+        .slider.reveal-right
 
-        .slide
-          .slide__head
-            +Img({
+          .slide
+            .slide__head
+              +Img({
+                  src: 'img/person4.jpeg',
+                  alt: 'LinguaSphere'
+              })
+              h3 – Anna Petrova
+              .small Berlin, Germany 
+              p ⭐⭐⭐⭐⭐
+            .slide__body
+              p I enrolled in the Business English course to enhance my competitiveness in the job market. The program helped me improve my business correspondence skills and conduct negotiations in English with confidence. This was a crucial step in my career.
+
+          .slide
+            .slide__head
+              +Img({
+                  src: 'img/person4.jpeg',
+                  alt: 'LinguaSphere'
+              })
+              h3 – Mateusz Kowalski
+              .small Warsaw, Poland
+              p ⭐⭐⭐⭐⭐
+            .slide__body
+              p I joined LinguaSphere to improve my English for travel and conversations. Now, I can comfortably discuss topics ranging from culture to politics with native speakers. The course also proved beneficial for work-related interactions.
+            
+
+          .slide
+            .slide__head
+              +Img({
+                  src: 'img/person4.jpeg',
+                  alt: 'LinguaSphere'
+              })
+              h3 – Sofia Ivanova
+              p ⭐⭐⭐⭐⭐
+              .small Sofia, Bulgaria
+            .slide__body
+              p I chose the intermediate course because I already had basic English knowledge but struggled with speaking fluently. The LinguaSphere instructors helped me build confidence and refine my grammar. This opened up new opportunities for me.
+            
+
+          .slide
+            .slide__head
+              +Img({
+                  src: 'img/person4.jpeg',
+                  alt: 'LinguaSphere'
+              })
+              h3 – Paolo Rossi
+              p ⭐⭐⭐⭐⭐
+              .small Milan, Italy
+            .slide__body
+              p Traveling has become much easier since I completed the travel English course. Now, I can confidently ask for directions, book hotels, and order food without any hesitation. On my last trip, I even helped other tourists who didn’t speak the local language!
+            
+
+          .slide
+            .slide__head
+              +Img({
                 src: 'img/person4.jpeg',
                 alt: 'LinguaSphere'
-            })
-            h3 – Anna Petrova
-            .small Berlin, Germany 
-            p ⭐⭐⭐⭐⭐
-          .slide__body
-            p I enrolled in the Business English course to enhance my competitiveness in the job market. The program helped me improve my business correspondence skills and conduct negotiations in English with confidence. This was a crucial step in my career.
-
-        .slide
-          .slide__head
-            +Img({
-                src: 'img/person4.jpeg',
-                alt: 'LinguaSphere'
-            })
-            h3 – Mateusz Kowalski
-          .slide__body
-            p I joined LinguaSphere to improve my English for travel and conversations. Now, I can comfortably discuss topics ranging from culture to politics with native speakers. The course also proved beneficial for work-related interactions.
-          .small Warsaw, Poland
-
-        .slide
-          .slide__head
-            +Img({
-                src: 'img/person4.jpeg',
-                alt: 'LinguaSphere'
-            })
-            h3 – Sofia Ivanova
-          .slide__body
-            p I chose the intermediate course because I already had basic English knowledge but struggled with speaking fluently. The LinguaSphere instructors helped me build confidence and refine my grammar. This opened up new opportunities for me.
-          .small Sofia, Bulgaria
-
-        .slide
-          .slide__head
-            +Img({
-                src: 'img/person4.jpeg',
-                alt: 'LinguaSphere'
-            })
-            h3 – Paolo Rossi
-          .slide__body
-            p Traveling has become much easier since I completed the travel English course. Now, I can confidently ask for directions, book hotels, and order food without any hesitation. On my last trip, I even helped other tourists who didn’t speak the local language!
-          .small Milan, Italy
-
-        .slide
-          .slide__head
-            +Img({
-              src: 'img/person4.jpeg',
-              alt: 'LinguaSphere'
-            })
-            h3 – Elena Smirnova
-          .slide__body
-            p The Conversational English course helped me not only improve my speaking skills but also discuss complex topics like art and culture. Now, I can communicate freely on various subjects.
-          .small Moscow, Russia
+              })
+              h3 – Elena Smirnova
+              p ⭐⭐⭐⭐⭐
+              .small Moscow, Russia
+            .slide__body
+              p The Conversational English course helped me not only improve my speaking skills but also discuss complex topics like art and culture. Now, I can communicate freely on various subjects.
+            
 
       .slider-controls
         .prev-arrow <

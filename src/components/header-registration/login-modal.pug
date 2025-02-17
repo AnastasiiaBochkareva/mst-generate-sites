@@ -1,8 +1,10 @@
 mixin Login-modal()
     div(id='login-modal' class='modal')
-        form(id='login-form')
+        
+        .login-form(id='login-form')
+            .btn-close X
             label(for='login-name') Имя
             input(type='text' id='login-name' required)
             label(for='login-password') Пароль
             input(type='password' id='login-password' required)
-            button(type='submit' class='btn-banner') Войти
+            button(type='submit' class='btn-banner' id='modal-login-btn') Войти
