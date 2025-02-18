@@ -1,0 +1,16 @@
+extends /sites/CricketVerse/layouts/base.pug
+
+block variables
+    - const title = 'Ball Systems – Fantasy Cricket Rankings and Leaderboards'
+    - const description = 'Check out the latest rankings, scores, and leaderboards on Ball Systems. Stay updated with real-time stats and see how you stack up in the world of fantasy cricket. Play, compete, and climb the ranks!'
+
+block content
+    +Header()
+
+    main
+        +Balls-banner()
+
+        +Table()
+
+
+    +Footer()

@@ -1,0 +1,15 @@
+mixin Banner()
+    section.cricketzone.reveal-zoom
+        .container.cricketzone__container
+            +Img({
+                src: 'img/cricketzone.jpg',
+                alt: 'FantasyCricketZone',
+                class: 'cricketzone-bg'
+            })
+            h1 CricketZone – Play. Select. Win!
+            p Build your dream team with real players, track live matches, and score points in real time! Are you ready for the challenge? Step into the world of Fantasy Cricket!
+            +Link({
+                class: 'btn cricketzone__btn',
+                href: 'contact.html',
+                text: 'Download cricketzone App',
+            })

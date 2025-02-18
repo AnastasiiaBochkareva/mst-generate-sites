@@ -1,0 +1,25 @@
+.cricketzone {
+    &-bg {
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        display: block;
+        z-index: -1;
+    }
+    &__container {
+        position: relative;
+        background: rgba(0, 0, 0, 0.5);
+        padding: 100px 20px;
+        color: #fff;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        gap: 40px;
+    }
+    &__btn {
+        margin-left: auto;
+        margin-right: auto;
+    }
+}

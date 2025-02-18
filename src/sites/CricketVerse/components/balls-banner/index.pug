@@ -1,0 +1,15 @@
+mixin Balls-banner()
+    section.score-banner.reveal-zoom
+        .score-banner__container.container 
+            +Img({
+                src: 'img/score.jpg',
+                alt: 'Score',
+                class: 'score-banner-bg'
+            })
+            h1 Scoreboard Battle
+            p Track your fantasy cricket success in real-time! Stay ahead of the game, monitor your team's progress, and strategize to claim your victory at CricketZone. Let the scoreboard tell the story of your triumph!
+            +Link({
+                class: 'btn cricketzone__btn',
+                href: 'contact.html',
+                text: 'Download cricketzone App',
+            })

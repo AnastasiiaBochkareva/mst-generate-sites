@@ -1,0 +1,63 @@
+mixin Footer()
+    footer.footer
+        .container.footer__container
+            .footer__logo
+                +Link({
+                    href: 'index.html',
+                    text: 'CricketZone'
+                })
+                a(href='https://www.gamcare.org.uk/')
+                        +Img({
+                            src: 'img/gamecare.png',
+                            alt: 'gamble'
+                        })
+            .footer__links
+                div
+                    p Contact Us
+                    p    
+                        a(href='tel:+91 98340 56359') +91 98340 56359
+                
+                    p    
+                        a(href='mailto:contact@cricketzone.com') contact@cricketzone.com
+                
+                    p    
+                        a(href='https://maps.app.goo.gl/s2VGLE2eBz2QE49E6' target='_blank') Siddiq Nagar, HITEC City, Hyderabad, Telangana 500081, India
+                div
+                    p Quick Links
+                    +Link({
+                        href: 'index.html',
+                        text: 'Home',
+                    })
+                    +Link({
+                        href: 'how-to-play.html',
+                        text: 'How to Play',
+                    })
+                    +Link({
+                        href: 'balls-systems.html',
+                        text: 'Balls System',
+                    })
+                    +Link({
+                         href: 'contact.html',
+                        text: 'Contact',
+                    })
+                div
+                    p Legal
+                    +Link({
+                        href: `terms-conditions.html`,
+                        text: 'Terms and conditions',
+                    })
+                    +Link({
+                        href: `privacy-policy.html`,
+                        text: 'Privacy policy',
+                    })
+            .footer__disclaimer
+                +Img({
+                    src: 'img/disclaimer.png',
+                    alt: 'Disclaimer'
+                })
+                   
+                p Playing fantasy cricket on CricketZone is quick and easy! You can enjoy the game at any time, from anywhere, without delays. Please note that daily fantasy sports are restricted in the states of Andhra Pradesh, Assam, Nagaland, Orissa, Sikkim, and Telangana. All rights reserved by CricketZone. This website is owned and managed by cricketzone.com, registered in India.
+
+                
+                p.copyright © 2025 CricketZone. All rights reserved.
+        
