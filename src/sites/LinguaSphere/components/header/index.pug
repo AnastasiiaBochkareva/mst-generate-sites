@@ -32,7 +32,7 @@ mixin Header(param)
         .container.header__container
             .header__logo
                 +Link({
-                    href: 'index.html',
+                    href: '/',
                     text: 'LinguaSphere'
                 })
             ul.header__list
@@ -44,9 +44,7 @@ mixin Header(param)
                                 text: link.text
                             })
                         if(link.id)
-                            //- button.btn.btn_primary.btn-modal(id=link.id)=link.text
-                            //- button(id="logout-btn" style="display: none;") Выйти
-                            //- p(id="welcome-msg" style="display: none;")
+                           
 
                             button(id='register-btn') Register
                             button(id='login-btn') Login
