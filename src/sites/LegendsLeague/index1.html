@@ -1,0 +1,897 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="img/favicon.jpg" type="image/x-icon">
+    <meta name="description" content="Join LegendsLeague Fantasy Cricket! Build your ultimate team, compete with players worldwide, and earn amazing prizes. Start playing today for an unforgettable fantasy cricket experience!" />
+    <title>LegendsLeague Fantasy Cricket – Build, Compete & Win Big!</title>
+    
+    
+    <link rel="stylesheet" href="style.css">
+</head>
+
+
+<body>
+
+
+  
+
+  <header class="luxury-header" style="background-color: rgb(0, 0, 0); color: rgb(255, 255, 255);">
+    <div class="luxury-header__container">
+      <div class="luxury-header__logo">
+        <a href="/"  class="luxury-header__logo-link" style="text-transform: uppercase; color: #ffffff;">LegendsLeague</a>
+      </div>
+      <nav class="luxury-header__nav">
+        <ul class="luxury-header__menu">
+          <li class="luxury-header__menu-item">
+            <a href="/" class="luxury-header__menu-link">Home</a>
+          </li>
+          <li class="luxury-header__menu-item">
+            <a href="about/" class="luxury-header__menu-link">About</a>
+          </li>
+          <li class="luxury-header__menu-item">
+            <a href="how-to-play/" class="luxury-header__menu-link">How to Play</a>
+          </li>
+          <li class="luxury-header__menu-item">
+            <a href="download/" class="luxury-header__menu-link">Download App</a>
+          </li>
+          <li class="luxury-header__menu-item">
+            <a href="contact/" class="luxury-header__menu-link">Contacts</a>
+          </li>
+        </ul>
+      </nav>
+      
+      <div class="luxury-header__burger">
+        <button class="luxury-header__burger-button">
+          <span class="luxury-header__burger-bar"></span>
+          <span class="luxury-header__burger-bar"></span>
+          <span class="luxury-header__burger-bar"></span>
+        </button>
+      </div>
+    </div>
+  </header>
+  
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      const burgerButton = document.querySelector(".luxury-header__burger-button");
+      const navMenu = document.querySelector(".luxury-header__nav");
+  
+      burgerButton.addEventListener("click", function () {
+        navMenu.classList.toggle("luxury-header__nav--visible");
+      });
+    });
+  </script>
+
+
+  <main style="min-height: 100vh;">
+
+   <div id="fantasyModal" class="modal">
+    <div class="modal-content">
+        <p>Fantasy sports are considered a game of skill and are legal in most parts of India. By participating, you confirm that you are at least 18 years old and not a resident of Andhra Pradesh, Assam, Nagaland, Odisha, Sikkim, or Telangana, where fantasy sports are prohibited.</p>
+        <button class="close-btn" id="closeModalBtn" onclick="closeModal()">OK</button>
+    </div>
+</div>
+
+
+<script>
+    document.addEventListener("DOMContentLoaded", function() {
+        var modal = document.getElementById("fantasyModal");
+        var closeModalBtn = document.getElementById("closeModalBtn");
+
+        // Check if the modal should be hidden
+        if (localStorage.getItem("fantasyModalClosed") === "true") {
+            modal.style.display = "none";
+        } else {
+            modal.style.display = "flex";
+        }
+
+        // Close modal on button click
+        closeModalBtn.addEventListener("click", function() {
+            modal.style.display = "none";
+            localStorage.setItem("fantasyModalClosed", "true"); // Store the flag correctly
+        });
+
+        // Close modal when clicking outside of it
+        window.onclick = function(event) {
+            if (event.target === modal) {
+                modal.style.display = "none";
+                localStorage.setItem("fantasyModalClosed", "true");
+            }
+        };
+    });
+</script>
+
+
+<section class="hero">
+    <div class="hero-content">
+        <h1 class="hero-title">Build Your Dream Cricket Team</h1>
+        <p class="hero-subtitle">Select. Strategize. Dominate. Experience fantasy cricket like never before.</p>
+        <div class="hero-buttons">
+            <a href="download/" class="btn btn-primary">Start Playing</a>
+            <a href="how-to-play/" class="btn btn-secondary">How It Works</a>
+        </div>
+    </div>
+</section>
+
+
+<section class="testimonials-section">
+    <div class="testimonials-container">
+        <h2 class="testimonials-title">What Our Users Say</h2>
+        <p class="testimonials-subtitle">
+            Real cricket enthusiasts from across India share their experiences with LegendsLeague.
+        </p>
+
+        <div class="testimonials-slider">
+            <div class="testimonial active">
+                <p class="testimonial-text">
+                    "LegendsLeague is a game-changer! It keeps me engaged with every match, making strategy and team selection feel like a real challenge."
+                </p>
+                <div class="testimonial-info">
+                    <img src="img/a (3).jpg" alt="User Image">
+                    <div class="testimonial-details">
+                        <h3>Rahul Sharma</h3>
+                        <span>New Delhi, India</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="testimonial">
+                <p class="testimonial-text">
+                    "A must-have for every cricket fan! The interface is smooth, and the analytics help me improve my decision-making skills."
+                </p>
+                <div class="testimonial-info">
+                    <img src="img/a (4).jpg" alt="User Image">
+                    <div class="testimonial-details">
+                        <h3>Priya Nair</h3>
+                        <span>Mumbai, India</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="testimonial">
+                <p class="testimonial-text">
+                    "I’ve never been this involved in cricket before. LegendsLeague gives a fresh perspective on team management and competition."
+                </p>
+                <div class="testimonial-info">
+                    <img src="img/a (5).jpg" alt="User Image">
+                    <div class="testimonial-details">
+                        <h3>Arjun Mehta</h3>
+                        <span>Bangalore, India</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="testimonial">
+                <p class="testimonial-text">
+                    "Fantastic experience! I love the real-time updates and how immersive the entire platform is."
+                </p>
+                <div class="testimonial-info">
+                    <img src="img/a (6).jpg" alt="User Image">
+                    <div class="testimonial-details">
+                        <h3>Ananya Gupta</h3>
+                        <span>Kolkata, India</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="testimonial">
+                <p class="testimonial-text">
+                    "The analytics feature is amazing! It helps me track my performance and make better decisions."
+                </p>
+                <div class="testimonial-info">
+                    <img src="img/a (7).jpg" alt="User Image">
+                    <div class="testimonial-details">
+                        <h3>Vikram Joshi</h3>
+                        <span>Pune, India</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="testimonial">
+                <p class="testimonial-text">
+                    "This app keeps me engaged throughout the tournament season. The updates are fast, and the UI is smooth!"
+                </p>
+                <div class="testimonial-info">
+                    <img src="img/a (8).jpg" alt="User Image">
+                    <div class="testimonial-details">
+                        <h3>Megha Verma</h3>
+                        <span>Chennai, India</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="testimonial">
+                <p class="testimonial-text">
+                    "One of the best fantasy cricket platforms out there! The competition is fierce, and I love it!"
+                </p>
+                <div class="testimonial-info">
+                    <img src="img/a (9).jpg" alt="User Image">
+                    <div class="testimonial-details">
+                        <h3>Karan Singh</h3>
+                        <span>Hyderabad, India</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="testimonial">
+                <p class="testimonial-text">
+                    "I never thought a cricket fantasy game could be this engaging! LegendsLeague keeps me coming back for more."
+                </p>
+                <div class="testimonial-info">
+                    <img src="img/a (10).jpg" alt="User Image">
+                    <div class="testimonial-details">
+                        <h3>Ravi Malhotra</h3>
+                        <span>Jaipur, India</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="testimonial">
+                <p class="testimonial-text">
+                    "I love how intuitive the app is. The UI is sleek, and the updates are always on point!"
+                </p>
+                <div class="testimonial-info">
+                    <img src="img/a (11).jpg" alt="User Image">
+                    <div class="testimonial-details">
+                        <h3>Simran Kaur</h3>
+                        <span>Ahmedabad, India</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="testimonial">
+                <p class="testimonial-text">
+                    "A brilliant platform for cricket lovers! LegendsLeague really understands the passion of the fans."
+                </p>
+                <div class="testimonial-info">
+                    <img src="img/a (12).jpg" alt="User Image">
+                    <div class="testimonial-details">
+                        <h3>Neeraj Choudhary</h3>
+                        <span>Lucknow, India</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="testimonial-controls">
+            <button class="prev-btn">&larr;</button>
+            <button class="next-btn">&rarr;</button>
+        </div>
+
+    </div>
+</section>
+<script>
+    const testimonials = document.querySelectorAll('.testimonial');
+const prevBtn = document.querySelector('.prev-btn');
+const nextBtn = document.querySelector('.next-btn');
+let currentIndex = 0;
+
+const showTestimonial = (index) => {
+    testimonials.forEach((testimonial, i) => {
+        testimonial.classList.toggle('active', i === index);
+    });
+};
+
+nextBtn.addEventListener('click', () => {
+    currentIndex = (currentIndex + 1) % testimonials.length;
+    showTestimonial(currentIndex);
+});
+
+prevBtn.addEventListener('click', () => {
+    currentIndex = (currentIndex - 1 + testimonials.length) % testimonials.length;
+    showTestimonial(currentIndex);
+});
+
+showTestimonial(currentIndex);
+
+</script>
+
+<section class="ratings-section">
+    <div class="ratings-container">
+        <h2 class="ratings-title">LegendsLeague Ratings & Statistics</h2>
+        <p class="ratings-subtitle">
+            Trusted by thousands of cricket enthusiasts, LegendsLeague is redefining the way fans engage with the game.
+        </p>
+
+        <div class="ratings-grid">
+            <div class="rating-item">
+                <img src="img/a13.png" alt="Star Icon">
+                <h3 class="rating-number" data-target="4.8">4.8</h3>
+                <p>Average App Rating</p>
+            </div>
+
+            <div class="rating-item">
+                <img src="img/a14.png" alt="Users Icon">
+                <h3 class="rating-number" data-target="500000">500000</h3>
+                <p>Registered Users</p>
+            </div>
+
+            <div class="rating-item">
+                <img src="img/a15.png" alt="Download Icon">
+                <h3 class="rating-number" data-target="1000000">1000000</h3>
+                <p>App Downloads</p>
+            </div>
+
+            <div class="rating-item">
+                <img src="img/a16.png" alt="Performance Icon">
+                <h3 class="rating-number" data-target="99.9">99.9</h3>
+                <p>Uptime Reliability (%)</p>
+            </div>
+        </div>
+
+        <a href="download/" class="ratings-btn">Explore More</a>
+    </div>
+</section>
+
+
+
+<section class="app-preview-section">
+    <div class="app-preview-container">
+        <h2 class="app-preview-title">Experience LegendsLeague Like Never Before</h2>
+        <p class="app-preview-subtitle">
+            Get a sneak peek at the immersive interface, powerful analytics, and seamless navigation that redefine cricket strategy and engagement.
+        </p>
+
+        <div class="app-preview-content">
+            <div class="app-preview-text">
+                <h3 class="app-feature-title">⚡ Intuitive Dashboard</h3>
+                <p>
+                    Dive into a well-crafted dashboard that delivers real-time match updates, team insights, and deep analytics to help you strategize like a pro.
+                </p>
+
+                <h3 class="app-feature-title">📊 Advanced Performance Tracking</h3>
+                <p>
+                    Analyze player statistics, past performances, and predictions—all in a sleek, user-friendly interface that makes decision-making effortless.
+                </p>
+
+                <h3 class="app-feature-title">🎯 Precision-Driven Team Selection</h3>
+                <p>
+                    LegendsLeague empowers you to craft the perfect lineup with detailed player data, injury reports, and expert recommendations.
+                </p>
+
+                <a href="download/" class="app-preview-btn">Explore Now</a>
+            </div>
+
+            <div class="app-preview-images">
+             
+                <img src="img/a (18).jpg" alt="App Preview 2" class="app-image app-image-right">
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<section class="luxury-overview-section">
+    <div class="luxury-container">
+        <div class="luxury-image">
+            <img src="img/a28.jpg" alt="Luxury Cricket" class="luxury-img">
+        </div>
+
+        <div class="luxury-content">
+            <h2 class="luxury-title">Unleash Your Cricket Strategy with LegendsLeague</h2>
+            <p class="luxury-description">
+                LegendsLeague offers a unique platform for cricket fans who want to challenge their skills, strategize, and immerse themselves in the excitement of the game. With intuitive design, advanced analytics, and seamless integration, this is the app you've been waiting for.
+            </p>
+
+            <div class="luxury-features">
+                <h3 class="features-title">Why Choose LegendsLeague?</h3>
+                <ul class="luxury-features-list">
+                    <li><span class="icon">&#x2714;</span> Create your dream team with precision and ease.</li>
+                    <li><span class="icon">&#x2714;</span> Real-time updates and performance tracking.</li>
+                    <li><span class="icon">&#x2714;</span> A smooth, immersive user interface designed for every cricket enthusiast.</li>
+                    <li><span class="icon">&#x2714;</span> Play with friends, challenge rivals, and improve your strategic approach.</li>
+                </ul>
+            </div>
+
+            <div class="luxury-cta">
+                <p class="cta-text">Ready to take your cricket game to the next level?</p>
+                <a href="download/" class="cta-btn">Download Now</a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="faq-section">
+    <div class="faq-container">
+        <h2 class="faq-title">Frequently Asked Questions</h2>
+        <p class="faq-intro">
+            Here are some common questions we get about LegendsLeague. Feel free to reach out if you need further assistance.
+        </p>
+
+        <div class="faq-accordion">
+            <div class="faq-item">
+                <button class="faq-question">
+                    <span class="question-text">How does LegendsLeague work?</span>
+                    <span class="plus-icon">+</span>
+                </button>
+                <div class="faq-answer">
+                    <p>
+                        LegendsLeague allows cricket fans to build their ideal teams by selecting players from real-life cricket matches. The platform uses performance data to help you make strategic decisions. As the matches progress, you earn points based on the performance of the players in your team.
+                    </p>
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <button class="faq-question">
+                    <span class="question-text">What devices can I use LegendsLeague on?</span>
+                    <span class="plus-icon">+</span>
+                </button>
+                <div class="faq-answer">
+                    <p>
+                        LegendsLeague is available on both Android and iOS devices. You can download the app directly from the Google Play Store or the Apple App Store to start building your dream team on the go.
+                    </p>
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <button class="faq-question">
+                    <span class="question-text">Can I play with my friends?</span>
+                    <span class="plus-icon">+</span>
+                </button>
+                <div class="faq-answer">
+                    <p>
+                        Yes! LegendsLeague allows you to create private leagues with your friends and challenge each other to see who can make the best team. You can compete for fun or just to improve your cricket knowledge and strategy.
+                    </p>
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <button class="faq-question">
+                    <span class="question-text">Is there a way to track my performance over time?</span>
+                    <span class="plus-icon">+</span>
+                </button>
+                <div class="faq-answer">
+                    <p>
+                        Absolutely! LegendsLeague provides performance analytics for each user, which tracks your decisions and provides detailed insights into how your team is performing over time. You can use this information to improve your strategic thinking and decision-making in future games.
+                    </p>
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <button class="faq-question">
+                    <span class="question-text">How do I create a team?</span>
+                    <span class="plus-icon">+</span>
+                </button>
+                <div class="faq-answer">
+                    <p>
+                        Creating a team is easy! Simply select your players based on real-life matchups and their current form. You can view player statistics and other relevant data to help make informed choices. Once you have assembled your team, you’re ready to go!
+                    </p>
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <button class="faq-question">
+                    <span class="question-text">Do I need an internet connection to play?</span>
+                    <span class="plus-icon">+</span>
+                </button>
+                <div class="faq-answer">
+                    <p>
+                        Yes, LegendsLeague requires an internet connection to fetch live data from real cricket matches. An internet connection ensures that your team remains updated with the latest stats, player performance, and match results.
+                    </p>
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <button class="faq-question">
+                    <span class="question-text">Is there a limit to the number of players I can select?</span>
+                    <span class="plus-icon">+</span>
+                </button>
+                <div class="faq-answer">
+                    <p>
+                        Yes, each team in LegendsLeague can have a maximum of 11 players. You’ll need to balance your team carefully to ensure you have a combination of top-performing batsmen, bowlers, and all-rounders. Make sure your team composition is balanced to maximize your points potential.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<script>
+// Accordion functionality for FAQs
+const faqItems = document.querySelectorAll('.faq-item');
+
+faqItems.forEach(item => {
+    const faqQuestion = item.querySelector('.faq-question');
+    
+    faqQuestion.addEventListener('click', () => {
+        // Toggle active class to show/hide answer
+        item.classList.toggle('active');
+        
+        // Get the answer element
+        const answer = item.querySelector('.faq-answer');
+        
+        // If the item is active, show the answer, otherwise hide it
+        if (item.classList.contains('active')) {
+            answer.style.display = 'block';
+        } else {
+            answer.style.display = 'none';
+        }
+    });
+});
+
+</script>
+
+<section class="champions-section">
+    <div class="champions-container">
+        <div class="champions-content">
+            <h2 class="champions-title">Meet the Legends</h2>
+            <p class="champions-description">
+                These exceptional players have mastered the art of strategy and performance in LegendsLeague. Their consistency, tactical decisions, and passion make them stand out in the world of fantasy cricket.
+            </p>
+
+            <div class="champions-cards">
+                <div class="champion-card">
+                    <div class="champion-image">
+                        <img src="img/a29.jpg" alt="Player 1">
+                    </div>
+                    <div class="champion-info">
+                        <h3 class="player-name">Rahul Verma</h3>
+                        <p class="player-details">
+                            An all-rounder with a sharp mind, Rahul knows how to build the perfect team. His ability to predict match outcomes has made him a key player in the league.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="champion-card">
+                    <div class="champion-image">
+                        <img src="img/a30.jpg" alt="Player 2">
+                    </div>
+                    <div class="champion-info">
+                        <h3 class="player-name">Ananya Iyer</h3>
+                        <p class="player-details">
+                            Ananya’s deep understanding of player statistics gives her an edge over competitors. She is known for making bold, game-changing moves.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="champion-card">
+                    <div class="champion-image">
+                        <img src="img/a31.jpg" alt="Player 3">
+                    </div>
+                    <div class="champion-info">
+                        <h3 class="player-name">Vikram Rathore</h3>
+                        <p class="player-details">
+                            A master strategist, Vikram has been leading the charts season after season. His ability to balance aggressive and defensive gameplay is unmatched.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <a href="download/" class="champions-btn">Join the Action</a>
+        </div>
+    </div>
+</section>
+
+<section class="featured-players-section">
+    <div class="featured-container">
+        <div class="featured-image">
+            <img src="img/a32.jpeg" alt="Featured Player">
+        </div>
+        <div class="featured-content">
+            <h2 class="featured-title">Rising Stars of LegendsLeague</h2>
+            <p class="featured-description">
+                These players have showcased incredible strategy, sharp decision-making, and deep knowledge of the game. Here’s a look at their journey and contributions to the league.
+            </p>
+
+            <div class="player-stats">
+                <div class="stat-box">
+                    <span class="stat-label">Total Matches</span>
+                    <span class="stat-value" id="matches-played">0</span>
+                </div>
+                <div class="stat-box">
+                    <span class="stat-label">Average Points</span>
+                    <span class="stat-value" id="avg-points">0</span>
+                </div>
+                <div class="stat-box">
+                    <span class="stat-label">Captain Selections</span>
+                    <span class="stat-value" id="captain-selections">0</span>
+                </div>
+            </div>
+
+            
+        </div>
+    </div>
+</section>
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+    function animateStats(id, value, duration) {
+        let start = 0;
+        let increment = Math.ceil(value / duration);
+        let element = document.getElementById(id);
+
+        let counter = setInterval(function () {
+            start += increment;
+            if (start >= value) {
+                start = value;
+                clearInterval(counter);
+            }
+            element.innerText = start;
+        }, 50);
+    }
+
+    animateStats("matches-played", 125, 20);
+    animateStats("avg-points", 78, 20);
+    animateStats("captain-selections", 50, 20);
+});
+
+</script>
+
+<section class="strategy-hub-section">
+    <div class="strategy-container">
+        <div class="strategy-content">
+            <h2 class="strategy-title">Master Your Fantasy Cricket Strategy</h2>
+            <p class="strategy-description">
+                Take your LegendsLeague game to the next level with expert tips, team formations, and strategic insights. Whether you're new or experienced, this hub is designed to enhance your gameplay.
+            </p>
+
+            <div class="strategy-points">
+                <div class="strategy-item">
+                    <img src="img/a33.png" alt="Strategy Image 1">
+                    <div class="strategy-text">
+                        <h3>Analyze Player Performance</h3>
+                        <p>Deep dive into player stats, track recent form, and make informed decisions.</p>
+                    </div>
+                </div>
+                <div class="strategy-item">
+                    <img src="img/a33.png" alt="Strategy Image 2">
+                    <div class="strategy-text">
+                        <h3>Build Balanced Teams</h3>
+                        <p>Mix experienced players with emerging talents to create a well-rounded team.</p>
+                    </div>
+                </div>
+            </div>
+
+            
+        </div>
+    </div>
+</section>
+
+<section class="blogs-section">
+    <div class="blogs-container">
+        <h2 class="blogs-title">Latest Cricket Insights</h2>
+        <p class="blogs-subtitle">Stay ahead with expert strategies, player analysis, and in-depth cricket knowledge.</p>
+
+        <div class="blogs-grid">
+            <!-- Blog Item 1 -->
+            <div class="blog-card">
+                <img src="img/a34.jpg" alt="Cricket Blog Image" class="blog-image">
+                <div class="blog-content">
+                    <h3 class="blog-title">Mastering Fantasy Cricket Strategies</h3>
+                    <p class="blog-summary">A complete guide to building the perfect team and improving your chances of success.</p>
+                    <div class="blog-full-content">
+                        <p>Fantasy cricket is all about making calculated decisions. A well-balanced team consists of strong batsmen, efficient bowlers, and dynamic all-rounders. The key is to analyze each player's past performances, current form, and head-to-head records.</p>
+                        <p>Additionally, consider external factors like pitch conditions and weather reports. A dry pitch might favor spinners, while a green top will help pace bowlers. Research, patience, and strategy make all the difference in fantasy cricket.</p>
+                    </div>
+                    <button class="read-more-btn">Read More</button>
+                </div>
+            </div>
+
+            <!-- Blog Item 2 -->
+            <div class="blog-card">
+                <img src="img/a35.jpg" alt="Cricket Blog Image" class="blog-image">
+                <div class="blog-content">
+                    <h3 class="blog-title">Top Performers of the Season</h3>
+                    <p class="blog-summary">Discover the best players this season and their impact on matches.</p>
+                    <div class="blog-full-content">
+                        <p>Each season, certain players rise to the occasion with exceptional performances. Some batters accumulate massive runs, while others deliver match-winning spells.</p>
+                        <p>Keep an eye on player consistency and adaptability across different formats. Analyzing a player's strike rate, average, and recent form will help in picking the right stars for your team.</p>
+                    </div>
+                    <button class="read-more-btn">Read More</button>
+                </div>
+            </div>
+
+            <!-- Blog Item 3 -->
+            <div class="blog-card">
+                <img src="img/a36.jpg" alt="Cricket Blog Image" class="blog-image">
+                <div class="blog-content">
+                    <h3 class="blog-title">How to Analyze Player Form?</h3>
+                    <p class="blog-summary">Understanding player performance trends can give you an edge.</p>
+                    <div class="blog-full-content">
+                        <p>A player's form isn’t just about runs scored or wickets taken. Look at their strike rate, economy rate, and performances against strong teams.</p>
+                        <p>Check recent statistics and injury updates before selecting them for your fantasy team. A well-informed decision can lead to a more competitive lineup.</p>
+                    </div>
+                    <button class="read-more-btn">Read More</button>
+                </div>
+            </div>
+
+            <!-- Blog Item 4 -->
+            <div class="blog-card">
+                <img src="img/a37.jpg" alt="Cricket Blog Image" class="blog-image">
+                <div class="blog-content">
+                    <h3 class="blog-title">Impact of Pitch Conditions</h3>
+                    <p class="blog-summary">Understanding how different pitches affect player performance.</p>
+                    <div class="blog-full-content">
+                        <p>Some pitches favor fast bowlers, while others support spinners or batters. Knowing pitch conditions can help in making better fantasy team selections.</p>
+                        <p>For example, in dry conditions, spinners play a crucial role, whereas in swinging conditions, pacers dominate. Research pitch reports before finalizing your team.</p>
+                    </div>
+                    <button class="read-more-btn">Read More</button>
+                </div>
+            </div>
+
+            <!-- Blog Item 5 -->
+            <div class="blog-card">
+                <img src="img/a38.jpg" alt="Cricket Blog Image" class="blog-image">
+                <div class="blog-content">
+                    <h3 class="blog-title">Building a Competitive Mindset</h3>
+                    <p class="blog-summary">How mental strength plays a crucial role in fantasy cricket.</p>
+                    <div class="blog-full-content">
+                        <p>Playing fantasy cricket requires patience, research, and decision-making skills. Avoid making impulsive choices based on one good performance.</p>
+                        <p>Instead, study long-term performance trends, team combinations, and opposition strength. A disciplined approach leads to consistent results.</p>
+                    </div>
+                    <button class="read-more-btn">Read More</button>
+                </div>
+            </div>
+
+            <!-- Blog Item 6 -->
+            <div class="blog-card">
+                <img src="img/a39.jpg" alt="Cricket Blog Image" class="blog-image">
+                <div class="blog-content">
+                    <h3 class="blog-title">Selecting Captain & Vice-Captain</h3>
+                    <p class="blog-summary">Choosing the right leaders for your team can make a difference.</p>
+                    <div class="blog-full-content">
+                        <p>Your captain earns double points, while the vice-captain gets 1.5x points. Pick reliable performers who consistently deliver strong results.</p>
+                        <p>Choosing a player in good form, facing a weak opposition, or playing in favorable conditions can be a great advantage.</p>
+                    </div>
+                    <button class="read-more-btn">Read More</button>
+                </div>
+            </div>
+
+            <!-- Blog Item 7 -->
+            <div class="blog-card">
+                <img src="img/a40.jpg" alt="Cricket Blog Image" class="blog-image">
+                <div class="blog-content">
+                    <h3 class="blog-title">The Science Behind Team Balance</h3>
+                    <p class="blog-summary">Creating the perfect mix of players for a strong team.</p>
+                    <div class="blog-full-content">
+                        <p>A well-balanced team has a mix of batters, bowlers, all-rounders, and a solid wicketkeeper. Don't overload your team with players of the same type.</p>
+                        <p>Instead, distribute points wisely and maintain diversity to handle various match scenarios effectively.</p>
+                    </div>
+                    <button class="read-more-btn">Read More</button>
+                </div>
+            </div>
+
+            <!-- Blog Item 8 -->
+            <div class="blog-card">
+                <img src="img/a41.jpg" alt="Cricket Blog Image" class="blog-image">
+                <div class="blog-content">
+                    <h3 class="blog-title">Expert Advice & Community Insights</h3>
+                    <p class="blog-summary">Learn from seasoned fantasy players and cricket analysts.</p>
+                    <div class="blog-full-content">
+                        <p>Top fantasy cricket players focus on data-driven strategies rather than gut feelings. Stay updated with expert predictions and analysis.</p>
+                        <p>Join fantasy sports communities, discuss strategies, and learn from experienced players to improve your game.</p>
+                    </div>
+                    <button class="read-more-btn">Read More</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<script>
+    document.querySelectorAll('.read-more-btn').forEach(button => {
+    button.addEventListener('click', () => {
+        const fullContent = button.previousElementSibling;
+        fullContent.style.display = fullContent.style.display === "block" ? "none" : "block";
+        button.textContent = button.textContent === "Read More" ? "Read Less" : "Read More";
+    });
+});
+
+</script>
+
+<section class="exclusive-challenges">
+    <div class="challenges-container">
+        <h2 class="challenges-title">Exclusive Challenges</h2>
+        <p class="challenges-subtitle">Push your skills to the limit with unique fantasy cricket challenges.</p>
+
+        <div class="challenges-grid">
+            <!-- Challenge Item 1 -->
+            <div class="challenge-card" onclick="toggleDetails(this)">
+                <div class="challenge-front">
+                    <h3 class="challenge-name">The Ultimate Strategist</h3>
+                    <p class="challenge-summary">Craft the most balanced team based on real-time player form.</p>
+                </div>
+                <div class="challenge-back">
+                    <p>Only those who analyze player statistics deeply can master this challenge. Keep track of form, pitch conditions, and head-to-head records to build a team that dominates.</p>
+                </div>
+            </div>
+
+            <!-- Challenge Item 2 -->
+            <div class="challenge-card" onclick="toggleDetails(this)">
+                <div class="challenge-front">
+                    <h3 class="challenge-name">Unbeatable Bowling Attack</h3>
+                    <p class="challenge-summary">Pick the best-performing bowlers and dominate every match.</p>
+                </div>
+                <div class="challenge-back">
+                    <p>Focus on economy rates, recent wickets, and bowling conditions. A smart bowler selection can turn the game in your favor.</p>
+                </div>
+            </div>
+
+            <!-- Challenge Item 3 -->
+            <div class="challenge-card" onclick="toggleDetails(this)">
+                <div class="challenge-front">
+                    <h3 class="challenge-name">Master of All-Rounders</h3>
+                    <p class="challenge-summary">Only teams with top-performing all-rounders can succeed here.</p>
+                </div>
+                <div class="challenge-back">
+                    <p>All-rounders bring balance to any team. Choose players who can contribute with both bat and ball for the ultimate edge.</p>
+                </div>
+            </div>
+
+            <!-- Challenge Item 4 -->
+            <div class="challenge-card" onclick="toggleDetails(this)">
+                <div class="challenge-front">
+                    <h3 class="challenge-name">Tactical Captaincy</h3>
+                    <p class="challenge-summary">Your captain’s performance will decide everything.</p>
+                </div>
+                <div class="challenge-back">
+                    <p>Select a captain who consistently delivers match-winning performances. A well-chosen leader can maximize your team's potential.</p>
+                </div>
+            </div>
+
+            <!-- Challenge Item 5 -->
+            <div class="challenge-card" onclick="toggleDetails(this)">
+                <div class="challenge-front">
+                    <h3 class="challenge-name">The Power-Hitters Club</h3>
+                    <p class="challenge-summary">Form a team of the biggest six-hitters in the game.</p>
+                </div>
+                <div class="challenge-back">
+                    <p>Pick aggressive batsmen who can change the game within a few overs. Strike rates and boundary-hitting ability are key factors.</p>
+                </div>
+            </div>
+
+            <!-- Challenge Item 6 -->
+            <div class="challenge-card" onclick="toggleDetails(this)">
+                <div class="challenge-front">
+                    <h3 class="challenge-name">Defensive Wall</h3>
+                    <p class="challenge-summary">Can you build a team that minimizes losses and maximizes points?</p>
+                </div>
+                <div class="challenge-back">
+                    <p>A defensive strategy requires selecting players who consistently perform well. Stability over risk-taking is the key to mastering this challenge.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<script>
+    function toggleDetails(card) {
+        card.classList.toggle("flipped");
+    }
+</script>
+
+  </main>
+
+
+  <footer class="luxury-footer">
+    <div class="footer-container">
+        <div class="footer-logo">
+            <h2 class="footer-site-name">LegendsLeague</h2>
+        </div>
+        <div class="footer-links">
+            <ul class="footer-link-list">
+                <li><a href="disclaimer/" class="footer-link">Disclaimer</a></li>
+                <li><a href="privacy-policy/" class="footer-link">Privacy Policy</a></li>
+                <li><a href="term-conditions/" class="footer-link">Terms & Conditions</a></li>
+                <li><a href="responsible/" class="footer-link">Responsible Play</a></li>
+                <li><a href="rules/" class="footer-link">Rules</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="gam" style="display: flex; margin-top: 20px; align-items: center; gap: 10px; justify-content: center;">
+      <div class="cirle" style="color: white; background-color: red; border-radius: 100%; padding: 15px;font-size: 20px; font-weight: 700;">18+</div>
+      <a href="https://www.gamcare.org.uk/"><img src="img/ga-care.png" alt="img" style="max-width: 70px;"></a>
+    
+    </div>
+    <p style="max-width: 1200px; margin: 0 auto;">
+      Participation in fantasy sports is governed by the laws applicable in India. Fantasy sports are categorized as a 'game of skill' under Indian law and are legal in most states. However, residents of Andhra Pradesh, Assam, Nagaland, Odisha, Sikkim, and Telangana are not eligible to participate as per state regulations. Users must be at least 18 years of age to register and play on this platform. Please play responsibly and ensure compliance with applicable laws before participating.
+    </p>
+    <div class="footer-bottom">
+        <p class="footer-text">© 2025 LegendsLeague. All Rights Reserved.</p>
+    </div>
+</footer>
+
+
+  
+</body>
+
+</html>
