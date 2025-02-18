@@ -1,4 +1,5 @@
-.how-to-play-banner {
+.htp-banner {
+    background-color: #333;
     &__bg {
         position: absolute;
         top: 0;
@@ -17,5 +18,17 @@
         display: flex;
         flex-direction: column;
         gap: 40px;
+        h1,
+        > p {
+            text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+        }
+    }
+    .btn {
+        margin: 30px auto 0;
+    }
+    @media (max-width: 767px) {
+        .btn {
+            margin: 10px auto 0;
+        }
     }
 }

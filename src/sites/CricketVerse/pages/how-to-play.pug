@@ -1,8 +1,8 @@
 extends /sites/CricketVerse/layouts/base.pug
 
 block variables
-    - const title = 'How to Play – CricketZone'
-    - const description = 'Discover the exciting world of Fantasy Cricket at CricketZone! Learn how to create teams, participate in contests, and boost your chances of winning. Follow our simple steps to get started and enjoy the game!'
+    - const title = 'How to Play CricketVerse – Your Guide to Fantasy Cricket'
+    - const description = 'Learn how to play CricketVerse and master the art of fantasy cricket! This guide will walk you through creating your team, selecting players, and scoring points based on real-world performances. Start your journey today and get the most out of your CricketVerse experience!'
 
 block content
     +Header()
@@ -11,9 +11,19 @@ block content
 
         +Htp-banner()
 
-        +Guide()
+        +Htp-steps()
 
-        +Challenge()
+        +Htp-why()
+
+        //- +Atmosphere()
+
+        +Htp-team()
+
+        +Htp-challenge()
+
+        
+        
+        
 
 
     +Footer()

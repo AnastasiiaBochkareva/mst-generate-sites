@@ -30,6 +30,8 @@ html,
 body {
     font-family: "DM Sans", serif;
     overflow-x: hidden;
+    background-color: #444444;
+    color: #ecf0f1;
 }
 main {
     overflow: hidden;
@@ -68,14 +70,6 @@ a {
     }
 }
 
-// link
-a {
-    font-size: clamp(1rem, 2vw, 1.25rem);
-    transition: color 0.3s ease;
-    &:hover {
-        text-decoration: underline;
-    }
-}
 // button
 .btn {
     display: block;
@@ -93,19 +87,26 @@ a {
         background-color: #69917c;
         color: #fff;
     }
+    @media (max-width: 767px) {
+        padding: 7px 20px;
+    }
 }
-
+.btn:not(.form__btn) {
+    animation: pulse 1.5s infinite;
+    &:hover {
+        background-color: #fff;
+        color: #3a7f76;
+    }
+}
 // PADDING
-.cricketzone,
-.cricketzone-features,
-.cricketzone-benefits,
-.cricketzone-reviews,
-.how-to-play-banner,
-.guide,
-.challenge,
-.table,
-.score-banner,
-.contacts {
+.steps,
+.htp-why,
+.htp-challenge,
+.htp-team,
+.dload-how,
+.dload-security,
+.dload-system,
+.features {
     padding-top: 50px;
     padding-bottom: 50px;
     @media (max-width: 767px) {
@@ -163,3 +164,33 @@ img {
         margin-top: 0;
     }
 }
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+        opacity: 1;
+    }
+    50% {
+        transform: scale(1.1);
+        opacity: 0.8;
+    }
+    100% {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+@keyframes move {
+    0% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-5px);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+// transition: transform 0.3s ease;
+
+// &:hover {
+//     animation: move 0.6s ease-in-out;
+// }

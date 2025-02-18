@@ -1,0 +1,23 @@
+mixin Htp-challenge()
+    section.htp-challenge.container
+        h2 Create Your Fantasy Challenge
+        p Creating a challenge is easy! Just log in, tap "Create Challenge," choose your match, pick your players, and set your challenge rules.
+        .img.reveal-zoom
+            +Img({
+                src: 'img/table.jpeg',
+                alt: 'Fantasy Challenge'
+            })
+        .reveal-zoom
+            .htp-challenge__icon 🎮
+            h3 Understanding the Scoring System
+            p CricketVerse uses a dynamic scoring system. Track your players’ performance in real-time, earn points for runs, wickets, and catches, and see your rank on the leaderboard.
+            ul
+                li ✔ Tap the "Account" icon to see your score.
+                li ✔ Check detailed stats under the "Cricket" section to track your team’s performance.
+                li ✔ Stay ahead by knowing the scoring system and adjusting your picks for every match.
+      
+            +Link({
+                class: 'btn',
+                href: 'download.html',
+                text: 'Download app',
+            })

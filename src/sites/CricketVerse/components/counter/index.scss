@@ -1,0 +1,28 @@
+.counter {
+    padding: 40px 20px;
+
+    &__container {
+        display: flex;
+        gap: 20px;
+        > div {
+            flex: 1;
+            text-align: center;
+            padding: 20px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+        }
+    }
+    &__number {
+        font-weight: bold;
+    }
+
+    &__label {
+        margin-top: 10px;
+    }
+
+    @media (max-width: 575px) {
+        &__container {
+            flex-wrap: wrap;
+        }
+    }
+}

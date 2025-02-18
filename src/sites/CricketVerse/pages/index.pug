@@ -1,8 +1,8 @@
 extends /sites/CricketVerse/layouts/base.pug
 
 block variables
-    - const title = 'CricketZone – Play Fantasy Cricket Anytime, Anywhere'
-    - const description = 'Join CricketZone to enjoy the thrill of fantasy cricket. Play from anywhere, anytime, and win exciting rewards. Get started with our easy-to-use platform and experience the best fantasy cricket game.'
+    - const title = 'CricketVerse — Play fantasy cricket and rise to the top!'
+    - const description = 'CricketVerse is the perfect platform for cricket fans. Build virtual teams, track real-life games, and earn points based on player performances in tournaments. Join CricketVerse and become a fantasy cricket champion!'
 
 block content
     +Header()
@@ -15,6 +15,18 @@ block content
         
         +Benefits()
 
+        +Counter({
+            counterOne: 'text',
+            counterTwo: 'text',
+            counterThree: 'text',
+        })
+
+        +Table()
+
         +Reviews()
+
+        +Advantages()
+
+        +Info()
 
     +Footer()
