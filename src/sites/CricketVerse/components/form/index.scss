@@ -105,6 +105,8 @@
     @media (max-width: 767px) {
         &__container {
             flex-direction: column;
+            padding-top: 20px;
+            padding-bottom: 20px;
             > div {
                 max-width: 100%;
             }

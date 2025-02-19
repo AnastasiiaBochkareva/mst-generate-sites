@@ -1,0 +1,19 @@
+mixin Mob-counter(param)
+
+    - param.counterOne = param.counterOne ? param.counterOne : ''
+    - param.counterTwo = param.counterTwo ? param.counterTwo : ''
+    - param.counterThree = param.counterThree ? param.counterThree : ''
+    
+    section.mob-counter
+        .container.mob-counter__container 
+            h2 CricketVerse – Player Feedback
+            p See what our players think about the CricketVerse app and explore some key statistics that make our platform a favorite among cricket enthusiasts.
+            div
+                .counter__number(id='counter1') 0
+                .counter__label=param.counterOne
+            div
+                .counter__number(id='counter2') 0K+
+                .counter__label=param.counterTwo
+            div
+                .counter__number(id='counter3') 0K+
+                .counter__label=param.counterThree

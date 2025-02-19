@@ -1,0 +1,15 @@
+mixin Mob-anner()
+    section.mob-banner
+        .container.mob-banner__container.reveal-zoom
+            +Img({
+                src: 'img/team4.jpeg',
+                alt: 'CricketVersebanner',
+                class: 'banner-bg'
+            })
+            h1 Step into the world of CricketVerse — the ultimate fantasy cricket experience!
+            p Create your team in CricketVerse, manage players, and earn points based on their real-world tournament performance. Become the top cricket manager!
+            +Link({
+                class: 'btn banner__btn',
+                href: '/download/',
+                text: 'Download App',
+            })

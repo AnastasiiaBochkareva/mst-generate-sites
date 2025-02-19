@@ -1,0 +1,51 @@
+extends /sites/CricketVerse/layouts/base.pug
+
+block variables
+    - const title = 'CricketVerse — Play fantasy cricket and rise to the top!'
+    - const description = 'CricketVerse is the perfect platform for cricket fans. Build virtual teams, track real-life games, and earn points based on player performances in tournaments. Join CricketVerse and become a fantasy cricket champion!'
+
+block content
+    +Header()
+
+    main
+        section.container(style="background-color: #444; padding: 0 0 20px;")
+            div(id="download")
+                div(class="container" style="padding: 0;")
+                    div.main-link
+                        a(href="/contact/" style="display: flex; align-items: center; justify-content: center;")
+                            +Img({
+                                src: 'img/land.jpg',
+                                alt: 'CricketVerse'
+                            })
+            
+        +Mob-anner()
+
+        +Mob-tricks()
+
+        +M-dload()
+
+        +M-install()
+
+        +Mob-features()
+
+        +Mob-benefits()
+
+        +Mob-counter({
+            counterOne: 'Average Player Rating',
+            counterTwo: 'Total Downloads',
+            counterThree: 'Active Players',
+        })
+
+        +Mob-table()
+
+        +Mob-ultimate()
+
+        +Mob-reviews()
+
+        +Mob-advantages()
+
+        +Mob-info()
+
+        +Disclaimer-modal()
+
+    +Footer()

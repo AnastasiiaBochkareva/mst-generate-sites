@@ -67,11 +67,12 @@
             width: 70px;
             height: 70px;
         }
-        p:not(.copyright) {
-            width: calc(100% - 90px);
-            text-align: center;
+        div {
+            color: yellow;
+            font-size: 3rem;
         }
-        .copyright {
+        p,
+        div {
             width: 100%;
             text-align: center;
         }

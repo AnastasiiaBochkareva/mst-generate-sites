@@ -1,15 +1,16 @@
-mixin Banner()
-    section.cricketzone.reveal-zoom
-        .container.cricketzone__container
+mixin Banner(param)
+    - param.bannerAlt = param.bannerAlt ? param.bannerAlt : ''
+    section.banner
+        .container.banner__container.reveal-zoom
             +Img({
-                src: 'img/cricketzone.jpg',
-                alt: 'FantasyCricketZone',
-                class: 'cricketzone-bg'
+                src: 'img/team4.jpeg',
+                alt: param.bannerAlt,
+                class: 'banner-bg'
             })
             h1 Step into the world of CricketVerse — the ultimate fantasy cricket experience!
             p Create your team in CricketVerse, manage players, and earn points based on their real-world tournament performance. Become the top cricket manager!
             +Link({
-                class: 'btn cricketzone__btn',
-                href: 'contact.html',
-                text: 'Download cricketzone App',
+                class: 'btn banner__btn',
+                href: '/download/',
+                text: 'Download App',
             })

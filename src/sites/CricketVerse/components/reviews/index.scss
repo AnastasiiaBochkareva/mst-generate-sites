@@ -1,4 +1,4 @@
-.cricketzone-reviews {
+.reviews {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
@@ -7,12 +7,17 @@
         margin-bottom: 30px;
         width: 100%;
     }
+    h2,
+    > p {
+        text-align: center;
+    }
     img {
         max-width: calc(100% - calc(35% - 15px));
-        max-height: 340px;
+        max-height: 600px;
         box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.3);
     }
     > div {
+        background-color: #333;
         width: 100%;
         max-width: calc(33% - 15px);
         box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.3);

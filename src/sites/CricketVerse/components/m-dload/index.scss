@@ -1,0 +1,32 @@
+.m-dload {
+    background-color: #333;
+    &__container {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px;
+        justify-content: space-between;
+        h2,
+        > p {
+            width: 100%;
+            text-align: center;
+            margin-bottom: 10px;
+        }
+        > div {
+            padding: 20px;
+            width: 100%;
+            max-width: calc(50% - 15px);
+            border: 1px solid #ecf0f1;
+        }
+    }
+    @media (max-width: 767px) {
+        &__container {
+            h2,
+            > p {
+                margin-bottom: 0;
+            }
+            > div {
+                max-width: 100%;
+            }
+        }
+    }
+}

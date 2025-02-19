@@ -1,0 +1,12 @@
+.mob-table {
+    overflow: hidden;
+    h2,
+    > p {
+        margin-bottom: 20px;
+        text-align: center;
+    }
+    &-container {
+        overflow-x: auto;
+        -webkit-overflow-scrolling: touch;
+    }
+}

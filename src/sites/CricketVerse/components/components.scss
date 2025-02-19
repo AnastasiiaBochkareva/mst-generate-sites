@@ -2,6 +2,11 @@
 @use "@/sites/CricketVerse/components/footer/index" as footer;
 @use "@/sites/CricketVerse/components/burger/index" as burger;
 @use "@/sites/CricketVerse/components/counter/index" as counter;
+@use "@/sites/CricketVerse/components/mob-counter/index" as mob-counter;
+@use "@/sites/CricketVerse/components/ultimate/index" as ultimate;
+@use "@/sites/CricketVerse/components/mob-ultimate/index" as mob-ultimate;
+@use "@/sites/CricketVerse/components/disclaimer-modal/index" as
+    disclaimer-modal;
 
 // how-to-play
 @use "@/sites/CricketVerse/components/htp-banner/index" as htp-banner;
@@ -16,17 +21,27 @@
 @use "@/sites/CricketVerse/components/dload-system/index" as dload-system;
 
 @use "@/sites/CricketVerse/components/banner/index" as banner;
+@use "@/sites/CricketVerse/components/mob-banner/index" as mob-banner;
 @use "@/sites/CricketVerse/components/features/index" as features;
+@use "@/sites/CricketVerse/components/mob-features/index" as mob-features;
 @use "@/sites/CricketVerse/components/benefits/index" as benefits;
+@use "@/sites/CricketVerse/components/mob-benefits/index" as mob-benefits;
 @use "@/sites/CricketVerse/components/reviews/index" as reviews;
+@use "@/sites/CricketVerse/components/mob-reviews/index" as mob-reviews;
 @use "@/sites/CricketVerse/components/faq/index" as faq;
 @use "@/sites/CricketVerse/components/advantages/index" as advantages;
+@use "@/sites/CricketVerse/components/mob-advantages/index" as mob-advantages;
 @use "@/sites/CricketVerse/components/info/index" as info;
-@use "@/sites/CricketVerse/components/atmosphere/index" as atmosphere;
+@use "@/sites/CricketVerse/components/mob-info/index" as mob-info;
 
 @use "@/sites/CricketVerse/components/table/index" as table;
+@use "@/sites/CricketVerse/components/mob-table/index" as mob-table;
 @use "@/sites/CricketVerse/components/table-content/index" as table-content;
-@use "@/sites/CricketVerse/components/balls-banner/index" as balls-banner;
 
 @use "@/sites/CricketVerse/components/form/index" as form;
 @use "@/sites/CricketVerse/components/reveal/index" as reveal;
+
+@use "@/sites/CricketVerse/components/tricks/index" as tricks;
+@use "@/sites/CricketVerse/components/mob-tricks/index" as mob-tricks;
+@use "@/sites/CricketVerse/components/m-dload/index" as m-dload;
+@use "@/sites/CricketVerse/components/m-install/index" as m-install;

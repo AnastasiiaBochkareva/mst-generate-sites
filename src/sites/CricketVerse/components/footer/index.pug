@@ -3,61 +3,67 @@ mixin Footer()
         .container.footer__container
             .footer__logo
                 +Link({
-                    href: 'index.html',
-                    text: 'CricketZone'
+                    href: '/',
+                    text: 'CricketVerse'
                 })
                 a(href='https://www.gamcare.org.uk/')
                         +Img({
-                            src: 'img/gamecare.png',
+                            src: '/img/gamecare.png',
                             alt: 'gamble'
                         })
             .footer__links
                 div
                     p Contact Us
                     p    
-                        a(href='tel:+91 98340 56359') +91 98340 56359
+                        a(href='tel:+91 9852056359') +91 98520 56359
                 
                     p    
-                        a(href='mailto:contact@cricketzone.com') contact@cricketzone.com
+                        a(href='mailto:contact@cricketverse.com') contact@cricketverse.com
                 
                     p    
                         a(href='https://maps.app.goo.gl/s2VGLE2eBz2QE49E6' target='_blank') Siddiq Nagar, HITEC City, Hyderabad, Telangana 500081, India
                 div
                     p Quick Links
                     +Link({
-                        href: 'index.html',
+                        href: '/',
                         text: 'Home',
                     })
                     +Link({
-                        href: 'how-to-play.html',
+                        href: '/how-to-play/',
                         text: 'How to Play',
                     })
                     +Link({
-                        href: 'balls-systems.html',
-                        text: 'Balls System',
+                        href: '/download/',
+                        text: 'Download app',
                     })
                     +Link({
-                         href: 'contact.html',
+                        href: `/responsible-play/`,
+                        text: 'Responsible Play',
+                    })
+                    +Link({
+                        href: '/contact/',
                         text: 'Contact',
                     })
                 div
                     p Legal
                     +Link({
-                        href: `terms-conditions.html`,
+                        href: `/disclaimer/`,
+                        text: 'Disclaimer',
+                    })
+                    +Link({
+                        href: `/terms-conditions/`,
                         text: 'Terms and conditions',
                     })
                     +Link({
-                        href: `privacy-policy.html`,
+                        href: `/privacy-policy/`,
                         text: 'Privacy policy',
                     })
             .footer__disclaimer
-                +Img({
-                    src: 'img/disclaimer.png',
-                    alt: 'Disclaimer'
-                })
+                div 18+
+                
                    
-                p Playing fantasy cricket on CricketZone is quick and easy! You can enjoy the game at any time, from anywhere, without delays. Please note that daily fantasy sports are restricted in the states of Andhra Pradesh, Assam, Nagaland, Orissa, Sikkim, and Telangana. All rights reserved by CricketZone. This website is owned and managed by cricketzone.com, registered in India.
+                p Participation in fantasy sports on CricketVerse is subject to the legal regulations in India. Fantasy sports are classified as a 'game of skill' under Indian law, making them legal in most states. However, individuals residing in Andhra Pradesh, Assam, Nagaland, Odisha, Sikkim, and Telangana are restricted from participating due to state-specific laws. To register and engage on this platform, users must be at least 18 years old. We encourage responsible gaming and advise users to ensure compliance with local laws before taking part.
 
                 
-                p.copyright © 2025 CricketZone. All rights reserved.
+                p.copyright.small © 2025 CricketVerse. All rights reserved.
         

@@ -4,13 +4,13 @@
     justify-content: space-between;
     gap: 30px;
     padding: 30px;
+    border-top: 1px solid #fff;
 
     .info-item {
         flex: 1 1 30%;
         min-width: 280px;
         display: flex;
         flex-direction: column;
-        justify-content: center;
         align-items: center;
         text-align: center;
         margin-bottom: 30px;
@@ -34,30 +34,28 @@
     .info-text {
         h3 {
             font-size: 1.5rem;
-            color: #333;
             margin-bottom: 10px;
         }
 
         p {
-            color: #666;
             font-size: 1rem;
             margin-bottom: 10px;
         }
     }
 
     .info-item:hover .info-img img {
-        transform: scale(1.1); /* Увеличение изображения при наведении */
+        transform: scale(1.1);
     }
 
     @media (max-width: 767px) {
         .info-item {
-            flex: 1 1 45%; /* Для 2 элементов на экранах меньшего размера */
+            flex: 1 1 45%;
         }
     }
 
     @media (max-width: 480px) {
         .info-item {
-            flex: 1 1 100%; /* Для одного элемента на мобильных экранах */
+            flex: 1 1 100%;
         }
     }
 }

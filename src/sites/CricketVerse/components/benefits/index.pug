@@ -3,27 +3,26 @@ mixin Benefits()
         .container.benefits__container.reveal-zoom
             h2 Discover CricketVerse
             p Step into the world of CricketVerse and experience fantasy cricket like never before. Our app offers an intuitive interface, real-time updates, and seamless team management.
-            +Link({
-                class: 'btn benefits__btn',
-                href: 'contact.html',
-                text: 'Download App',
-            })
+            
             div.reveal-right
                 .img    
                     +Img({
                         src: 'img/phone4.jpeg',
-                        alt: 'FantasyCricketZone',
-                        class: 'cricketzone-bg'
+                        alt: 'Smart Team Management'
                     })
                 h3 Smart Team Management
                 p Build your ultimate cricket squad, analyze player stats, and adjust strategies on the go—all in a sleek, easy-to-use dashboard.
 
-            div.reveal-bottom
+            div.reveal-left
                 .img    
                     +Img({
                         src: 'img/phone5.jpeg',
-                        alt: 'FantasyCricketZone',
-                        class: 'cricketzone-bg'
+                        alt: 'Live Match Insights'
                     })
                 h3 Live Match Insights
                 p Track live performances of your selected players, get instant updates, and refine your tactics with real-time data.
+            +Link({
+                class: 'btn benefits__btn',
+                href: '/download/',
+                text: 'Download App',
+            })
