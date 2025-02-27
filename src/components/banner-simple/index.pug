@@ -1,0 +1,21 @@
+mixin Banner-simple(param={})
+    - param.title = param.title ? param.title : ''
+    - param.subtitle = param.subtitle ? param.subtitle : ''
+    - param.prefix = param.prefix ? param.prefix : ''
+
+    section(class=`${param.prefix}__banner`)
+        .container.banner__container
+            .banner__img
+                +Img({
+                    src: 'img/img.jpeg',
+                    alt: '!',
+                })
+            .banner__text
+                h1=param.title
+                p=param.subtitle
+                    if(param.link)
+                        +Link({
+                            class: 'btn',
+                            href: '/',
+                            text: 'Lorem',
+                        })
