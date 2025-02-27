@@ -1,0 +1,13 @@
+mixin Carousel(param)
+    .carousel
+        ul.carousel__list
+            li.carousel__item(data-pos="-2")
+                p=param.item1
+            li.carousel__item(data-pos="-1")
+                p=param.item2
+            li.carousel__item(data-pos="0")
+                p=param.item3
+            li.carousel__item(data-pos="1")
+                p=param.item4
+            li.carousel__item(data-pos="2")
+                p=param.item5
