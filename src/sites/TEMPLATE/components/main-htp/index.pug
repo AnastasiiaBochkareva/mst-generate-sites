@@ -1,0 +1,25 @@
+mixin Main-htp()
+    section.main-htp
+        .container.main-htp__container.grid-square
+            .main-htp__item.reveal-right.active
+                +Img({
+                    src: 'img/img.jpeg',
+                    alt: 'Lorem',
+                })
+            .main-htp__item.main-htp__text.reveal-left.active
+                h2 Кратко, как играть и что можно выиграть
+                p Объясни в двух-трех предложениях, как играет пользователь и что его ждет: "Для начала просто нажми кнопку и увидишь, что выпадет. 
+                p Ты можешь выиграть коины или попасть в таблицу лидеров, а также получить дополнительные бонусы!"
+            .main-htp__item.main-htp__text.reveal-bottom.active
+                ul
+                    li Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vitae, repudiandae?
+                    li Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vitae, repudiandae?
+                    li Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vitae, repudiandae?
+                
+                    +Link({
+                        class: 'btn main-htp__btn',
+                        href: 'catalog.html',
+                        text: 'See more',
+                    })
+
+            

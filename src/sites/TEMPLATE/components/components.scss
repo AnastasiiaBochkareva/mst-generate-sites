@@ -1,0 +1,45 @@
+// general
+@use "@/sites/TEMPLATE/components/header/index" as header;
+@use "@/sites/TEMPLATE/components/footer/index" as footer;
+@use "@/sites/TEMPLATE/components/burger/index" as burger;
+
+// ts
+@use "@/components/parallax/index" as parallax;
+@use "@/sites/TEMPLATE/components/reveal/index" as reveal;
+
+// main
+@use "@/sites/TEMPLATE/components/banner/index" as banner;
+@use "@/sites/TEMPLATE/components/game-intro/index" as game-intro;
+@use "@/sites/TEMPLATE/components/advantages/index" as advantages;
+@use "@/sites/TEMPLATE/components/main-htp/index" as main-htp;
+@use "@/sites/TEMPLATE/components/top-players/index" as top-players;
+@use "@/components/table/index" as table;
+
+@use "@/components/grid/index" as grid;
+@use "@/components/slider/index" as slider;
+// @use "@/components/variable/index" as variable;
+// banner
+// @use "@/components/banner-three-blocks/index" as banner-three-blocks;
+// @use "@/components/banner-simple/index" as banner-simple;
+
+@use "@/sites/TEMPLATE/components/welcome-block/index" as welcome-block;
+
+@use "@/sites/TEMPLATE/components/reviews/index" as reviews;
+@use "@/sites/TEMPLATE/components/arrivals-main/index" as arrivals-main;
+@use "@/sites/TEMPLATE/components/tricks/index" as tricks;
+@use "@/sites/TEMPLATE/components/form/index" as form;
+
+@use "@/sites/TEMPLATE/components/catalog-block/index" as catalog-block;
+@use "@/sites/TEMPLATE/components/limited/index" as limited;
+@use "@/sites/TEMPLATE/components/arrivals/index" as arrivals;
+@use "@/sites/TEMPLATE/components/ideas/index" as ideas;
+
+@use "@/sites/TEMPLATE/components/faq/index" as faq;
+@use "@/sites/TEMPLATE/components/materials/index" as materials;
+@use "@/sites/TEMPLATE/components/tips/index" as tips;
+@use "@/sites/TEMPLATE/components/care/index" as care;
+@use "@/sites/TEMPLATE/components/contact/index" as contact;
+@use "@/sites/TEMPLATE/components/delivery/index" as delivery;
+// section {
+//     @include banner-three-blocks.banner-style("new");
+// }

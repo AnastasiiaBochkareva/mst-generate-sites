@@ -1,0 +1,26 @@
+mixin Advantages()
+    section.advantages
+        .advantages__bg
+        .container.advantages__container.reveal-zoom.active
+            .advantages__head
+                h2 Преимущества игры
+                p Укажи, что отличает эти игры от других:
+                p 
+                    +Link({
+                        class: 'btn advantages__btn',
+                        href: 'catalog.html',
+                        text: 'Catalog',
+                    })
+            .advantages__cols
+                .advantages__cols-bg
+                .advantages__col
+                    +Img({
+                        src: 'img/img.jpeg',
+                        alt: 'Lorem',
+                    })
+                .advantages__col.advantages__list
+                    ul
+                        li "Легкость в освоении: просто нажми кнопку, и игра начнется!"
+                        li "Мгновенные результаты: играй, не тратя время на загрузки!"
+                        li "Полностью бесплатные: не нужно платить для того, чтобы участвовать!"
+                        li Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta, beatae?

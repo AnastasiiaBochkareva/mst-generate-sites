@@ -1,0 +1,23 @@
+.game-intro {
+    background-color: #e5e5e5;
+    position: relative;
+
+    &__head {
+        h2 {
+            margin-bottom: 30px;
+        }
+        p {
+            margin-bottom: 20px;
+            text-align: center;
+        }
+    }
+    > div {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 10px;
+        p {
+            margin-left: 20px;
+        }
+    }
+}

@@ -1,0 +1,85 @@
+.tips {
+    position: relative;
+    .container {
+    }
+    &__img-bg {
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        z-index: -1;
+    }
+    &__container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        gap: 20px;
+        > div {
+            width: 100%;
+            flex: 1;
+            padding: 40px;
+            background-color: rgba(255, 255, 255, 0.9);
+        }
+        ul {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            margin: 10px 0;
+            li {
+                position: relative;
+                padding-left: 20px;
+                display: flex;
+                &::before {
+                    content: "";
+                    display: block;
+                    width: 5px;
+                    height: 5px;
+                    background-color: transparent;
+                    background-color: #000;
+                    left: 0;
+                    position: absolute;
+                    top: 10px;
+                    border-radius: 50%;
+                }
+            }
+        }
+        > div {
+            h2 {
+                margin-bottom: 30px;
+                text-align: left;
+            }
+        }
+    }
+    &__slider {
+        width: 100%;
+        margin: 0 auto;
+        position: relative;
+        overflow: hidden;
+        padding-left: 0 !important;
+        padding-right: 0 !important;
+    }
+    .slide {
+        text-align: left;
+    }
+
+    .prev-arrow,
+    .next-arrow {
+        padding: 10px;
+    }
+    @media (max-width: 767px) {
+        &__container {
+            > div,
+            ul {
+                max-width: 100%;
+                flex: initial;
+            }
+        }
+        &__slider {
+            .slider-controls {
+                justify-content: center;
+                top: 97%;
+            }
+        }
+    }
+}

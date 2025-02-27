@@ -1,0 +1,27 @@
+extends /sites/TEMPLATE/layouts/base.pug
+
+block variables
+    - const title = 'NeatNest Catalog – Organize Your Space with Quality Storage'
+    - const description = 'Explore NeatNest’s catalog of premium storage products designed to simplify and beautify your home. Shop today for the best in organization.'
+
+block content
+    +Header()
+
+    main
+
+        
+        +Arrivals-main()
+
+        +Tricks()
+
+        +Form()
+        
+        +Catalog-block()
+
+        +Arrivals()
+
+        +Ideas()
+
+        +Limited()
+
+    +Footer()

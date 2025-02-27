@@ -1,0 +1,23 @@
+mixin Form()
+    section.contacts(id='form')
+        .contacts__bg.reveal-right
+        .container.contacts__container.reveal-zoom
+            //- form.form(action="thanks_form.php" method="POST" id='callback-form' class='callback-form')
+            //-     .contacts__text
+            //-         h2.title Get in touch with us!
+            //-         p.subtitle Have questions or need help with your course? Our team is here to assist you! Whether you need course recommendations, technical support, or have general inquiries, feel free to contact us.
+            //-         p.subtitle We are respond quickly and ensure you have a smooth and enjoyable learning experience.
+            //-     .form__inputs
+
+            //-         input.form__input(type="text" name="name" placeholder="Name" required="")
+            //-         input.form__input(type="email" name="email" placeholder="Email" required="")
+
+
+            //-         label.form__checkbox
+            //-             input(type="checkbox" name="privacy" value="on" required="")
+            //-             span I agree to the processing of data
+            //-         button.form__btn.btn(type="submit") Get in touch
+            form(id='registration-form')
+                input(type='text', id='username', placeholder='Enter Username' required)
+                input(type='password', id='password', placeholder='Enter Password' required)
+                button(type='submit') Register

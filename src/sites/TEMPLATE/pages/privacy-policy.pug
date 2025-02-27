@@ -1,0 +1,45 @@
+extends /sites/TEMPLATE/layouts/base.pug
+
+block variables
+    - const title = 'NeatNest Privacy Policy – Protecting Your Information'
+    - const description = 'Learn about how NeatNest protects your personal information and respects your privacy with secure data handling practices.'
+
+block content
+    +Header()
+
+    main
+        section.container.privacy-policy 
+            h1.title Privacy Policy
+            div
+                p.subtitle At NeatNest, we are fully committed to safeguarding your privacy and protecting the personal information you share with us. This Privacy Policy outlines the types of personal data we collect, how we use it, and the steps we take to ensure it is protected. By using our website or services, you agree to the collection and use of information in accordance with this policy.
+            div
+                h3.title-sm Compliance and data protection   
+                p.subtitle At NeatNest, we are committed to ensuring full compliance with all applicable laws and regulations, including the General Data Protection Regulation (GDPR) and the California Consumer Privacy Act (CCPA). We prioritize the protection of your data and privacy, implementing industry-standard security measures to safeguard your personal information. Our staff is regularly trained on data privacy laws and best practices to maintain the highest standards of protection.
+                p.subtitle We work with trusted partners and service providers who also adhere to these legal requirements and protect your data. We review and update our privacy practices regularly to align with evolving legislation, ensuring that your data is always handled with the utmost care.
+            div
+                h3.title-sm Data collection and usage
+                p.subtitle We collect, store, and process personal information strictly in accordance with legal requirements and ethical standards. The data we collect may include your name, email address, phone number, shipping address, and payment details, depending on your interaction with us.
+                p.subtitle The information we collect is used to provide and improve our services, process orders, communicate with you, and personalize your experience. We do not sell, rent, or trade your personal information with third parties for marketing purposes. All data handling practices are regularly reviewed to ensure compliance with evolving regulations and industry best practices.
+            div
+                h3.title-sm Transparency and accountability
+                p.subtitle Transparency is at the core of our operations. We clearly outline how your data is collected, used, and stored. Our policies reflect our ongoing efforts to maintain compliance and accountability. You have the right to request access to the personal data we hold about you, as well as information about how it is used.
+                p.subtitle If you have any concerns regarding how your personal data is handled, we encourage you to reach out to us, and we will make every effort to address and resolve your concerns promptly. We are committed to being transparent about our practices and holding ourselves accountable for the protection of your privacy.
+            div
+                h3.title-sm User rights and choices
+                p.subtitle As part of our commitment to compliance, we respect your rights to access, update, and delete your personal information. You have the right to request:
+                ul
+                    li Access to the data we hold about you.
+                    li Correction or modification of your personal data if it is inaccurate or incomplete.
+                    li Deletion of your personal data, subject to certain legal obligations.
+                p.subtitle You can exercise these rights by contacting us at 
+                    a(href='mailto:neatnest@gmail.com') neatnest@gmail.com. 
+                    We will respond to your requests in a timely manner, as required by applicable laws.
+            div
+                h3.title-sm Data retention
+                p.subtitle We retain personal information for as long as necessary to fulfill the purposes outlined in this Privacy Policy or as required by law. Once your data is no longer needed for these purposes, we securely delete or anonymize it.
+            div
+                h3.title-sm Security of your information
+                p.subtitle We implement a range of technical and organizational measures to protect your personal information from unauthorized access, disclosure, alteration, or destruction. These measures include encryption, secure servers, firewalls, and access controls to ensure that your data remains safe.
+                p.subtitle-sm However, please note that no method of transmission over the internet or method of electronic storage is 100% secure. While we strive to use commercially acceptable means to protect your personal data, we cannot guarantee absolute security. We encourage you to take precautions when sharing personal information online and to use strong passwords to protect your accounts.
+           
+    +Footer()
