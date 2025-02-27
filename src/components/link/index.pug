@@ -3,6 +3,6 @@ mixin Link(param)
     - param.href = param.href ? param.href : ''
     - param.text = param.text ? param.text : ''
     if(param.href && param.text)
-        a(href=`/${siteName}/${param.href}` class=`${param.class}`)=param.text
+        a(href=`${param.href}` class=`${param.class}`)=param.text
     else
         p Здесь должна быть ссылка!!!
