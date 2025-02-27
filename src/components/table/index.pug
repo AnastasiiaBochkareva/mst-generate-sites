@@ -1,0 +1,18 @@
+mixin Table(attrs, headers = [], rows = [])
+    table&attributes(attrs)
+        thead
+            tr
+                if headers.length
+                    each header in headers
+                        th= header
+                else
+                    th Нет заголовков
+        tbody
+            if rows.length
+                each row in rows
+                    tr
+                        each cell in row
+                            td= cell
+            else
+                tr
+                    td(colspan=headers.length || 1) Нет данных
