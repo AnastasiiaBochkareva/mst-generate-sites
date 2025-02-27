@@ -1,8 +1,9 @@
 mixin Img(param)
     - param.src = param.src ? `/src/sites/${siteName}/${param.src}` : ''
     - param.class = param.class ? param.class : ''
+    - param.id = param.id ? param.id : ''
     - param.alt = param.alt ? param.alt : 'Описание изображения' 
     if (param.src)
-        img(src=param.src, alt=param.alt, class=param.class)
+        img(src=param.src, alt=param.alt, class=param.class, id=param.id)
     else
         span Тут должна быть картинка
