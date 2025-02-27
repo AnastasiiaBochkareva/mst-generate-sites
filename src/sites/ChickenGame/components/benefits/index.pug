@@ -1,0 +1,22 @@
+mixin Benefits()
+    section.benefits(id='creators')
+        .container.benefits__container.reveal-zoom
+            h2 Chicken Game: Insights from the Creators
+            p At Inout Games, we are thrilled to share the success of Chicken Game, one of our most exciting and popular creations. Since its release, Chicken Game has captivated players around the world, offering a unique and enjoyable experience.
+            
+            div.reveal-right
+                .img    
+                    +Img({
+                        src: 'img/icon.jpeg',
+                        alt: 'Insights from the Creators'
+                    })
+                h3 Here’s what our front-end developer has to say about the game:
+                p "I joined Inout Games in early 2024, and I had the opportunity to be part of the development of Chicken Game. We wanted to create something truly fun and engaging, so we focused on making the gameplay simple yet exciting. With an easy-to-use interface and a fun storyline, Chicken Game is designed for everyone to enjoy. It's been amazing to see how many players love the mini-game, and we’re excited that various platforms are integrating Chicken Game into their services, allowing even more people to join the fun!"
+
+            div.reveal-left
+                p At Inout Games, we’re always working to bring our community new ways to entertain and enjoy unique gaming experiences. Chicken Game is a perfect example of how we strive to create games that everyone can enjoy!
+                +Link({
+                    class: 'btn',
+                    href: '#game',
+                    text: 'Join to Community',
+                })

@@ -1,0 +1,51 @@
+mixin Footer()
+    footer.footer
+        .container.footer__container
+            .footer__logo
+                +Link({
+                    href: '/',
+                    text: 'ChickenGame'
+                })
+                
+            .footer__links
+                div
+                    p Contact Us
+                    p    
+                        a(href='tel:+91 9852051353') +91 98520 51353
+                
+                    p    
+                        a(href='mailto:contact@chickengame.com') contact@chickengame.com
+                
+                    p    
+                        a(href='https://maps.app.goo.gl/s2VGLE2eBz2QE49E6' target='_blank') Siddiq Nagar, HITEC City, Hyderabad, Telangana 500081, India
+                
+                div
+                    p Legal
+                    +Link({
+                        href: `/contacts/`,
+                        text: 'Contacts',
+                    })
+                    +Link({
+                        href: `/disclaimer/`,
+                        text: 'Disclaimer',
+                    })
+                    +Link({
+                        href: `/terms-conditions/`,
+                        text: 'Terms and conditions',
+                    })
+                    +Link({
+                        href: `/privacy-policy/`,
+                        text: 'Privacy policy',
+                    })
+            .footer__disclaimer
+                div 
+                    +Img({
+                        src: 'img/18.jpeg',
+                        alt: 'Disclaimer'
+                    })
+
+                p All games on Lucky Mirage Casino are purely for entertainment purposes. You must be at least 18 years old to play. There are no financial transactions involved—just fun and excitement! Enjoy the thrill responsibly and always remember—it's all about the experience!
+
+                
+                p.copyright.small © 2025 ChickenGame. All rights reserved.
+        

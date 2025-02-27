@@ -1,0 +1,60 @@
+mixin Categories()
+    section.categories.reveal-zoom
+        .container.categories__top
+            div
+                h2 Features of Chicken Road
+                p Before you jump into the action in Chicken Road, let’s walk you through the key features of this thrilling game. This guide will help you prepare for the exciting adventure ahead. And don’t forget — you can always try out the game in demo mode on our official website to get a feel for it before you start!
+
+            div
+                h2 Gameplay Overview
+                p When you start your journey through Chicken Road, you can choose the amount of risk you're comfortable with by selecting one of the difficulty levels. The higher the difficulty, the more exciting the adventure becomes — but also more challenging.
+    section.categories.categories-secondary.reveal-zoom
+        .container.categories__container
+            .categories__head
+                h2 Difficulty Levels
+                p Each difficulty setting changes the number of stages and the challenges you'll face, including the chances of encountering flames and the rewards along the way. Choose wisely to tailor the experience to your adventure style:
+               
+            .categories__body(id='levels')
+                .categories__item
+                    .title-sm 
+                        +Img({
+                            src: 'img/easy.jpeg',
+                            alt: 'Features of Chicken Road'
+                        })
+                    p.subtitle 24 stages, with multipliers ranging from x1.02 to x24.5
+                .categories__item
+                    .title-sm
+                        +Img({
+                            src: 'img/medium.jpeg',
+                            alt: 'Gameplay Overview'
+                        })
+                    p.subtitle 22 stages, with multipliers ranging from x1.11 to Max Challenge
+                .categories__item
+                    .title-sm
+                        +Img({
+                            src: 'img/hard.jpeg',
+                            alt: 'Difficulty Levels'
+                        })
+                    p.subtitle 20 stages, with multipliers ranging from x1.22 to Max Challenge
+                .categories__item
+                    .title-sm
+                        +Img({
+                            src: 'img/hardcore.jpeg',
+                            alt: 'Smart Team Management'
+                        })
+                    p.subtitle 15 stages, with multipliers ranging from x1.63 to Max Challenge
+            p The higher the level, the more intense the challenge — but the thrill and excitement increase as well! Remember, Chicken Road is a game of strategy and reflexes, so always stay sharp as you navigate through the dangerous dungeon.
+            
+    section.categories.categories-third.reveal-zoom
+        .container.categories__bottom
+            h2 Ready to Get Started?
+            p Pick your difficulty, take a deep breath, and guide the chicken through the fiery traps. The further you go, the more exhilarating the journey becomes.
+            p Each level offers new challenges, faster obstacles, and unpredictable fire patterns. Stay sharp, time your moves perfectly, and help the chicken cross safely.
+            p Whether you're here for a quick game or aiming to master every level, there's always a new adventure waiting. So, are you up for the challenge? 
+            +Link({
+                class: 'btn',
+                href: '#game',
+                text: 'Start the Game',
+            }) 
+                
+                

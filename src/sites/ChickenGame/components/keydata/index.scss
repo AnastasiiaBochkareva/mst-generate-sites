@@ -1,0 +1,44 @@
+.keydata {
+    h2 {
+        text-align: center;
+    }
+    p {
+        margin: 20px 0;
+    }
+    table {
+        width: 100%;
+        max-width: 900px;
+        border-collapse: collapse;
+        margin: 20px 0;
+        font-size: 1rem;
+        color: #333;
+        margin-left: auto;
+        margin-right: auto;
+
+        th,
+        td {
+            padding: 12px;
+            text-align: left;
+            border: 1px solid #ddd;
+        }
+
+        th {
+            background-color: #f4f4f4;
+            font-weight: bold;
+        }
+
+        tbody tr:nth-child(odd) {
+            background-color: #f9f9f9;
+        }
+
+        tbody tr td:hover {
+            background-color: #e1e1e1;
+            color: #333;
+        }
+
+        td {
+            font-size: 13px;
+            color: #fff;
+        }
+    }
+}

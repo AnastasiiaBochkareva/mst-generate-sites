@@ -1,0 +1,14 @@
+mixin Banner()
+    section.banner
+        .banner__container.reveal-zoom(id='game')
+            .land
+                +Img({
+                    src: 'img/land.jpg',
+                    alt: 'ChickenGame'
+                })
+            iframe(
+                id="gameIframe"
+                title="i-Chicken Road",
+                src="https://demo.inout.games/casino-view/games/game/?authToken=5059cbeca07e503d81b64766fe20044ffaf3555da158d5eb6d2b216d904f5c39bad0b1cab2d16945aba478cf1f48e697c60e4d663ba9784b37201909a62ae950&operatorId=ee2013ed-e1f0-4d6e-97d2-f36619e2eb52&gameMode=chicken-road&isDemo=MTcxMjY2OTE0NDI5NA%3D%3D&currency=USD&lang=en",
+                allowfullscreen=true
+            )

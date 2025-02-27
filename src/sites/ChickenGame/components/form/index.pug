@@ -1,0 +1,20 @@
+mixin Form()
+    
+    section.contacts
+        .container.contacts__container.reveal-zoom
+            form.form(action="thanks_form.php" method="POST" id='contact_form' class="contact_form")
+                .contacts__text
+                    h1.title Get in touch with us!
+                    p.subtitle Have any questions or need assistance? We're here to help! Get in touch with us:
+
+                .form__inputs
+
+                    input.form__input(type="text" name="name" placeholder="Name" required="")
+
+                    input.form__input(type="email" name="email" placeholder="Email" required="")
+
+
+                    label.form__checkbox
+                        input(type="checkbox" name="privacy" value="on" required="")
+                        span I agree to the processing of data
+                    button.form__btn.btn(type="submit") Send Message

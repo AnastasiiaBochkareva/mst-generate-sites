@@ -1,0 +1,44 @@
+.mission {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: space-between;
+    > div {
+        box-shadow: 0 2px 6px rgba(0, 0, 0, 0.5);
+        max-width: calc(50% - 10px);
+        width: 100%;
+        padding: 40px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 20px;
+        position: relative;
+        z-index: 1;
+        background-color: #444;
+        border: 1px solid #ecf0f1;
+        overflow: visible;
+        transition: transform 0.3s ease-in-out;
+        &:hover {
+            transform: translateY(-10px);
+        }
+        &:first-child {
+            border-top: 1px solid #fff;
+            border-left: 1px solid #fff;
+            border-right: 10px solid #47c161;
+            border-bottom: 10px solid #47c161;
+            border-radius: 0 10px 0 10px;
+        }
+    }
+    .colored {
+        background-color: #ecf0f1;
+        align-items: center;
+        color: #333;
+    }
+    @media (max-width: 767px) {
+        flex-direction: column;
+        > div {
+            max-width: 100%;
+            padding: 20px;
+        }
+    }
+}

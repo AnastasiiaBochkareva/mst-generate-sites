@@ -1,0 +1,28 @@
+@use "@/sites/ChickenGame/components/header/index" as header;
+@use "@/components/grid/index" as grid;
+
+@use "@/sites/ChickenGame/components/footer/index" as footer;
+@use "@/sites/ChickenGame/components/burger/index" as burger;
+
+@use "@/sites/ChickenGame/components/reveal/index" as reveal;
+
+@use "@/sites/ChickenGame/components/disclaimer-modal/index" as disclaimer-modal;
+@use "@/sites/ChickenGame/components/form/index" as form;
+
+// main
+@use "@/sites/ChickenGame/components/banner/index" as banner;
+@use "@/sites/ChickenGame/components/table/index" as table;
+@use "@/sites/ChickenGame/components/mission/index" as mission;
+@use "@/sites/ChickenGame/components/start/index" as start;
+@use "@/sites/ChickenGame/components/categories/index" as categories;
+@use "@/sites/ChickenGame/components/care/index" as care;
+@use "@/sites/ChickenGame/components/keydata/index" as keydata;
+@use "@/sites/ChickenGame/components/features/index" as features;
+@use "@/sites/ChickenGame/components/benefits/index" as benefits;
+
+@use "@/sites/ChickenGame/components/info/index" as info;
+@use "@/sites/ChickenGame/components/about-us/index" as about-us;
+@use "@/sites/ChickenGame/components/faq/index" as faq;
+@use "@/sites/ChickenGame/components/guide/index" as guide;
+@use "@/sites/ChickenGame/components/area/index" as area;
+@use "@/sites/ChickenGame/components/reviews/index" as reviews;
