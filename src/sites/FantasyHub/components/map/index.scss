@@ -1,0 +1,30 @@
+.map {
+    background-color: #9f9f9f;
+    color: #fff;
+    &__container {
+        display: flex;
+        align-items: center;
+        gap: 20px;
+        flex-wrap: wrap;
+        > h2 {
+            width: 100%;
+        }
+        .img {
+            flex: 2;
+        }
+        > div:not(.img) {
+            flex: 1;
+        }
+        > div {
+            width: 100%;
+            p {
+                margin-bottom: 20px;
+            }
+        }
+    }
+    @media (max-width: 767px) {
+        &__container {
+            flex-direction: column;
+        }
+    }
+}

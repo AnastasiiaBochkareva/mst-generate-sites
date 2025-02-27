@@ -1,0 +1,33 @@
+mixin Footer()
+    footer.footer
+        .container.footer__container
+            .footer__logo
+                +Link({
+                    href: 'index.html',
+                    text: 'FantasyHub'
+                })
+                a(href='https://www.gamcare.org.uk/')
+                    +Img({
+                        src: 'img/gamecare.png',
+                        alt: 'gamble'
+                    })
+            .footer__contact-links.footer__links
+                p Call us:
+                    a(href='tel:+918347250619') +91 8347 250 619
+                p White us:
+                    a(href='mailto:contact@fantasyhub.com') contact@fantasyhub.com
+                p Find us:
+                    a(href='https://maps.app.goo.gl/73r1eTuyC77JDMUQ8' target='_blank') Armane Haklu, Shiroor, Karnataka, India
+            .footer__pages-links.footer__links
+                +Link({
+                    href: 'privacy-policy.html',
+                    text: 'Privacy policy'
+                })
+                +Link({
+                    href: 'terms-conditions.html',
+                    text: 'Terms and conditions'
+                })
+            .footer__disclaimer
+                .age 18+
+                p Participation in fantasy sports is governed by the laws applicable in India. Fantasy sports are categorized as a 'game of skill' under Indian law and are legal in most states. However, residents of Andhra Pradesh, Assam, Nagaland, Odisha, Sikkim, and Telangana are not eligible to participate as per state regulations. Users must be at least 18 years of age to register and play on this platform. Please play responsibly and ensure compliance with applicable laws before participating.
+        

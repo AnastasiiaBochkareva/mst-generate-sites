@@ -1,0 +1,43 @@
+mixin Advantages()
+    section.advantages
+        .container.advantages__container.reveal-zoom
+            h2 Why These Games Are Fan Favorites
+            p Each game offers a unique fantasy sports experience, tailored for every strategy lover and sports enthusiast. Discover what makes them stand out!
+            .advantages__cards
+                div 
+                    +Img({
+                        src: 'img/cricket1.jpeg',
+                        alt: 'CricketClash'
+                    })
+                    h3 CricketClash
+                    p #1 for Ultimate Cricket Strategy
+                    p.advantages-hidden Master the pitch by crafting game-winning tactics. From selecting top players to managing match-day lineups, every decision leads your team closer to glory.
+                div
+                    +Img({
+                        src: 'img/football1.jpeg',
+                        alt: 'TotalStriker'
+                    })
+                    h3 TotalStriker
+                    p #1 for Football Tactics
+                    p.advantages-hidden Experience the intensity of football management. Build your dream squad, adjust formations, and outthink your rivals on the virtual field.
+                div
+                    +Img({
+                        src: 'img/basketball1.jpeg',
+                        alt: 'HoopsDynasty'
+                    })
+                    h3 HoopsDynasty
+                    p #1 for Basketball Season Management
+                    p.advantages-hidden Take control of every quarter! Draft the best players, balance offense and defense, and lead your team through epic seasons to claim the top spot.
+                div
+                    +Img({
+                        src: 'img/baseball1.jpeg',
+                        alt: 'HomeRunHeroes'
+                    })
+                    h3 HomeRunHeroes
+                    p #1 for Baseball Fans
+                    p.advantages-hidden Step up to the plate and manage your all-star lineup. Plan your strategies, rotate your roster, and create unforgettable baseball moments.
+            +Link({
+                class: 'btn',
+                text: 'Play Games',
+                href: 'download.html'
+            })

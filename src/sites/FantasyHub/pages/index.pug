@@ -1,0 +1,35 @@
+extends /sites/FantasyHub/layouts/base.pug
+
+block variables
+    - const title = 'FantasyHub - Your Ultimate Fantasy Sports Platform for Cricket, Football, and More'
+    - const description = 'Join FantasyHub for a premier fantasy sports experience! Create your dream team, compete in exciting leagues, and win with skill-based gameplay. Play fantasy cricket, football, basketball, and more, while enjoying a seamless and thrilling platform. Register now and elevate your fantasy sports journey!'
+block content
+  +Header()
+
+  main
+    +Dev-land()
+    +Banner()
+
+    +Game-slider()
+
+    +Map()
+
+    +Overview()
+
+    +Advantages()
+
+    +Counter({
+      counterOne: 'Join sports fans from all over India',
+      counterTwo: 'Regular events for every sports enthusiast',
+      counterThree: 'Cricket, football, basketball, and baseball await you',
+    })
+
+    +Inspiring()
+
+    +Benefits()
+
+    +Reviews()
+    +Disclaimer-modal()
+    
+
+  +Footer()

@@ -1,0 +1,12 @@
+.main-htp {
+    background-color: #e5e5e5;
+    &__text {
+        padding: 30px;
+        background-color: #fff;
+    }
+    &__item {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+}

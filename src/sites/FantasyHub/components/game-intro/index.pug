@@ -1,0 +1,38 @@
+mixin Game-intro()
+    section.game-intro
+        .container.game-intro__container
+            div
+                h2 О чем игра
+                p Подробное введение в сюжет и механику игры: "Наши флеш-игры просты, но захватывающи. Каждое нажатие кнопки может стать решающим моментом. Увлекательная графика и случайные результаты заставят тебя возвращаться снова и снова."
+            div.grid-ladder
+                div       
+                    +Img({
+                        src: 'img/img.jpeg',
+                        alt: 'Lorem, ipsum dolor.'
+                    })
+                div    
+                    +Img({
+                        src: 'img/img.jpeg',
+                        alt: 'Lorem, ipsum dolor.'
+                    })
+                div
+                    h3 Lorem, ipsum dolor.
+                    p – Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores, dolor?
+                    h3 Lorem, ipsum dolor.
+                    p – Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores, dolor?
+                div
+                    h3 Lorem, ipsum dolor.
+                    p – Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores, dolor?
+                    +Link({
+                        class: 'btn',
+                        href: '/',
+                        text: 'Lorem',
+                    })
+                div       
+                    +Img({
+                        src: 'img/img.jpeg',
+                        alt: 'Lorem, ipsum dolor.'
+                    })
+                
+            
+            

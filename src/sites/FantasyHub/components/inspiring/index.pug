@@ -1,0 +1,17 @@
+mixin Inspiring()
+    section.inspiring
+        .container.inspiring__container
+            h2 Start Playing Now!
+            
+            .img
+                +Img({
+                    src: 'img/phone.jpeg',
+                    alt: 'Start Playing Now'
+                })
+                p Assemble your team, master your tactics, and join thousands of sports fans. The sooner you start, the faster you become part of the action!
+
+            +Link({
+                href: 'Download.html',
+                text: 'Start Play',
+                class: 'btn'
+            })

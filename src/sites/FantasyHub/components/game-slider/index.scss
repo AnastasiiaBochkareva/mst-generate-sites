@@ -1,0 +1,62 @@
+.game-slider {
+    background-color: #000;
+    position: relative;
+    z-index: 1;
+    .slide {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px;
+        justify-content: center;
+        > div {
+            width: 100%;
+            max-width: calc(35% - 15px);
+            background-color: #242424;
+            color: #fff;
+            border-radius: 30px;
+            padding: 20px;
+            > h3 {
+                margin-bottom: 10px;
+            }
+            img {
+                width: 150px;
+                height: 150px;
+                border: 1px solid #000;
+                border-radius: 30px;
+                box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.5);
+                margin-bottom: 10px;
+            }
+            .btn {
+                padding: 5px 30px !important;
+            }
+        }
+    }
+    .slider-controls {
+        .prev-arrow,
+        .next-arrow {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: #242424;
+            color: #fff !important;
+            width: 50px;
+            height: 50px;
+            padding-bottom: 6px;
+        }
+    }
+    @media (max-width: 650px) {
+        .slide {
+            > div {
+                max-width: 100%;
+            }
+            &:nth-child(2) {
+                display: none;
+            }
+        }
+        .slider {
+            overflow: hidden;
+        }
+        .slider-controls {
+            display: none !important;
+        }
+    }
+}

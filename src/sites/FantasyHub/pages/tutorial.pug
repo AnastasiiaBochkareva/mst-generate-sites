@@ -1,0 +1,18 @@
+extends /sites/FantasyHub/layouts/base.pug
+
+block variables
+    - const title = 'FantasyHub Tutorial – Master the Game with Our Guides'
+    - const description = 'New to fantasy sports? Explore our detailed tutorials and step-by-step guides to get started. Learn how to create your team, score points, manage players, and excel in competitions. With tips from the pros, you will be on your way to victory in no time!'
+
+block content
+    +Header()
+
+    main
+
+        +Tutorial-banner()
+
+        +Tutorial-nav()
+
+        +Tutorial-guide()
+
+    +Footer()

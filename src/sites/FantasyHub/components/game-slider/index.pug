@@ -1,0 +1,57 @@
+mixin Game-slider()
+    section.game-slider
+        .container.container__slider.reveal-zoom
+            .slider
+                .slide
+                    div
+                        +Img({
+                            src: 'img/cricket.jpeg',
+                            alt: 'CricketClash'
+                        })
+                        h3 CricketClash 
+                        p Manage your team and dominate the virtual cricket fields.
+                        +Link({
+                            class: 'btn',
+                            text: 'Play',
+                            href: 'download.html'
+                        })
+                    div
+                        +Img({
+                            src: 'img/football.jpeg',
+                            alt: 'TotalStriker'
+                        })
+                        h3 TotalStriker 
+                        p Feel the thrill of coaching your ultimate football squad.
+                        +Link({
+                            class: 'btn',
+                            text: 'Play',
+                            href: 'download.html'
+                        })
+                .slide
+                    div
+                        +Img({
+                            src: 'img/basketball.jpeg',
+                            alt: 'HoopsDynasty'
+                        })
+                        h3 HoopsDynasty 
+                        p Build your basketball dynasty one season at a time.
+                        +Link({
+                            class: 'btn',
+                            text: 'Play',
+                            href: 'download.html'
+                        })
+                    div
+                        +Img({
+                            src: 'img/baseball.jpeg',
+                            alt: 'HomeRunHeroes'
+                        })
+                        h3 HomeRunHeroes 
+                        p Master baseball strategies and lead your team to greatness.
+                        +Link({
+                            class: 'btn',
+                            text: 'Play',
+                            href: 'download.html'
+                        })
+            .slider-controls
+                .prev-arrow <
+                .next-arrow >

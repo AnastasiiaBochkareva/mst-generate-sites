@@ -1,0 +1,22 @@
+extends /sites/FantasyHub/layouts/base.pug
+
+block variables
+    - const title = 'FantasyHub Rules – Know the Game, Play Fair'
+    - const description = 'Understand the rules of FantasyHub and get ready to play! Explore the guidelines for creating teams, scoring, and participating in fantasy sports. Learn how to compete fairly and responsibly while enjoying a fun, skill-based experience.'
+
+block content
+    +Header()
+
+    main
+       
+        +Rules-banner()
+
+        +Rules-team-creation()
+
+        +Rules-player-scoring() 
+
+        +Rules-team-management()
+
+        +Rules-competitions()
+
+    +Footer()

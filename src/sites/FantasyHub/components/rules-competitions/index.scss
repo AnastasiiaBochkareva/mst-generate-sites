@@ -1,0 +1,24 @@
+.rules-competitions {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    position: relative;
+    background-color: #000;
+    color: #fff;
+    .img {
+        flex: 1;
+    }
+    > div:not(.img) {
+        flex: 2;
+        margin-top: auto;
+        margin-bottom: auto;
+    }
+    > h2,
+    p {
+        text-align: center;
+        margin: 10px 0;
+    }
+    @media (max-width: 767px) {
+        flex-direction: column;
+    }
+}

@@ -1,0 +1,19 @@
+mixin Counter(param)
+
+    - param.counterOne = param.counterOne ? param.counterOne : ''
+    - param.counterTwo = param.counterTwo ? param.counterTwo : ''
+    - param.counterThree = param.counterThree ? param.counterThree : ''
+    
+    section.counter
+        .container.counter__container 
+            h2 Fantasy Sports That Connect People!
+            
+            div
+                .counter__number(id='counter1') 0+ players
+                .counter__label=param.counterOne
+            div
+                .counter__number(id='counter2') 0+ tournaments
+                .counter__label=param.counterTwo
+            div
+                .counter__number(id='counter3') 0+ unique games 
+                .counter__label=param.counterThree

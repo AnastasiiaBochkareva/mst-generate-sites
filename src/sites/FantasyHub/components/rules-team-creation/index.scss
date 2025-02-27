@@ -1,0 +1,51 @@
+.team-creation {
+    position: relative;
+    padding-bottom: 50px;
+    background-color: #000;
+    color: #fff;
+
+    &__container {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        gap: 20px;
+        h2,
+        > p {
+            width: 100%;
+            text-align: center;
+        }
+        .img {
+            flex: 1;
+            position: relative;
+            min-height: 200px;
+            overflow: hidden;
+            img {
+                position: absolute;
+                left: 0;
+                top: 0;
+            }
+        }
+        ul {
+            flex: 2;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            gap: 10px;
+        }
+    }
+
+    @media (max-width: 767px) {
+        &__container {
+            flex-direction: column;
+            h2 {
+                padding-top: 0;
+            }
+            ul {
+                flex: 1;
+            }
+            .img {
+                width: 100%;
+            }
+        }
+    }
+}

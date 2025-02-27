@@ -1,0 +1,17 @@
+mixin Rules-competitions()
+    section.container.rules-competitions
+        
+        div
+            h2 Competitions:
+            p Participate in public leagues or create private leagues to compete with friends and family.
+            p Points accumulate over a set period (matchday, tournament, season), and the highest scorer wins.
+            +Link({
+                class: 'btn limited__btn',
+                href: 'index.html',
+                text: 'Start Competition',
+            })
+        .img
+            +Img({
+                src: 'img/competition.jpeg',
+                alt: 'Competitions',
+            })

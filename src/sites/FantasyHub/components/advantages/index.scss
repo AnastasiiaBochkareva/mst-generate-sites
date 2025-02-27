@@ -1,0 +1,64 @@
+.advantages {
+    background-color: #242424;
+    &__container {
+        color: #fff;
+
+        h2,
+        p {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+    }
+    &__cards {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px;
+        justify-content: center;
+        > div {
+            text-align: center;
+            width: 100%;
+            max-width: calc(25% - 15px);
+            background-color: #000;
+            padding: 20px;
+            box-shadow: 0 2px 6px rgba(0, 0, 0, 0.5);
+            border-radius: 30px;
+            position: relative;
+            overflow: hidden;
+            &:hover {
+                .advantages-hidden {
+                    opacity: 1;
+
+                    background-color: #000;
+                }
+            }
+            img {
+                height: 300px;
+                border-radius: 30px;
+                border: 1px solid #000;
+            }
+            .advantages-hidden {
+                position: absolute;
+                opacity: 0;
+                transition: opacity 0.3s ease;
+                top: 20px;
+                right: 20px;
+                bottom: 20px;
+                left: 20px;
+            }
+        }
+    }
+    @media (max-width: 991px) {
+        &__cards {
+            > div {
+                max-width: calc(50% - 15px);
+            }
+        }
+    }
+    @media (max-width: 767px) {
+        &__cards {
+            > div {
+                max-width: 100%;
+            }
+        }
+    }
+}
