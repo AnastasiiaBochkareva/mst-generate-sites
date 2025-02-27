@@ -45,6 +45,7 @@ function MultiPagePugPlugin() {
                             `Ошибка обработки Pug для ${siteName}:`,
                             err
                         );
+                        throw new Error("Смотри консоль");
                     })
                 );
             });
