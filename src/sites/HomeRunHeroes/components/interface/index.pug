@@ -1,0 +1,14 @@
+mixin Interface()
+    section.interface
+        .container.interface__container
+            h2 System Requirements
+            p Make sure your device meets the minimum requirements for the best gameplay experience:
+            ul.reveal-zoom 
+                li OS: iOS 12+ / Android 8.0+
+                li Storage: 500MB free space
+                li RAM: 3GB+
+            +Link({
+                class: 'btn',
+                text: 'Get App',
+                href: '/support/'   
+            })

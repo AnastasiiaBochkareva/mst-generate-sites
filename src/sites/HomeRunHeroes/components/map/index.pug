@@ -1,0 +1,17 @@
+mixin Map()
+    section.map 
+        .container.map__container
+            +Img({
+                src: 'img/baseball3.jpeg',
+                alt: 'How to Play'
+            })
+            
+            div.reveal-zoom.bg-dark.block-shadow
+                h2 How to Play
+                p Swing the bat, aim for the stands, and score big! Time your swings perfectly to send the ball soaring across the field. Master different pitches, improve your skills, and become the ultimate HomeRunHero.
+
+                +Link({
+                    href: '/download/',
+                    class: 'btn',
+                    text: 'Download App'
+                })

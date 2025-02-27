@@ -1,0 +1,36 @@
+mixin House()
+    section.team.container
+        .team__imgs
+            +Img({
+                    src: '/img/team.jpeg',
+                    alt: 'Team Creation',
+                    class: 'team-one reveal-left'
+                })
+            +Img({
+                    src: '/img/competition.jpeg',
+                    alt: 'Team Management',
+                    class: 'team-two reveal-right'
+                })
+            +Img({
+                    src: '/img/team1.jpeg',
+                    alt: 'Competitions',
+                    class: 'team-three reveal-left'
+                })
+            +Img({
+                    src: '/img/score.jpeg',
+                    alt: 'Player Scoring',
+                    class: 'team-four reveal-right'
+                })
+        .team__items
+            .team__item.reveal-zoom
+                h3.team-title-sm Team Creation:
+                ul
+                    li 1. Select your basketball squad from a pool of available players, each with unique skills and attributes.
+                    li 2. Pick players based on their performance in recent games, keeping an eye on their stats and form.
+                    li 3. Players are assigned positions (e.g., point guard, shooting guard, center) and must be placed in those spots for a well-balanced team.
+            .border.reveal-right
+            .team__item.reveal-left
+                h3.team-title-sm Team Management:
+                p Regularly update your lineup based on player form, injuries, or matchups with other teams.
+                p In HoopsDynasty, you can designate a captain who earns double points and a vice-captain who earns 1.5x points for their contributions.
+                p Keep an eye on player performance trends and upcoming matchups to ensure your team is always optimized for the best results.

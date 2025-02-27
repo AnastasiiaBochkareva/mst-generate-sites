@@ -1,0 +1,21 @@
+mixin Form()
+    section.contacts
+        .container.contacts__container
+            form.form(action="thanks_form.php" method="POST" id='contact_form' class="contact_form")
+                .contacts__text
+                    h2.title Get in touch with us!
+                    p.subtitle Have any questions or need assistance? We're here to help! Get in touch with us:
+
+                .form__inputs
+
+                    input.form__input(type="text" name="name" placeholder="Name" required="")
+
+                    input.form__input(type="email" name="email" placeholder="Email" required="")
+
+
+                    label.form__checkbox
+                        input(type="checkbox" name="privacy" value="on" required="")
+                        span I accept the 
+                            a(href="/privacy-policy/") Privacy Policy
+                    button.form__btn.btn(type="submit") Send Message
+            

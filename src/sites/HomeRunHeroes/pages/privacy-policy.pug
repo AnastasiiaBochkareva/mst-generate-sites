@@ -1,0 +1,46 @@
+extends /sites/HomeRunHeroes/layouts/base.pug
+
+block variables
+    - const title = 'HomeRunHeroes Privacy Policy – Protecting Your Personal Data'
+    - const description = 'Discover how HomeRunHeroes ensures the protection of your personal data with secure privacy practices and safe data handling.'
+
+block content
+    +Header()
+
+    main
+        section.container.privacy-policy 
+            h1.title Privacy Policy
+            div
+                p.subtitle At HomeRunHeroes, we take your privacy seriously and are dedicated to safeguarding the personal information you share with us. This Privacy Policy explains the types of personal data we collect, how we use it, and the steps we take to protect it. By using our platform or services, you consent to the collection and use of your information as described in this policy.
+            div
+                h3.title-sm Compliance and data protection   
+                p.subtitle We are fully committed to complying with all relevant laws and regulations, including the General Data Protection Regulation (GDPR) and the California Consumer Privacy Act (CCPA). Protecting your data is a top priority for us, and we implement industry-standard security measures to ensure the safety of your personal information. Our team regularly undergoes training to stay informed about data privacy laws and best practices, maintaining the highest level of protection.
+                p.subtitle We collaborate with trusted partners and service providers who also adhere to these legal standards, ensuring your data remains protected. Our privacy practices are continually reviewed and updated to comply with evolving legislation, so your data is always handled with the utmost care.
+            div
+                h3.title-sm Data collection and usage
+                p.subtitle We collect, store, and process personal information only in compliance with legal requirements and ethical standards. The data we gather may include your name, email address, phone number, shipping details, and payment information, depending on your interaction with our platform.
+                p.subtitle The data we collect helps us deliver and enhance our services, process transactions, communicate with you, and customize your experience. We do not sell, lease, or share your personal information with third parties for marketing purposes. Our data handling practices are regularly assessed to ensure compliance with the latest regulations and industry standards.
+            div
+                h3.title-sm Transparency and accountability
+                p.subtitle Transparency is fundamental to our operations. We make it clear how your data is collected, used, and stored. Our policies reflect our ongoing commitment to transparency and accountability. You have the right to request access to the personal data we hold about you, as well as information on how it is used.
+                p.subtitle If you have concerns about how your personal data is handled, please contact us, and we will work to address your concerns quickly and effectively. We are committed to openness about our practices and taking responsibility for the protection of your privacy.
+            div
+                h3.title-sm User rights and choices
+                p.subtitle In line with our commitment to privacy, we respect your rights to access, update, and delete your personal data. You have the right to request:
+                ul
+                    li Access to the data we hold about you.
+                    li Correction or update of your personal information if it is inaccurate or incomplete.
+                    li Deletion of your personal data, subject to specific legal obligations.
+                p.subtitle You can exercise these rights by reaching out to us at 
+                    a(href='mailto:contact@HomeRunHeroes.com') 
+                        | contact@HomeRunHeroes.com. 
+                    We will respond to your requests in a timely manner, as required by applicable laws.
+            div
+                h3.title-sm Data retention
+                p.subtitle We retain personal information for as long as it is necessary to fulfill the purposes outlined in this Privacy Policy or as required by law. When your data is no longer needed for these purposes, we ensure it is securely deleted or anonymized.
+            div
+                h3.title-sm Security of your information
+                p.subtitle We implement a range of technical and organizational safeguards to protect your personal data from unauthorized access, disclosure, alteration, or destruction. These measures include encryption, secure servers, firewalls, and access controls to ensure the integrity and confidentiality of your information.
+                p.subtitle-sm However, it is important to note that no method of transmitting data over the internet or storing it electronically is 100% secure. While we make every effort to use commercially reasonable means to protect your personal information, we cannot guarantee absolute security. We encourage you to take precautions when sharing personal data online and use strong, unique passwords to safeguard your accounts.
+           
+    +Footer()

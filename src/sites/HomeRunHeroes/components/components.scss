@@ -1,0 +1,54 @@
+// general
+@use "@/sites/HomeRunHeroes/components/header/index" as header;
+@use "@/sites/HomeRunHeroes/components/footer/index" as footer;
+@use "@/sites/HomeRunHeroes/components/burger/index" as burger;
+@use "@/components/dev-land/index" as dev-land;
+@use "@/sites/HomeRunHeroes/components/disclaimer-modal/index" as
+    disclaimer-modal;
+
+// ts
+@use "@/components/parallax/index" as parallax;
+@use "@/components/tabs/index" as tabs;
+@use "@/components/carousel/index" as carousel;
+@use "@/sites/HomeRunHeroes/components/reveal/index" as reveal;
+
+// main
+@use "@/sites/HomeRunHeroes/components/game-slider/index" as game-slider;
+@use "@/sites/HomeRunHeroes/components/map/index" as map;
+@use "@/sites/HomeRunHeroes/components/overview/index" as overview;
+@use "@/sites/HomeRunHeroes/components/advantages/index" as advantages;
+@use "@/sites/HomeRunHeroes/components/counter/index" as counter;
+@use "@/sites/HomeRunHeroes/components/inspiring/index" as inspiring;
+@use "@/sites/HomeRunHeroes/components/benefits/index" as benefits;
+
+// download
+@use "@/sites/HomeRunHeroes/components/install/index" as install;
+@use "@/sites/HomeRunHeroes/components/features/index" as features;
+@use "@/sites/HomeRunHeroes/components/interface/index" as interface;
+
+// tutorial
+@use "@/sites/HomeRunHeroes/components/tutorial-banner/index" as tutorial-banner;
+@use "@/sites/HomeRunHeroes/components/tutorial-nav/index" as tutorial-nav;
+@use "@/sites/HomeRunHeroes/components/tutorial-guide/index" as tutorial-guide;
+
+// support
+@use "@/sites/HomeRunHeroes/components/form/index" as form;
+@use "@/sites/HomeRunHeroes/components/faq/index" as faq;
+@use "@/sites/HomeRunHeroes/components/support-banner/index" as support-banner;
+
+//rules
+@use "@/sites/HomeRunHeroes/components/rules-banner/index" as rules-banner;
+@use "@/sites/HomeRunHeroes/components/rules-player-scoring/index" as
+    rules-player-scoring;
+@use "@/sites/HomeRunHeroes/components/rules-team-creation/index" as
+    rules-team-creation;
+@use "@/sites/HomeRunHeroes/components/rules-competitions/index" as
+    rules-competitions;
+@use "@/sites/HomeRunHeroes/components/rules-team-management/index" as
+    rules-team-management;
+
+@use "@/components/grid/index" as grid;
+@use "@/components/slider/index" as slider;
+
+@use "@/sites/HomeRunHeroes/components/reviews/index" as reviews;
+@use "@/sites/HomeRunHeroes/components/house/index" as house;

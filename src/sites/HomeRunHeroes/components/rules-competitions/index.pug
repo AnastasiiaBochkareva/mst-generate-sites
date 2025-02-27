@@ -1,0 +1,18 @@
+mixin Rules-competitions()
+    section.container.rules-competitions
+        
+        div.reveal-zoom
+            h2 Competitions
+            .img
+                +Img({
+                    src: '/img/competition.jpeg',
+                    alt: 'Competitions',
+                })
+            p Join public leagues or create your own private leagues to challenge friends, family, or other players.
+            p Compete across different seasons and matchups, with points accumulating throughout each round. The player with the highest total points at the end of the competition takes the top spot.
+            +Link({
+                class: 'btn limited__btn',
+                href: '/download/',
+                text: 'Start Competition',
+            })
+        

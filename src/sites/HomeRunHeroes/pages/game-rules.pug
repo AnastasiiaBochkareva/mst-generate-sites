@@ -1,0 +1,24 @@
+extends /sites/HomeRunHeroes/layouts/base.pug
+
+block variables
+    - const title = 'HomeRunHeroes Rules – Fair Play & Strategy'
+    - const description = 'Learn the official rules of HomeRunHeroes. Understand team management, player scoring, and game mechanics to make the most of your basketball experience.'
+
+block content
+    +Header()
+
+    main
+       
+        +Rules-banner()
+
+        //- +House()
+
+        section.container
+            +Tabs()
+
+        //- +Rules-player-scoring() 
+
+
+        //- +Rules-competitions()
+
+    +Footer()

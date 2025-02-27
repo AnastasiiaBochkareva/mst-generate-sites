@@ -1,0 +1,23 @@
+mixin Install()
+    section.install
+        .container.install__container
+            h2 How to Download
+            p Getting HomeRunHeroes is quick and simple! Follow these steps to start playing:
+            ul 
+                li.reveal-left.hover-shadow 
+                    .number.box-shadow 1
+                    h3 Download the App 
+                    p Click the Download button for your device.
+                li.reveal-right.hover-shadow  
+                    .number.box-shadow 2
+                    h3 Install 
+                    p Install the game by following the on-screen instructions.
+                li.reveal-left.hover-shadow  
+                    .number.box-shadow 3
+                    h3 Create Your Profile 
+                    p Launch HomeRunHeroes and get ready for action!
+            +Link({
+                class: 'btn',
+                text: 'Start Play',
+                href: '/support/'
+            })

@@ -1,0 +1,39 @@
+mixin Advantages()
+    section.advantages
+        .container.advantages__container
+            h2 Game Modes
+            p Enjoy a variety of game modes:
+            .advantages__cards.reveal-zoom
+                div 
+                    +Img({
+                        src: '/img/enthusiasts.jpeg',
+                        alt: 'Basketball Enthusiasts'
+                    })
+                    h3 Single Player: 
+                    p.advantages-hidden Compete in challenges and climb the leaderboard.
+                div
+                    +Img({
+                        src: '/img/strategy.jpeg',
+                        alt: 'Basketball Strategy'
+                    })
+                    h3 Multiplayer:
+                    p.advantages-hidden Go head-to-head with players worldwide.
+                div
+                    +Img({
+                        src: '/img/building.jpeg',
+                        alt: 'Team Building'
+                    })
+                    h3 Training Mode:
+                    p.advantages-hidden Perfect your swing and timing before the big games.
+                //- div
+                //-     +Img({
+                //-         src: '/img/management.jpeg',
+                //-         alt: 'Basketball Management'
+                //-     })
+                //-     h3 #1 for Basketball Management
+                //-     p.advantages-hidden Take charge of every game, make tactical decisions, and manage your roster through each challenging season to build a legendary team.
+            +Link({
+                class: 'btn',
+                text: 'Play Games',
+                href: '/download/'
+            })

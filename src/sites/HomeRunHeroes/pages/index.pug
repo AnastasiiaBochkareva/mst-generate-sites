@@ -1,0 +1,43 @@
+extends /sites/HomeRunHeroes/layouts/base.pug
+
+block variables
+    - const title = 'HomeRunHeroes – Your Ultimate Basketball Management Experience'
+    - const description = 'Step into the world of HomeRunHeroes, where your basketball strategy shapes the game. Build your dream team, make tactical decisions, and experience the thrill of virtual basketball like never before.'
+block content
+  +Dev-land()
+  +Header()
+
+  main
+
+    +Banner()
+    +Carousel({
+      item1: '1',
+      item2: '2',
+      item3: '3 word',
+      item4: '4',
+      item5: '5',
+    })
+    //- +Game-slider()
+
+    +Map()
+
+    +Advantages()
+
+    +Counter({
+      counterOne: 'fans',
+      counterTwo: 'exciting seasons',
+      counterThree: 'dynamic teams',
+    })
+    +Inspiring()
+
+    
+
+    +Overview()
+
+    +Benefits()
+
+    +Reviews()
+    +Disclaimer-modal()
+    
+
+  +Footer()

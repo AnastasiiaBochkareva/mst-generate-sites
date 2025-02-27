@@ -1,0 +1,39 @@
+.reviews {
+    > h2 {
+        margin-bottom: 30px;
+        color: #fff;
+    }
+    > p {
+        margin: 30px 0;
+        text-align: center;
+        color: #fff;
+    }
+    &__list {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+    &__item {
+        background-color: #fff;
+        border-radius: 30px;
+        width: 100%;
+        max-width: calc(33% - 15px);
+        padding: 20px;
+        min-height: 200px;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        h3 {
+            margin-top: auto;
+        }
+    }
+    @media (max-width: 767px) {
+        &__item {
+            max-width: 100%;
+            min-height: 140px;
+            &-bg {
+                height: 140px;
+            }
+        }
+    }
+}

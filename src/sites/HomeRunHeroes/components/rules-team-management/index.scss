@@ -1,0 +1,20 @@
+.team-management {
+    background-color: #000;
+    color: #fff;
+    position: relative;
+    img {
+        position: absolute;
+    }
+    &__bg {
+        position: relative;
+        background-color: rgba(0, 0, 0, 0.6);
+    }
+    &__container {
+        h2 {
+            text-align: left;
+        }
+        p {
+            margin: 20px 0;
+        }
+    }
+}

@@ -1,0 +1,17 @@
+mixin Inspiring()
+    section.inspiring
+        .container.inspiring__container
+            h2 Start Playing Now!
+            
+            .img
+                +Img({
+                    src: '/img/phone.jpeg',
+                    alt: 'Start Playing Now'
+                })
+                p Create your basketball team, perfect your strategies, and immerse yourself in thrilling virtual matchups. The game is waiting — take your shot at building a legendary team!
+
+            +Link({
+                href: '/download/',
+                text: 'Start Play',
+                class: 'btn'
+            })

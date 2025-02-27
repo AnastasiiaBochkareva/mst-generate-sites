@@ -1,0 +1,19 @@
+extends /sites/HomeRunHeroes/layouts/base.pug
+
+block variables
+    - const title = 'HomeRunHeroes Support – Help & Assistance'
+    - const description = 'Need help with HomeRunHeroes? Find answers to common questions or contact our support team for assistance with gameplay, technical issues, and more.'
+
+block content
+    +Header()
+
+    main
+
+        +Support-banner()
+
+        +Form()
+
+        +Faq()
+
+
+    +Footer()

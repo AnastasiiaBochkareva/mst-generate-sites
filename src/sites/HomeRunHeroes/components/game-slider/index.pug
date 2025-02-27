@@ -1,0 +1,63 @@
+mixin Game-slider()
+    section.game-slider
+        .container.container__slider.reveal-zoom
+            .overflow
+                .slider
+                    .slide
+                        +Img({
+                            src: 'img/cricket.jpeg',
+                            alt: 'Create Your Team'
+                        })
+                        div
+                            h3 Create Your Team
+                            p Immerse yourself in the world of basketball and build your ultimate team.
+                            +Link({
+                                class: 'btn',
+                                text: 'Play',
+                                href: '/download/'
+                            })
+                    .slide
+                        +Img({
+                            src: 'img/football.jpeg',
+                            alt: 'Master Your Strategy'
+                        })
+                        div
+                            h3 Master Your Strategy
+                            p Take your basketball team to new heights with strategies and teamwork.
+                            +Link({
+                                class: 'btn',
+                                text: 'Play',
+                                href: '/download/'
+                            })
+                    .slide
+                        +Img({
+                            src: 'img/basketball.jpeg',
+                            alt: 'Thrilling Matchups'
+                        })
+                        div
+                            h3 Thrilling Matchups
+                            p Create your basketball dynasty and compete in thrilling matchups.
+                            +Link({
+                                class: 'btn',
+                                text: 'Play',
+                                href: '/download/'
+                            })
+                    .slide
+                        +Img({
+                            src: 'img/baseball.jpeg',
+                            alt: 'Dream Team'
+                        })
+                        div
+                            h3 Dream Team
+                            p Build your dream basketball team and rise to the top of the rankings.
+                            +Link({
+                                class: 'btn',
+                                text: 'Play',
+                                href: '/download/'
+                            })
+
+
+
+            .slider-controls
+                .prev-arrow <
+                .next-arrow >

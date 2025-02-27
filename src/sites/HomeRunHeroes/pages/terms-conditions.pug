@@ -1,0 +1,52 @@
+extends /sites/HomeRunHeroes/layouts/base.pug
+
+block variables
+    - const title = 'HomeRunHeroes Terms and Conditions – Guidelines for Using Our Platform'
+    - const description = 'Please read HomeRunHeroes’s terms and conditions before using our platform. We ensure a safe, enjoyable, and compliant experience for all users.'
+
+block content
+    +Header()
+
+    main
+        section.container.terms 
+            h1.title Terms and Conditions
+            div
+                p.subtitle By accessing and using HomeRunHeroes, you agree to be bound by these Terms and Conditions. If you do not agree with these terms, please refrain from using our platform. We reserve the right to update or change these terms at any time, so we encourage you to review this page regularly to stay informed. Continued use of our platform after any changes signifies your acceptance of the revised terms.
+
+            div
+                h3.title-sm Legal compliance and regulations
+                p.subtitle By using HomeRunHeroes, you agree to comply with all relevant laws and regulations, including data protection standards and online safety protocols. HomeRunHeroes operates in accordance with global compliance requirements to provide a safe environment for users. This includes adherence to privacy laws such as the General Data Protection Regulation (GDPR) for users in the European Union, and other applicable regulations in the regions where we operate.
+                p.subtitle We are committed to maintaining a secure platform and ensuring the safety of our users’ personal information. We comply with industry standards and implement robust security measures to prevent unauthorized access to user data.
+
+            div
+                h3.title-sm User responsibilities
+                p.subtitle Users are expected to act responsibly and follow all relevant laws while engaging with HomeRunHeroes. By using our platform, you agree not to participate in any activities that may harm, disrupt, or interfere with our platform’s functionality or other users' experiences.
+                p.subtitle Any misuse of our platform that violates these terms may result in account suspension or termination, and we may pursue appropriate legal action if necessary. The following activities are strictly prohibited:
+                ul
+                    li Engaging in fraudulent actions or misrepresenting personal information
+                    li Unauthorized access or tampering with user accounts or private data
+                    li Distributing malicious software or participating in hacking activities
+                    li Posting harmful, offensive, or unlawful content
+                p.subtitle We aim to foster a safe and respectful online community, and we will take the necessary actions to protect the integrity of our platform.
+
+            div
+                h3.title-sm Dispute resolution and governing law
+                p.subtitle In the event of disputes, we follow established legal frameworks and offer fair resolution methods. All disputes will be governed by the laws of the jurisdiction where HomeRunHeroes is based. By using our services, you agree to comply with these terms and acknowledge their enforcement.
+                p.subtitle We encourage users to contact our support team to resolve issues before pursuing formal legal action. If a resolution cannot be reached through direct communication, we encourage alternative dispute resolution, such as mediation or arbitration, before considering litigation.
+
+            div
+                h3.title-sm Limitation of liability
+                p.subtitle HomeRunHeroes will not be held responsible for any damages that may arise from the use or inability to use our platform, including indirect, incidental, or consequential damages. While we strive to ensure the accuracy and security of our services, we cannot guarantee uninterrupted service or error-free operation.
+
+            div
+                h3.title-sm Modifications to services
+                p.subtitle HomeRunHeroes reserves the right to modify, update, or discontinue any part of our platform or features without prior notice. While we will make reasonable efforts to notify users of significant changes, we cannot guarantee the availability of specific features or services at all times.
+
+            div
+                h3.title-sm Contact Information
+                p.subtitle For any questions or concerns regarding our policies, please contact us at 
+                    a(href='mailto:contact@HomeRunHeroes.com') 
+                        | contact@HomeRunHeroes.com.  
+                    We are happy to assist you with any inquiries or issues you may have, and we aim to resolve all matters in a timely and satisfactory manner.
+
+    +Footer()
