@@ -1,0 +1,5 @@
+mixin ParallaxBlock(imagePath, title, subtitle)
+    .parallax-container(style=`--bg-image: url(${imagePath})`)
+        .parallax-content
+            h1=title
+            p=subtitle
