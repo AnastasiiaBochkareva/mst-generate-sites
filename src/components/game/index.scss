@@ -1,0 +1,30 @@
+.game {
+    background-color: #000;
+    &__container {
+        position: relative;
+        background: rgba(0, 0, 0, 0.5);
+        color: #fff;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        gap: 40px;
+        text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.9);
+
+        padding: 10px 20px;
+        text-align: center;
+
+        iframe {
+            overflow: hidden;
+            width: 100%;
+            height: 70vh;
+            border: none;
+            // background: url("/circle-loader.gif") center center no-repeat black;
+        }
+
+        @media (max-width: 768px) {
+            iframe {
+                height: 50vh;
+            }
+        }
+    }
+}
