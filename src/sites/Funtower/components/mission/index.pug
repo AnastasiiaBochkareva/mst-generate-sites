@@ -1,0 +1,17 @@
+mixin Mission()
+    section.mission
+        .mission__container.container.reveal-zoom
+            div
+                +Img({
+                        src: 'img/gameplay.jpg',
+                        alt: 'Mission'
+                    })
+            div.colored
+                h2 Fast-Paced Fun with Endless Replayability
+                p No two climbs in Funtower are the same. Each game offers fresh decisions, new strategies, and unexpected outcomes. It’s the perfect balance of quick rounds and deep strategy—you can play a few short games during a break or spend hours chasing your next high score. 
+                p The core mechanics are easy to grasp, but mastering the tower takes practice and smart decision-making. One round you might play cautiously, reaching a modest height; the next, you might take risks and soar past your personal best. This dynamic keeps players coming back, always thinking, "Just one more game."
+                +Link({
+                    class: 'btn btn-pulse',
+                    href: '#game',
+                    text: 'Join the Game',
+                })

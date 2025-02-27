@@ -1,0 +1,53 @@
+mixin Footer()
+    footer.footer
+        .container.footer__container
+            .footer__logo
+                +Link({
+                    href: '/',
+                    text: 'Funtower'
+                })
+                
+            .footer__links
+                div
+                    p Contact Us
+                    p    
+                        a(href='tel:+91 9852051353') +91 98520 51353
+                
+                    p    
+                        a(href='mailto:contact@funtower.com') contact@funtower.com
+                
+                    p    
+                        a(href='https://maps.app.goo.gl/Yc94QyK6MGBFjZVS8' target='_blank') Q7G4+HXP, Multai, Madhya Pradesh 460661, India
+                
+                div
+                    p Legal
+                    +Link({
+                        href: `contacts.html`,
+                        text: 'Contacts',
+                    })
+                    +Link({
+                        href: `disclaimer.html`,
+                        text: 'Disclaimer',
+                    })
+                    +Link({
+                        href: `terms-conditions.html`,
+                        text: 'Terms and conditions',
+                    })
+                    +Link({
+                        href: `privacy-policy.html`,
+                        text: 'Privacy policy',
+                    })
+            .footer__disclaimer
+                div 
+                    +Img({
+                        src: 'img/18.jpeg',
+                        alt: 'Disclaimer'
+                    })
+
+                h3 Important Notice
+                p All games on Lucky Mirage Casino are purely for entertainment purposes. You must be at least 18 years old to play. There are no financial transactions involved—just fun and excitement!
+                p Enjoy the thrill responsibly and always remember—it's all about the experience!
+
+                
+                p.copyright.small © 2025 Funtower. All rights reserved.
+        

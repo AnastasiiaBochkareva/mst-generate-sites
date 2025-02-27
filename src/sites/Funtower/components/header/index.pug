@@ -1,0 +1,32 @@
+mixin Header(param)
+    - 
+        const headerLinks = [
+            {
+              href: '/',
+              text: 'Home',
+            },
+            {
+              href: 'how-to-play.html',
+              text: 'How-to-play',
+            },
+            {
+              href: `contacts.html`,
+              text: 'Contacts',
+            }
+        ]
+
+    header.header
+        .container.header__container
+            .header__logo
+                +Link({
+                    href: '/',
+                    text: 'Funtower'
+                })
+            ul.header__list
+                each link in headerLinks
+                    li.header__list-item
+                        +Link({
+                            href: link.href,
+                            text: link.text
+                        })
+                            

@@ -1,0 +1,22 @@
+mixin Benefits()
+    section.benefits
+        .container.benefits__container.reveal-zoom
+            h2 Your Next Climb Starts Now
+            
+            div.reveal-right
+                .img    
+                    +Img({
+                        src: 'img/gameplay1.jpg',
+                        alt: 'Your Next Climb Starts Now'
+                    })
+                h3 The tower is waiting.
+                p With its perfect blend of simplicity, strategy, and pure fun, Funtower offers an engaging gaming experience that’s hard to put down. Every climb brings new challenges, fresh strategies, and the thrilling question of just how high you can go. There are no limits—just you, the tower, and the decisions you make along the way.
+
+            div.reveal-left
+                h3 So what are you waiting for?
+                p Dive into Funtower today, and see how far you can climb. Whether you’re here for quick fun or aiming for the top, your next adventure starts now.
+                +Link({
+                    class: 'btn',
+                    href: '#game',
+                    text: 'Start Play',
+                })

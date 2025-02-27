@@ -1,0 +1,36 @@
+.banner {
+    position: relative;
+    margin-top: 300px;
+    background-color: #f3f3f3;
+    > img {
+        position: absolute;
+        display: block;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+    }
+    &__container {
+        text-align: center;
+        h1 {
+            margin-bottom: 30px;
+        }
+        .text {
+            display: inline-block;
+            background: linear-gradient(to right, #b31815, #f080d0);
+            -webkit-background-clip: text;
+            color: transparent;
+            animation: gradientTextMovement 4s linear,
+                resetTextColor 5s ease 4s infinite;
+        }
+    }
+    @media (max-width: 767px) {
+        margin-top: 200px;
+        &__container {
+            h1,
+            p {
+                margin-bottom: 15px;
+            }
+        }
+    }
+}

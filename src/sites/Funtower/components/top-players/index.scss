@@ -1,0 +1,27 @@
+.table {
+    &__container {
+        overflow-x: scroll;
+        background-color: #f3f3f3;
+        h2,
+        p {
+            margin-bottom: 20px;
+            text-align: center;
+        }
+        table {
+            border-radius: 30px;
+            overflow: hidden;
+            width: 100%;
+            thead {
+                background: linear-gradient(to right, #b31815, #f080d0);
+                color: #fff;
+            }
+            tbody {
+                tr {
+                    td {
+                        text-align: center;
+                    }
+                }
+            }
+        }
+    }
+}

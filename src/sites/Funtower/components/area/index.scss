@@ -1,0 +1,24 @@
+.area {
+    border-top: 2px solid #000;
+    &__container {
+        display: flex;
+        gap: 20px;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    &__card {
+        background-color: #fff;
+        padding: 20px;
+        width: 100%;
+        max-width: calc(33% - 15px);
+        display: flex;
+        flex-direction: column;
+        color: #333;
+        gap: 20px;
+    }
+    @media (max-width: 767px) {
+        &__card {
+            max-width: 100%;
+        }
+    }
+}

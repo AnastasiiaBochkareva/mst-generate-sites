@@ -1,0 +1,19 @@
+extends /sites/Funtower/layouts/base.pug
+
+block variables
+    - const title = 'How to Play Funtower – Master the Climb and Reach New Heights'
+    - const description = 'Learn how to play Funtower with our simple guide. Discover tips, strategies, and gameplay mechanics to help you climb higher and enjoy the ultimate tower adventure. Dive in and start your journey today!'
+
+
+block content
+    +Header()
+    main
+        +Fixed-bg()
+        +Keydata()
+        
+        +Features()
+
+        +Guide()
+        +Info()
+        +Strategic()
+    +Footer()

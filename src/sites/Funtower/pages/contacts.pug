@@ -1,0 +1,22 @@
+extends /sites/Funtower/layouts/base.pug
+
+block variables
+    - const title = 'Contact Funtower – Share Your Feedback'
+    - const description = 'Got questions or feedback about Funtower? Use our contact form to reach out! We’re always happy to hear from players and improve your gaming experience.'
+
+
+block content
+    +Header()
+
+    main
+        section.container.contacts-page
+            
+            +Area()
+
+            +Form()
+
+            +Faq()
+
+            
+
+    +Footer()

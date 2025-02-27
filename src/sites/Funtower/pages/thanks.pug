@@ -1,0 +1,18 @@
+extends /sites/Funtower/layouts/base.pug
+
+block variables
+  - const title = 'Thank You for Getting in Touch – Funtower'
+  - const description = 'We appreciate your message! Our team will review your inquiry and respond shortly. Thanks for connecting with Funtower!'
+
+block content
+  main
+    section.thanks
+      .container
+        h1 Thanks for Connecting with Us!
+        p Your message has been successfully received, and our team will get back to you as soon as possible. We appreciate your interest in Funtower! If you have any further questions or need more information, feel free to reach out again — we’re here to help.
+
+        +Link({
+            class: 'btn',
+            href: '/',
+            text: 'Home',
+        })

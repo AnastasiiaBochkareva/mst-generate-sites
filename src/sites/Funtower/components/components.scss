@@ -1,0 +1,32 @@
+@use "@/sites/Funtower/components/header/index" as header;
+@use "@/components/grid/index" as grid;
+@use "@/components/slider/index" as slider;
+@use "@/components/land/index" as land;
+
+@use "@/components/game/index" as game;
+@use "@/components/fixed-bg/index" as fixed-bg;
+
+@use "@/sites/Funtower/components/footer/index" as footer;
+
+@use "@/sites/Funtower/components/reveal/index" as reveal;
+
+@use "@/sites/Funtower/components/disclaimer-modal/index" as disclaimer-modal;
+@use "@/sites/Funtower/components/form/index" as form;
+
+// main
+@use "@/sites/Funtower/components/banner/index" as banner;
+@use "@/sites/Funtower/components/mission/index" as mission;
+@use "@/sites/Funtower/components/start/index" as start;
+@use "@/sites/Funtower/components/rules/index" as rules;
+@use "@/sites/Funtower/components/strategic/index" as strategic;
+@use "@/sites/Funtower/components/keydata/index" as keydata;
+@use "@/sites/Funtower/components/features/index" as features;
+@use "@/sites/Funtower/components/benefits/index" as benefits;
+
+@use "@/sites/Funtower/components/info/index" as info;
+@use "@/sites/Funtower/components/faq/index" as faq;
+@use "@/sites/Funtower/components/guide/index" as guide;
+@use "@/sites/Funtower/components/area/index" as area;
+@use "@/sites/Funtower/components/reviews/index" as reviews;
+
+@use "@/sites/Funtower/components/top-players/index" as top-players;

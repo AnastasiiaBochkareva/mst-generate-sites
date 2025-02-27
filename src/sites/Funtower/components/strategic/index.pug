@@ -1,0 +1,54 @@
+mixin Strategic()
+    section.strategic
+    
+        .container.strategic__items.grid-sm
+            .strategic__item.reveal-left(style='background-color: #f4f4f4;')
+                h3 Strategic Depth for Every Player
+                p While Funtower’s core mechanics are simple, its true depth lies in the strategy behind each climb. Every level forces a decision: Do you keep climbing for bigger rewards, or do you step back to avoid the risk? 
+                +Link({
+                    class: 'btn',
+                    text: 'Play',
+                    href: '/#game'
+                })
+            .strategic__item.reveal-zoom(style='background-color: #d8c9a3;')
+                p During gameplay, you'll encounter 5 different types of buildings that can provide additional multipliers for your potential winnings. Each building type has its own unique range of multipliers, adding to the excitement and unpredictability of "Tower X".
+                ul 
+                    li 
+                        +Img({
+                            src: 'img/1.png',
+                            alt: 'Suburb house'
+                        })
+                        h3 Suburb house
+                        p 1X - 5X
+                    li 
+                        +Img({
+                            src: 'img/2.png',
+                            alt: 'Sity house'
+                        })
+                        h3 Sity house
+                        p 6X - 10X
+                    li 
+                        +Img({
+                            src: 'img/3.png',
+                            alt: 'Green house'
+                        })
+                        h3 Green house
+                        p 15X - 40X
+                    li 
+                        +Img({
+                            src: 'img/4.png',
+                            alt: 'Elite house'
+                        })
+                        h3 Elite house
+                        p 50X - 90X
+                    li 
+                        +Img({
+                            src: 'img/5.png',
+                            alt: 'Neon house'
+                        })
+                        h3 Neon house
+                        p 100X - 1000X
+            .strategic__item.reveal-right(style='background-color: #d0e9c6;')
+                p The higher you go, the more intense these decisions become. Players who study patterns and refine their approach can climb higher and higher, but there’s always room for bold, gut-feeling moves. 
+            .strategic__item.reveal-zoom(style='background-color: #faf0e6;')
+                p Whether you’re a cautious strategist or a fearless risk-taker, Funtower accommodates your style. This blend of simplicity and depth makes it appealing to both casual players and dedicated gamers alike.

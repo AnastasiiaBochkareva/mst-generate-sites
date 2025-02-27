@@ -1,0 +1,31 @@
+.features {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 20px;
+    position: relative;
+    background-color: #fff;
+    h2,
+    p {
+        width: 100%;
+        margin-bottom: 20px;
+        text-align: end;
+        max-width: 600px;
+        margin-left: auto;
+    }
+    .img {
+        position: absolute;
+        top: 0;
+        right: 30%;
+        bottom: 0;
+        left: 0;
+        z-index: -1;
+        filter: brightness(1.2);
+    }
+    @media (max-width: 767px) {
+        h2,
+        p {
+            margin-bottom: 0;
+        }
+    }
+}
