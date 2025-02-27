@@ -1,0 +1,17 @@
+.land {
+    align-items: center;
+    justify-content: center;
+    display: none;
+    overflow: hidden;
+    height: auto;
+    height: 100vh;
+    background-color: #122bb9;
+}
+.land img {
+    width: initial;
+}
+@media (max-width: 425px) {
+    .land {
+        display: flex;
+    }
+}
