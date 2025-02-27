@@ -11,14 +11,18 @@ body {
     font-size: 16px;
     font-weight: 100;
     font-style: normal;
+    overflow-x: hidden;
 }
 body.no-scroll {
     overflow: hidden;
 }
 main {
+    min-height: 100vh;
+}
+main,
+section {
     overflow: hidden;
 }
-
 ol,
 ul {
     list-style: none;
@@ -44,7 +48,7 @@ a {
     text-decoration: none;
 }
 
-.no-scroll {
+.no-scroll:not(body) {
     overflow: hidden;
     position: fixed;
     width: 100%;
