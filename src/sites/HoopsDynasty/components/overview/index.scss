@@ -1,0 +1,39 @@
+.overview {
+    background-color: #000;
+    color: #fff;
+    &__container {
+        h2,
+        > p {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+    }
+    &__cards {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px;
+        justify-content: space-between;
+        > div {
+            background-color: #242424;
+            padding: 20px;
+            border-radius: 30px;
+            width: 100%;
+            max-width: calc(50% - 15px);
+            text-align: center;
+            transition: transform 0.3s ease-in-out;
+            &:hover {
+                transform: translateY(-10px);
+            }
+            span {
+                font-size: 2.5rem;
+            }
+        }
+    }
+    @media (max-width: 767px) {
+        &__cards {
+            > div {
+                max-width: 100%;
+            }
+        }
+    }
+}

@@ -1,0 +1,22 @@
+extends /sites/HoopsDynasty/layouts/base.pug
+
+block variables
+    - const title = 'HoopsDynasty Rules – Fair Play & Strategy'
+    - const description = 'Learn the official rules of HoopsDynasty. Understand team management, player scoring, and game mechanics to make the most of your basketball experience.'
+
+block content
+    +Header()
+
+    main
+       
+        +Rules-banner()
+
+        +House()
+
+
+        +Rules-player-scoring() 
+
+
+        +Rules-competitions()
+
+    +Footer()

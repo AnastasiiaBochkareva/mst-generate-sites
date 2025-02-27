@@ -1,0 +1,87 @@
+.team {
+    display: flex;
+    flex-flow: row wrap;
+    gap: 20px;
+    background-color: #000;
+    color: #fff;
+    &__title,
+    &__subtitle {
+        width: 100%;
+    }
+    &__imgs {
+        position: relative;
+        overflow: hidden;
+        img {
+            position: absolute;
+            max-width: 300px;
+            max-height: 300px;
+        }
+        .team {
+            &-one {
+                left: -50px;
+                transform: rotate(-20deg);
+                top: 50px;
+            }
+            &-two {
+                left: 80px;
+                transform: rotate(-10deg);
+                bottom: 0;
+            }
+            &-three {
+                right: 70px;
+                top: -20px;
+                transform: rotate(-5deg);
+            }
+            &-four {
+                right: 0px;
+                transform: rotate(10deg);
+                bottom: 30px;
+            }
+        }
+    }
+    .border {
+        margin: 10px 0;
+        border: double 1em transparent;
+        border: 2px solid #a852a5;
+        border-radius: 2px;
+        border-image: linear-gradient(to right, #a852a5, black) 1;
+        background-image: linear-gradient(white, white),
+            linear-gradient(to right, #a852a5, black);
+        background-origin: border-box;
+        -webkit-background-clip: content-box, border-box;
+        background-clip: content-box, border-box;
+    }
+    &__imgs,
+    &__items {
+        // max-width: calc(50% - 10px);
+        // width: 100%;
+        flex: 1;
+    }
+    @media (max-width: 1199px) {
+        &__imgs {
+            img {
+                max-height: 400px;
+            }
+        }
+    }
+    @media (max-width: 767px) {
+        flex-direction: column;
+        &__imgs {
+            display: flex;
+            .team {
+                &-one,
+                &-two,
+                &-three,
+                &-four {
+                    left: 0;
+                    transform: rotate(0);
+                    top: 0;
+                    bottom: 0;
+                    position: initial;
+                    flex: 1;
+                    max-width: 25%;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,21 @@
+.rules-competitions {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    background-color: #000;
+    color: #fff;
+    .img {
+        border-radius: 30px;
+        max-height: 600px;
+        overflow: hidden;
+    }
+    > div:not(.img) {
+        margin-top: auto;
+        margin-bottom: auto;
+        > h2,
+        p {
+            text-align: center;
+            margin: 10px 0;
+        }
+    }
+}

@@ -1,0 +1,28 @@
+.support-banner {
+    background-color: #242424;
+    color: #fff;
+    &__container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 20px;
+        a {
+            color: #fff;
+        }
+        h1,
+        > p {
+            margin-bottom: 20px;
+            text-align: center;
+
+            width: 100%;
+        }
+        > div {
+            flex: 1;
+            margin-bottom: 20px;
+            max-width: 40%;
+            background-color: #9f9f9f;
+            border-radius: 30px;
+            padding: 20px;
+        }
+    }
+}

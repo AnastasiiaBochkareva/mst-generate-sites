@@ -1,0 +1,39 @@
+mixin Advantages()
+    section.advantages
+        .container.advantages__container.reveal-zoom
+            h2 Why These Games Are Fan Favorites
+            p Each game offers a unique fantasy sports experience, tailored for every strategy lover and sports enthusiast. Discover what makes them stand out!
+            .advantages__cards
+                div 
+                    +Img({
+                        src: '/img/enthusiasts.jpeg',
+                        alt: 'Basketball Enthusiasts'
+                    })
+                    h3 #1 for Basketball Enthusiasts
+                    p.advantages-hidden Create your ideal team, manage every aspect of the game, and lead your players through unforgettable basketball seasons.
+                div
+                    +Img({
+                        src: '/img/strategy.jpeg',
+                        alt: 'Basketball Strategy'
+                    })
+                    h3 #1 for Basketball Strategy
+                    p.advantages-hidden Control the pace of the game, make crucial decisions, and bring your team to the top with smart coaching and tactical gameplay.
+                div
+                    +Img({
+                        src: '/img/building.jpeg',
+                        alt: 'Team Building'
+                    })
+                    h3 #1 for Team Building
+                    p.advantages-hidden Draft your players, plan your matchups, and experience the excitement of each season in your quest for basketball greatness.
+                div
+                    +Img({
+                        src: '/img/management.jpeg',
+                        alt: 'Basketball Management'
+                    })
+                    h3 #1 for Basketball Management
+                    p.advantages-hidden Take charge of every game, make tactical decisions, and manage your roster through each challenging season to build a legendary team.
+            +Link({
+                class: 'btn',
+                text: 'Play Games',
+                href: '/download/'
+            })

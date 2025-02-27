@@ -1,0 +1,36 @@
+mixin Footer()
+    footer.footer
+        .container.footer__container
+            .footer__logo
+                +Link({
+                    href: '/',
+                    text: 'HoopsDynasty'
+                })
+                a(href='https://www.gamcare.org.uk/')
+                    +Img({
+                        src: '/img/gamecare.png',
+                        alt: 'gamble'
+                    })
+            .footer__contact-links.footer__links
+                p Call us:
+                    a(href='tel:+918347250619') 
+                        | +91 8347 250 619
+                p White us:
+                    a(href='mailto:contact@hoopsdynasty.com') 
+                        | contact@hoopsdynasty.com
+                p Find us:
+                    a(href='https://maps.app.goo.gl/9Hhgc13ZMkMR9WtBA' target='_blank') 
+                        | W38C+V95 Kaluru, Karnataka, India
+            .footer__pages-links.footer__links
+                +Link({
+                    href: '/privacy-policy/',
+                    text: 'Privacy policy'
+                })
+                +Link({
+                    href: '/terms-conditions/',
+                    text: 'Terms and conditions'
+                })
+            .footer__disclaimer
+                .age 18+
+                p Participation in HoopsDynasty is governed by the laws applicable in India. Fantasy sports, including HoopsDynasty, are considered a 'game of skill' under Indian law and are legal in most states. However, residents of Andhra Pradesh, Assam, Nagaland, Odisha, Sikkim, and Telangana are not eligible to participate due to state regulations. Users must be at least 18 years old to register and play on this platform. Please play responsibly and ensure compliance with the applicable laws before participating.
+        

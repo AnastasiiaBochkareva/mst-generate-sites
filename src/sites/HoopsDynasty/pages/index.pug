@@ -1,0 +1,36 @@
+extends /sites/HoopsDynasty/layouts/base.pug
+
+block variables
+    - const title = 'HoopsDynasty – Your Ultimate Basketball Management Experience'
+    - const description = 'Step into the world of HoopsDynasty, where your basketball strategy shapes the game. Build your dream team, make tactical decisions, and experience the thrill of virtual basketball like never before.'
+block content
+  +Dev-land()
+  +Header()
+
+  main
+
+    +Banner()
+
+    +Game-slider()
+
+    +Map()
+
+    +Counter({
+      counterOne: 'fans',
+      counterTwo: 'exciting seasons',
+      counterThree: 'dynamic teams',
+    })
+    +Inspiring()
+    +Advantages()
+
+    
+
+    +Overview()
+
+    +Benefits()
+
+    +Reviews()
+    +Disclaimer-modal()
+    
+
+  +Footer()

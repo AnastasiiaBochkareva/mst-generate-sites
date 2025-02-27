@@ -1,0 +1,18 @@
+extends /sites/HoopsDynasty/layouts/base.pug
+
+block variables
+    - const title = 'HoopsDynasty Tutorial – Get Started with Fantasy Basketball'
+    - const description = 'Learn how to play HoopsDynasty with our step-by-step tutorial. Discover team creation, strategy tips, and game mechanics to master your basketball management skills.'
+
+block content
+    +Header()
+
+    main
+
+        +Tutorial-banner()
+
+        +Tutorial-nav()
+
+        +Tutorial-guide()
+
+    +Footer()
