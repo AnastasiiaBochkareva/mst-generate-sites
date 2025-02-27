@@ -1,0 +1,121 @@
+@mixin transition-mix(
+    $property: all,
+    $duration: 0.2s,
+    $timing: linear,
+    $delay: 0s
+) {
+    transition-property: $property;
+    transition-duration: $duration;
+    transition-timing-function: $timing;
+    transition-delay: $delay;
+}
+.btn {
+    @include transition-mix;
+    padding: 10px 20px;
+    margin-right: 10px;
+    background-color: #fff;
+    border-radius: 3px;
+    cursor: pointer;
+    outline: none;
+    &:last-child {
+        margin-right: 0;
+    }
+    &:hover,
+    &.active {
+        color: #fff;
+    }
+}
+.content {
+    max-width: 700px;
+    margin: auto;
+}
+.content__title {
+    margin-bottom: 20px;
+    font: {
+        size: 18px;
+        weight: 500;
+    }
+    text-align: center;
+}
+.content__inner {
+    width: 375px;
+    height: 550px;
+    margin: auto;
+    box-shadow: 0 8px 17px 2px rgba(0, 0, 0, 0.14),
+        0 3px 14px 2px rgba(0, 0, 0, 0.12), 0 5px 5px -3px rgba(0, 0, 0, 0.2);
+}
+.tabs {
+    position: relative;
+    padding: 15px;
+    height: 100%;
+    overflow: hidden;
+}
+.tabs__nav {
+    position: relative;
+}
+.tabs__nav-decoration {
+    top: 0;
+    left: 0;
+    height: 100%;
+    transition: width 0.2s linear 0s, transform 0.2s ease-out 0s;
+    border-radius: 3px;
+    z-index: 1;
+}
+.tabs__nav-list {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    list-style-type: none;
+    z-index: 5;
+}
+.tabs__nav-item {
+    @include transition-mix($delay: 0s);
+    padding: 15px;
+    cursor: pointer;
+    &.active {
+        @include transition-mix($delay: 0.05s);
+        color: #fff;
+    }
+}
+.tabs__panels {
+    position: relative;
+    margin-top: 30px;
+}
+.tabs__panel {
+    transition: none;
+    height: 0;
+    transform: scale(0.8);
+    width: 100%;
+    opacity: 0;
+    &.active {
+        transition: all 0.25s linear 0s;
+        transform: scale(1);
+        height: 100%;
+        opacity: 1;
+    }
+}
+.tabs__panel-card {
+    display: flex;
+    margin-bottom: 30px;
+    padding: 15px;
+    box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14),
+        0 3px 1px -2px rgba(0, 0, 0, 0.12), 0 1px 5px 0 rgba(0, 0, 0, 0.2);
+    &:last-child {
+        margin-bottom: 0;
+    }
+}
+.tabs__panel-card--spaced-between {
+    justify-content: space-between;
+}
+.tabs__panel-avatar {
+    flex-shrink: 0;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+}
+.tabs__panel-img {
+    flex-shrink: 0;
+    width: 80px;
+    height: 80px;
+    border-radius: 4px;
+}
