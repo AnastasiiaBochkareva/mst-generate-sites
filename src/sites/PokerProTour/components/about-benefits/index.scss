@@ -1,0 +1,93 @@
+.app-about {
+    > h2,
+    > p {
+        text-align: center;
+    }
+    &__cards {
+        // display: flex;
+        // justify-content: space-between;
+        // gap: 20px;
+        // flex-wrap: wrap;
+        margin-top: 20px;
+        display: grid;
+        gap: 30px;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: auto auto auto;
+        margin-left: auto;
+        margin-right: auto;
+        > div {
+            background-color: #fff;
+            color: #000;
+            padding: 20px;
+            height: 100%;
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            gap: 10px;
+            box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.3);
+            transition: transform 0.3s ease;
+            &:hover {
+                transform: translate(5px, -5px);
+            }
+        }
+    }
+    &__card {
+        &-one {
+            grid-column: span 2;
+        }
+        &-two {
+            grid-column: span 1;
+        }
+        &-three {
+            grid-column: span 1;
+        }
+        &-four {
+            grid-column: span 2;
+        }
+        h3,
+        p {
+            transition: transform 0.3s ease-in-out;
+        }
+        svg {
+            border-radius: 50%;
+        }
+        &:hover {
+            h3,
+            p {
+                transform: scale(1.1);
+            }
+            svg {
+                box-shadow: 0 0 10px #00ff00, 0 0 20px #00ff00, 0 0 30px #00ff00,
+                    0 0 40px #00ff00;
+            }
+        }
+    }
+    .btn {
+        margin: 30px auto 0;
+    }
+
+    @media (max-width: 767px) {
+        &__cards {
+            grid-template-columns: repeat(1, 1fr);
+            gap: 20px;
+        }
+
+        h2 {
+            grid-column: span 1;
+        }
+        &__card {
+            &-one {
+                grid-column: span 1;
+            }
+            &-two {
+                grid-column: span 1;
+            }
+            &-three {
+                grid-column: span 1;
+            }
+            &-four {
+                grid-column: span 1;
+            }
+        }
+    }
+}

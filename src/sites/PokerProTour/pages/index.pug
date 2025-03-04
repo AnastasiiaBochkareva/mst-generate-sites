@@ -1,0 +1,27 @@
+extends /sites/PokerProTour/layouts/base.pug
+
+block variables
+    - const title = 'Welcome to PokerProTour – The Future of Esports'
+    - const description = 'Dive into the world of esports with PokerProTour. Stay ahead of the game with exciting features, tournaments, and everything you need to take your gaming experience to the next level.'
+block content
+  +Header()
+
+  main
+    +Main-banner()
+    +Main-slider()
+    +Map()
+    +Advantages()
+    +Overview()
+    +Counter({
+      counterOne: 'Active Players',
+      counterTwo: 'Tournaments Covered',
+      counterThree: 'Game Categories',
+    })
+    +Easy()
+    +Inner-banner()
+    +Benefits()
+    +Faq()
+    +Disclaimer-modal()
+    +Btn-up()
+
+  +Footer()

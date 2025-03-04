@@ -1,0 +1,53 @@
+extends /sites/PokerProTour/layouts/base.pug
+
+block variables
+    - const title = 'PokerProTour Terms and Conditions – Rules for Using Our Services'
+    - const description = 'Read PokerProTour’s terms and conditions for using our services. We ensure safe, secure, and compliant transactions for our customers.'
+
+block content
+    +Header()
+
+    main
+        section.container.terms
+            h1.title Terms and Conditions
+            div
+                p.subtitle Welcome to PokerProTour! By accessing and using our platform, you agree to these Terms and Conditions. Please review them carefully, as they define your rights and responsibilities when using our services. If you do not agree with any part of these terms, we kindly ask you to refrain from using the platform. We reserve the right to update these terms, and continued use of our services implies acceptance of any modifications.
+
+            div
+                h3.title-sm Responsible Platform Use
+                p.subtitle Our platform is designed to provide an engaging and secure environment for all users. To maintain a positive experience, users must:
+                ul
+                    li Provide accurate and truthful information when registering an account.
+                    li Respect all applicable laws and platform guidelines.
+                    li Avoid any activity that may disrupt the functionality of the website or negatively impact other users.
+                p.subtitle Any violation of these responsibilities may result in restrictions on your access to the platform, account suspension, or further action where necessary.
+
+            div
+                h3.title-sm Security and Privacy Measures
+                p.subtitle Protecting user data is our top priority. We follow strict privacy regulations and implement security protocols to safeguard personal information. While we take all reasonable measures to maintain data security, we encourage users to create strong passwords and exercise caution when sharing personal details online.
+                p.subtitle If you suspect any unauthorized activity on your account, please contact our support team immediately.
+
+            div
+                h3.title-sm User Rights and Support
+                p.subtitle At PokerProTour, we believe in transparency and user empowerment. You have the right to:
+                ul
+                    li Access and review the personal information associated with your account.
+                    li Request updates or corrections to inaccurate data.
+                    li Contact our support team for assistance with any issues related to platform usage.
+                p.subtitle For any inquiries or concerns, you can reach us at
+                    a(href='mailto:contact@pokerprotour.com') 
+                        | contact@pokerprotour.com
+
+            div
+                h3.title-sm Service Availability and Updates
+                p.subtitle We are constantly improving our platform to enhance the user experience. While we strive for uninterrupted service, there may be instances of temporary maintenance or feature updates. We reserve the right to modify, suspend, or discontinue certain aspects of the platform without prior notice.
+
+            div
+                h3.title-sm Dispute Resolution
+                p.subtitle In the event of any disputes, we encourage users to contact our support team first for a resolution. If further action is required, appropriate legal procedures will be followed in accordance with the applicable laws in our jurisdiction.
+
+            div
+                h3.title-sm Limitation of Liability
+                p.subtitle PokerProTour aims to provide a reliable and enjoyable platform. However, we are not responsible for any issues arising from external factors, such as technical interruptions or third-party actions. While we make every effort to maintain a smooth user experience, we cannot guarantee absolute error-free performance at all times.
+
+    +Footer()

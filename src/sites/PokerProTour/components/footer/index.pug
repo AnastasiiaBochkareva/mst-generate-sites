@@ -1,0 +1,25 @@
+mixin Footer()
+    footer.footer
+        .container.footer__container
+            .footer__logo
+                +Link({
+                    href: '/',
+                    text: 'PokerProTour'
+                })
+            .footer__contact-links.footer__links
+                p Call us:
+                    a(href='tel:+91 8473 250 619') +91 8473 250 619
+                p White us:
+                    a(href='mailto:contact@pokerprotour.com') contact@pokerprotour.com
+                p Find us:
+                    a(href='https://maps.app.goo.gl/QeSrRootsTkRfavp9' target='_blank') W527+RMW Bhawanipatna, Odisha, India
+            .footer__pages-links.footer__links
+                +Link({
+                    href: '/privacy-policy/',
+                    text: 'Privacy policy'
+                })
+                +Link({
+                    href: '/terms-conditions/',
+                    text: 'Terms and conditions'
+                })
+        

@@ -1,0 +1,45 @@
+extends /sites/PokerProTour/layouts/base.pug
+
+block variables
+    - const title = 'PokerProTour Privacy Policy – Protecting Your Data'
+    - const description = 'Learn how PokerProTour values your privacy and ensures the security of your personal information in the world of online gaming.'
+
+block content
+    +Header()
+
+    main
+        section.container.privacy-policy 
+            h1.title Privacy Policy
+            div
+                p.subtitle At PokerProTour, we prioritize your privacy and are dedicated to safeguarding the personal information you share with us. This Privacy Policy outlines how we collect, use, and protect your data. By using our platform, you agree to the terms described here.
+            div
+                h3.title-sm Data protection and compliance   
+                p.subtitle We adhere to international data protection laws, including the General Data Protection Regulation (GDPR) and the California Consumer Privacy Act (CCPA). Our platform utilizes advanced security protocols to ensure your information remains safe.
+                p.subtitle We also work with trusted service providers who maintain strict privacy standards to uphold data security and integrity. Our privacy practices are reviewed regularly to stay in line with evolving regulations.
+            div
+                h3.title-sm Information collection and use
+                p.subtitle We collect personal details such as your name, email, and preferences to improve your experience on PokerProTour. This information helps us provide personalized content, enhance platform functionality, and communicate important updates.
+                p.subtitle All data is collected with transparency, and we continuously evaluate our processes to ensure compliance with privacy standards.
+            div
+                h3.title-sm Transparency and user control
+                p.subtitle We believe in transparency. You have the right to know how your data is collected, stored, and used. If you need to access or modify your personal details, we are here to assist you.
+            div
+                h3.title-sm Your privacy rights
+                p.subtitle We respect your rights regarding personal data. You can request:
+                ul
+                    li Access to the personal data we have about you.
+                    li Corrections for inaccurate or outdated information.
+                    li Deletion of your data under applicable legal conditions.
+                p.subtitle For privacy-related requests, contact us at 
+                    a(href='mailto:contact@pokerprotour.com') 
+                        | contact@pokerprotour.com. 
+                    We will address your request in accordance with legal guidelines.
+            div
+                h3.title-sm Data retention policy
+                p.subtitle We retain personal data only as long as necessary for the purposes outlined in this Privacy Policy or as required by law. When data is no longer needed, we securely delete or anonymize it.
+            div
+                h3.title-sm Security measures
+                p.subtitle We implement strong security measures, including encryption, secure servers, and controlled access, to safeguard your personal information. These measures help prevent unauthorized access, alteration, or misuse of your data.
+                p.subtitle-sm While we take extensive precautions, no online system is entirely risk-free. We recommend using strong passwords and being mindful of the information you share online.
+
+    +Footer()

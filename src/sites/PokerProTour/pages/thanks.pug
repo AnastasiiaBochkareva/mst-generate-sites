@@ -1,0 +1,27 @@
+extends /sites/PokerProTour/layouts/base.pug
+
+block variables
+    - const title = 'Thank You from PokerProTour – We Appreciate Your Message'
+    - const description = 'Thank you for reaching out to PokerProTour! Your message has been received. We’ll get back to you as soon as possible with the support you need.'
+
+block content
+  main
+    section.container.thanks
+      .thanks__container
+
+        h1 Thank You for Reaching Out!
+        p Thank you for contacting PokerProTour. We’ve received your message and will get back to you as soon as possible. Our team is here to assist you with any questions or concerns about our esports platform.
+
+        p While you wait, feel free to check out the latest tournaments or explore new features available in our app!
+
+        p We look forward to assisting you!
+
+        p If you need immediate help, you can reach us at 
+          a(href='mailto:contact@pokerprotour.com') 
+            | contact@pokerprotour.com
+        +Link({
+          href: '/',
+          text: 'Home',
+          class: 'btn pulse-btn'
+        })
+

@@ -1,0 +1,40 @@
+// global
+@use "@/components/slider/index" as slider;
+@use "@/components/burger/index" as burger;
+@use "@/components/reveal/index" as reveal;
+
+// general
+@use "@/sites/PokerProTour/components/header/index" as header;
+@use "@/sites/PokerProTour/components/footer/index" as footer;
+@use "@/sites/PokerProTour/components/btn-up/index" as btn-up;
+@use "@/components/parallax/index" as parallax;
+
+// main
+@use "@/sites/PokerProTour/components/about-banner/index" as about-banner;
+@use "@/sites/PokerProTour/components/main-banner/index" as main-banner;
+@use "@/sites/PokerProTour/components/main-slider/index" as main-slider;
+@use "@/sites/PokerProTour/components/advantages/index" as advantages;
+@use "@/sites/PokerProTour/components/overview/index" as overview;
+@use "@/sites/PokerProTour/components/counter/index" as counter;
+@use "@/sites/PokerProTour/components/easy/index" as easy;
+@use "@/sites/PokerProTour/components/inner-banner/index" as inner-banner;
+@use "@/sites/PokerProTour/components/benefits/index" as benefits;
+@use "@/sites/PokerProTour/components/map/index" as map;
+@use "@/sites/PokerProTour/components/disclaimer-modal/index" as
+    disclaimer-modal;
+
+// about
+@use "@/sites/PokerProTour/components/about-benefits/index" as about-benefits;
+@use "@/sites/PokerProTour/components/about-us/index" as about-us;
+@use "@/sites/PokerProTour/components/app-services/index" as app-services;
+
+// download
+@use "@/sites/PokerProTour/components/features/index" as features;
+@use "@/sites/PokerProTour/components/interface/index" as interface;
+@use "@/sites/PokerProTour/components/install/index" as install;
+
+// support
+@use "@/sites/PokerProTour/components/support-banner/index" as support-banner;
+@use "@/sites/PokerProTour/components/form/index" as form;
+@use "@/sites/PokerProTour/components/faq/index" as faq;
+@use "@/components/map-iframe/index" as map-iframe;

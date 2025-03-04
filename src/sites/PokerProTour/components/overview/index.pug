@@ -1,0 +1,41 @@
+mixin Overview()
+    section.overview
+        +Img({
+            src:'/img/bg.jpeg',
+            alt: 'Stunning Stadiums & Environments'
+        })
+        .container.overview__container
+            h2.text-shadow Stunning Stadiums & Environments
+                span.hidden stake com app
+
+            p.text-shadow Play in immersive arenas filled with vibrant details, dynamic weather, and realistic physics. Every match feels like a live event!
+
+            .overview__cards.reveal-zoom
+                div.reveal-left
+                    +Img({
+                        src:'/img/romb.jpeg',
+                        alt: 'Dynamic Events'
+                    })
+                    h3 Dynamic Events
+                    p Experience time-limited tournaments, seasonal challenges, and special in-game events that keep the competition fresh.
+                div.reveal-right
+                    +Img({
+                        src:'/img/heart.jpeg',
+                        alt: 'Skill-Based Matchmaking'
+                    })
+                    h3 Skill-Based Matchmaking
+                    p Face off against opponents of your skill level, ensuring fair and intense matches every time.
+                div.reveal-left
+                    +Img({
+                        src:'/img/club.jpeg',
+                        alt: 'Interactive Atmosphere'
+                    }) 
+                    h3 Interactive Atmosphere
+                    p Feel the hype with reactive sound effects, animated audiences, and thrilling in-game commentary.
+                div.reveal-right
+                    +Img({
+                        src:'/img/spade.jpeg',
+                        alt: 'Day & Night Battles'
+                    }) 
+                    h3 Day & Night Battles
+                    p Compete in different lighting conditions, from golden-hour showdowns to high-stakes night matches under stadium lights.

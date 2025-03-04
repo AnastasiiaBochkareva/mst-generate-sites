@@ -1,0 +1,10 @@
+import "@/components/burger/index";
+import "@/components/reveal/index";
+// general
+import "@/components/slider/index";
+import "@/components/header-scrolled/index";
+import "@/sites/PokerProTour/components/counter/index";
+import "@/sites/PokerProTour/components/faq/index";
+import "@/sites/PokerProTour/components/disclaimer-modal/index";
+import "@/components/parallax/index";
+import "@/components/btn-up/index";

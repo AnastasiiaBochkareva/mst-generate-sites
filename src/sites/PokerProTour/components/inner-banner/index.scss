@@ -1,0 +1,26 @@
+.inner-banner {
+    position: relative;
+
+    img {
+        position: absolute;
+        z-index: -1;
+    }
+    &__container {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px;
+        align-items: center;
+        justify-content: center;
+        padding-top: 50px;
+        padding-bottom: 50px;
+        @media (max-width: 767px) {
+            padding-top: 20px;
+            padding-bottom: 20px;
+        }
+        > h2,
+        > p {
+            width: 100%;
+            text-align: center;
+        }
+    }
+}

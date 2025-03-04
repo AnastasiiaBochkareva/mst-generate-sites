@@ -1,0 +1,45 @@
+mixin Advantages()
+    section.advantages
+        .container.advantages__container
+            h2 Game Modes
+                span.hidden stake com app
+            p Experience diverse game modes tailored for every player:
+            .advantages__cards.reveal-zoom
+                div.translate 
+                    .img
+                        +Img({
+                            src: '/img/solo.jpeg',
+                            alt: 'Solo Challenges'
+                        })
+                    h3 Solo Challenges:
+                    p Test your skills, complete objectives, and climb the leaderboard.
+                div.translate
+                    .img
+                        +Img({
+                            src: '/img/lobby.jpeg',
+                            alt: 'Competitive Multiplayer'
+                        })
+                    h3 Competitive Multiplayer:
+                    p Face off against top players from around the globe in ranked matches.
+                div.translate
+                    .img
+                        +Img({
+                            src: '/img/training.jpeg',
+                            alt: 'Training Grounds'
+                        })
+                    h3 Training Grounds:
+                    p Hone your reflexes and strategy before stepping into real competition.
+                div.translate
+                    .img
+                        +Img({
+                            src: '/img/match.jpeg',
+                            alt: 'Custom Matches'
+                        })
+                    h3 Custom Matches:
+                    p Create private lobbies and challenge friends on your terms.
+                    
+            +Link({
+                class: 'btn',
+                text: 'Play Games',
+                href: '/download/'
+            })

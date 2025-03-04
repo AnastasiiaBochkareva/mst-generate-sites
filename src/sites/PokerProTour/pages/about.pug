@@ -1,0 +1,18 @@
+extends /sites/PokerProTour/layouts/base.pug
+
+block variables
+    - const title = 'About PokerProTour – Your Ultimate Esports Experience'
+    - const description = 'Learn more about PokerProTour, our expertise in esports, cutting-edge technology, and commitment to building a vibrant community of gamers.'
+
+block content
+    +Header()
+
+    main
+        +About-banner()
+        +About-benefits()
+        +App-about-us()
+        +App-services()
+
+        
+        +Btn-up()
+    +Footer()

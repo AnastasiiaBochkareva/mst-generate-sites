@@ -1,0 +1,37 @@
+mixin App-services()
+    section.app-services
+        .container
+            h2.app-services__title.reveal-zoom Our Features
+                span.hidden Stake
+            p.app-services__subtitle.reveal-zoom At PokerProTour, we provide a range of features designed to enhance your poker experience. Whether you're a competitive player, casual gamer, or part of a team, our platform is built to support you at every stage.
+            .app-services__container
+                .app-services__item.reveal-left
+                    h3 Poker Strategy Consultation
+                    .border
+                    p We offer expert consultation to help you sharpen your poker skills. Our specialists provide tailored strategies to help you succeed in any poker format.
+
+                .app-services__item.reveal-zoom
+                    h3 Real-Time Game Stats & Analysis
+                    .border
+                    p Our platform provides real-time stats to help you track player performance, make informed decisions, and improve your gameplay during poker sessions.
+
+                .app-services__item.reveal-right
+                    h3 Custom Poker Hand Creation
+                    .border
+                    p Build your perfect poker hand using our custom tools, allowing you to strategize and enhance your chances in the game.
+
+                .app-services__item.reveal-top
+                    h3 Instant Game Updates
+                    .border
+                    p Stay updated with live game data. Get instant notifications on key game developments and real-time performance changes that could affect your strategy.
+
+                .app-services__item.reveal-left
+                    h3 Game Analytics & Insights
+                    .border
+                    p We provide detailed game analytics to help you understand your playing patterns, refine your strategies, and excel in future poker games.
+
+            +Link({
+                class: 'btn app-services__btn',
+                href: '/support/',
+                text: 'Learn more',
+            })

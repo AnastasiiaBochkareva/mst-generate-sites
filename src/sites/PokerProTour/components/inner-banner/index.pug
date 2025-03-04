@@ -1,0 +1,20 @@
+mixin Inner-banner()
+    section.inner-banner.bg-dark
+        +Img({
+            src: '/img/table.jpeg',
+            alt: 'Poker Tournament Arena'
+        })
+        .container.inner-banner__container
+            h2.text-shadow WELCOME TO POKERPROTOUR – YOUR ULTIMATE POKER DESTINATION!
+                span.hidden stake app download
+            p.text-shadow Stay updated with the latest poker tournaments, player rankings, and live events.
+            +Link({
+                href: '/download/',
+                text: 'Get the App',
+                class: 'btn'
+            })
+            +Link({
+                href: '/support/',
+                text: 'Learn More',
+                class: 'btn'
+            }) 

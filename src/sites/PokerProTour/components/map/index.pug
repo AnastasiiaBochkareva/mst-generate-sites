@@ -1,0 +1,22 @@
+mixin Map()
+    section.map 
+        +Img({
+            src: '/img/map.jpeg',
+            alt: 'PLAYERS WORLDWIDE'
+        })
+        .container.map__container.bg-dark
+            
+            
+            div.reveal-zoom
+                h2.text-shadow POKERPROTOUR IS BRINGING ESPORTS TO PLAYERS WORLDWIDE
+                p.text-shadow Exciting things are on the horizon! Get ready for a major event in June 2025 that will bring together esports players from around the world.
+
+                p.text-shadow Stay updated on upcoming tournaments and exclusive insights leading up to this game-changing event!
+
+                +Link({
+                    href: '/download/',
+                    class: 'btn shine',
+                    text: 'Join Now'
+                })
+
+

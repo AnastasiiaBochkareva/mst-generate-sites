@@ -1,0 +1,47 @@
+.faq {
+    background-color: #242424;
+    h2 {
+        margin-bottom: 30px;
+        color: #fff;
+    }
+}
+.accordion {
+    .accordion-item {
+        border: 1px solid #ccc;
+        margin-bottom: 10px;
+
+        .accordion-header {
+            background-color: #f7f7f7;
+            color: #333;
+            padding: 20px;
+            width: 100%;
+            text-align: left;
+            cursor: pointer;
+            border: none;
+            font-size: 16px;
+            font-weight: bold;
+            transition: background-color 0.3s ease;
+            margin-top: 0;
+            &:hover {
+                background-color: transparent;
+                box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.3);
+                color: #fff;
+            }
+        }
+        .accordion-content {
+            display: none;
+            padding: 20px;
+            background-color: #f1f1f1;
+            color: #333;
+            > p {
+                a {
+                    color: #000;
+                }
+            }
+        }
+    }
+}
+
+.accordion .active + .accordion-content {
+    display: block;
+}

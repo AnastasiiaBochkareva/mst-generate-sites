@@ -1,0 +1,26 @@
+mixin Main-slider()
+    - var slides = [{ img: '/img/poker-tournament.jpeg', title: 'Poker Tournament', text: 'Join the ultimate poker tournament and showcase your skills against the best players.', btnText: 'Play Now' }, { img: '/img/poker-strategy.jpeg', title: 'Poker Strategy', text: 'Master your poker strategy with expert tips and tricks for every situation.', btnText: 'Learn More' }, { img: '/img/game-insights.jpeg', title: 'Game Insights', text: 'Analyze your gameplay, track performance, and stay ahead of the competition.', btnText: 'Explore Stats' }, { img: '/img/live-matches.jpeg', title: 'Live Matches', text: 'Watch live poker matches and follow the action as top players battle it out.', btnText: 'Watch Now' }, { img: '/img/leaderboard.jpeg', title: 'Global Leaderboard', text: 'Compete with players from around the world and rise through the global ranks.', btnText: 'Check Rankings' }, { img: '/img/poker-community.jpeg', title: 'Poker Community', text: 'Connect with fellow poker enthusiasts and share strategies in our community.', btnText: 'Join Us' }]
+
+
+    section.main-slider
+        .container.container__slider
+            .slider
+                each slide in slides
+                    .slide
+                        div
+                            .img
+                                +Img({
+                                    src: slide.img,
+                                    alt: slide.title
+                                })
+                            div
+                                h2=slide.title
+                                p=slide.text
+                                +Link({
+                                    href:'/download/',
+                                    class: 'btn',
+                                    text: slide.btnText
+                                })
+            .slider-controls
+                .prev-arrow <
+                .next-arrow >
